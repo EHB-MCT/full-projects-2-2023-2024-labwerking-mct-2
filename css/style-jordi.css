@@ -2,12 +2,21 @@ body {
 	padding: 50px;
 	background-color: #f3f2f0;
 }
-div {
-	margin-bottom: 50px;
+.styleguide div {
+	margin-bottom: 2.5vw;
+}
+.styleguide {
+	z-index: -2;
+	padding: 50px;
+	position: relative;
+}
+.div-color {
+	display: flex;
 }
 .color-display {
-	width: 50px;
-	height: 50px;
+	width: 3.5vw;
+	height: 3.5vw;
+	margin-right: 1vw;
 }
 /* -------------------------------------------------------------------------------------------------------------------------------- */
 .color1 {
@@ -52,5 +61,8 @@ img {
 	display: none;
 }
 .none2 {
+	display: none;
+}
+.none {
 	display: none;
 }

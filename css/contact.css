@@ -1,0 +1,78 @@
+.contactformulier {
+	padding: 2.5vw;
+}
+.white {
+	background-color: white;
+	border-color: black;
+	color: black;
+}
+.black {
+	background-color: black;
+	color: white;
+}
+#contact-textarea {
+	width: 80vw;
+	height: 10vw;
+	border-color: black;
+	resize: none;
+	margin-bottom: 2.5vw;
+}
+#submit {
+	padding: 0.5vw 2vw;
+}
+.fase-visual {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.fase-indicator {
+	display: flex;
+	width: 10vw;
+	justify-content: space-between;
+}
+.fase-1-indicator {
+	border-radius: 15vw;
+	padding: 0.5vw 0.8vw;
+	font-size: 1vw;
+}
+.fase-2-indicator {
+	border-radius: 15vw;
+	padding: 0.5vw 0.8vw;
+	font-size: 1vw;
+}
+.fase-1 {
+	display: none;
+}
+.fase-2 {
+	display: none;
+}
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
+.flex {
+	display: flex;
+}
+.space-between {
+	display: flex;
+	justify-content: space-between;
+}
+.space-evenly {
+	justify-content: space-evenly;
+}
+input {
+	margin-bottom: 1vw;
+}
+#EhB {
+	margin-bottom: 0vw;
+}
+.flex p {
+	font-size: 1.5vw;
+}
+.margin-b {
+	margin-bottom: 1vw;
+}
+.width {
+	width: 50vw;
+}

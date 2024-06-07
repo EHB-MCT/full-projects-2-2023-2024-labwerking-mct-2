@@ -3,13 +3,36 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="js/index.js"></script>
 		<link rel="stylesheet" href="https://use.typekit.net/zbr4thx.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/ytz2sug.css" />
 		<link href="css/reset.css" rel="stylesheet" />
-		<link href="css/style-pema.css" rel="stylesheet" />
-		<title>Document</title>
+		<link href="css/style-dave.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/contact.css" />
+
+		<title>Styleguide</title>
 	</head>
 	<body>
+		<nav class="navigation none1">
+			<div>
+				<img class="logo" src="images/Logo.svg" alt="" />
+			</div>
+			<div class="navigation-items">
+				<a class="navigation-item" href="">Medialab</a>
+				<a class="navigation-item" href="">FabLab</a>
+				<a class="navigation-item" href="">Studio</a>
+				<div>
+					<button class="navigation-item dropdown">Info <img class="nav-arrow-down none1" src="images/Arrow-down.png" alt="" /><img class="nav-arrow-up none" src="images/Arrow-up.svg" alt="" /></button>
+				</div>
+			</div>
+		</nav>
+		<div class="dropdown-menu none">
+			<a class="dropdown-item" href="">Tarieven</a>
+			<a class="dropdown-item" href="">Uitleendienst</a>
+			<a class="dropdown-item" href="">Activiteiten</a>
+			<a class="dropdown-item" href="">Blog</a>
+			<a class="dropdown-item" href="">Praktische info</a>
+		</div>
 		<div class="styleguide">
 			<div class="div-color">
 				<button class="color-display color1"></button>
@@ -25,19 +48,82 @@
 				<p>Dit is de tekst</p>
 			</div>
 			<div>
-				<button class="btn-primary">
-					<p>Primary</p>
-					<img src="images/Arrow.svg" class="arrow none1" alt="" />
-				</button>
+				<a href="#" class="btn-primary">Primary</a>
 			</div>
 			<div>
 				<img class="none1" src="images/Camera.svg" alt="" />
 				<img class="none1" src="images/Hammer.svg" alt="" />
 				<img class="none1" src="images/Mic.svg" alt="" />
+				<img class="none1" src="images/ball.svg" alt="" />
+				<img class="none1" src="images/Round_wave.svg" alt="" />
 				<img class="none2" src="images/3D1.png" alt="" />
 				<img class="none2" src="images/3D2.png" alt="" />
 				<img class="none2" src="images/3D3.png" alt="" />
 			</div>
+		</div>
+		<div class="contactformulier">
+			<form class="reserveer">
+				<div class="fase-1">
+					<h2>Vraag materiaal aan</h2>
+					<div class="fase-visual">
+						<div class="fase-indicator">
+							<button class="fase-1-indicator black" disabled>1</button>
+							<button class="fase-2-indicator white" disabled>2</button>
+						</div>
+					</div>
+					<p>welk materiaal wilt u lenen en hoeveel, wees zo gedetaileerd mogelijk *</p>
+					<textarea id="contact-textarea"></textarea>
+					<p>korte beschrijving van uw project *</p>
+					<textarea id="contact-textarea"></textarea>
+					<button id="submit">Volgende</button>
+				</div>
+				<div class="fase-2">
+					<h2 class="margin-b">Persoonsgegevens</h2>
+					<div class="fase-visual margin-b">
+						<div class="fase-indicator">
+							<button class="fase-1-indicator white" disabled>1</button>
+							<button class="fase-2-indicator black" disabled>2</button>
+						</div>
+					</div>
+
+					<p class="margin-b">welk materiaal wilt u lenen en hoeveel, wees zo gedetaileerd mogelijk *</p>
+					<div class="flex space-between width">
+						<div class="space-evenly flex-column">
+							<p>Naam</p>
+							<input type="text" required />
+							<p>E-mail</p>
+							<input type="email" required />
+							<p>Telefoonnummer</p>
+							<input type="tel" required />
+						</div>
+						<div class="space-between flex-column">
+							<div class="margin-b">
+								<p>EhB-student</p>
+								<div class="flex-column">
+									<div class="flex">
+										<input id="EhB" type="radio" required />
+										<p>Ja</p>
+									</div>
+									<div class="flex">
+										<input id="EhB" type="radio" required />
+										<p>Nee</p>
+									</div>
+								</div>
+							</div>
+							<div>
+								<p>gewenste datum</p>
+								<input type="date" required />
+								<p>gewenste terugbrengdatum</p>
+								<input type="date" required />
+							</div>
+						</div>
+					</div>
+					<p>opmerkingen</p>
+					<textarea id="contact-textarea"></textarea>
+					<button id="submit">Verzend</button>
+				</div>
+			</form>
+			<div class="uitleendiest"></div>
 		</div>
 	</body>
 </html>
