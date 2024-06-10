@@ -1,0 +1,33 @@
+.font1 {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+	font-size: 2vw;
+}
+.font2 {
+}
+.font3 {
+}
+.size1 {
+	font-size: 5vw;
+}
+.size2 {
+	font-size: 3vw;
+}
+.size3 {
+	font-size: 2vw;
+}
+.no-underline {
+	text-decoration: none;
+}
+.underline {
+	text-decoration: underline;
+}
+.bold {
+	font-weight: bold;
+}
+.regular {
+	font-weight: normal;
+}
+.thin {
+	font-weight: 100;
+}

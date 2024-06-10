@@ -1,0 +1,27 @@
+.navigation {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 0vw;
+	padding-right: 5vw;
+	height: 2.5vw;
+	text-align: right;
+}
+
+.navigation-items {
+	display: flex;
+	justify-content: space-between;
+	width: 50vw;
+	align-items: center;
+}
+.navigation-items-secundair {
+	display: flex;
+	justify-content: space-between;
+	width: 30vw;
+
+	align-items: center;
+}
+
+.logo {
+	width: auto;
+	height: 3.5vw;
+}
