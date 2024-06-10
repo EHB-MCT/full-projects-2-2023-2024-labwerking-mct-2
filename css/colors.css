@@ -51,3 +51,7 @@ body {
 .color5-border {
 	border-color: black;
 }
+.nav-bg {
+	background: rgb(243, 242, 240);
+	background: linear-gradient(90deg, rgba(243, 242, 240, 1) 35%, rgba(144, 208, 211, 1) 100%);
+}
