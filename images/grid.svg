@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1621 2940">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1923 3630.89">
   <defs>
     <style>
       .cls-1 {
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2 {
         fill: none;
-        stroke: #fff;
+        stroke: #db1f26;
         stroke-miterlimit: 10;
-        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke-width: 3px;
       }
     </style>
   </defs>
   <g id="Layer_2-2" data-name="Layer 2">
     <g>
-      <rect class="cls-1" x="1" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="138" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="275" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="412" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="549" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="686" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="823" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="960" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="1097" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="1234" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="1371" y="1" width="112" height="2938"/>
-      <rect class="cls-1" x="1508" y="1" width="112" height="2938"/>
+      <g>
+        <rect class="cls-1" x="152" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="289" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="426" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="563" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="700" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="837" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="974" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="1111" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="1248" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="1385" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="1522" y="1.5" width="112" height="3627"/>
+        <rect class="cls-1" x="1659" y="1.5" width="112" height="3627"/>
+      </g>
+      <rect class="cls-2" x="1.5" y="1.5" width="1920" height="3627.89"/>
     </g>
   </g>
 </svg>

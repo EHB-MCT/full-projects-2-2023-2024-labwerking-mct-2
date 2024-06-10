@@ -1,0 +1,86 @@
+.grid {
+	position: absolute;
+	width: 100%;
+	display: none;
+}
+.flex {
+	display: flex;
+}
+/* ------------------------------------------------------------------------------------------------------- */
+.homepage-titel {
+	padding: 0.8vw 7.5vw;
+	height: 34vw;
+	margin-bottom: 12.5vw;
+}
+.homepage-titel-info {
+	height: 9vw;
+	padding-left: 0.5vw;
+}
+.elements {
+	position: absolute;
+
+	width: 94vw;
+	margin-left: -8.5vw;
+}
+.homepage-titel-image {
+	width: 44vw;
+	height: 41vw;
+	z-index: -2;
+}
+.GE1 {
+	margin-top: 3vw;
+	width: 17.5vw;
+	height: auto;
+	z-index: -1;
+}
+.GE2 {
+	width: 15vw;
+	padding-top: 10vw;
+	padding-left: 3vw;
+	z-index: 1;
+}
+.GE3 {
+	position: absolute;
+	margin: 0.5vw 0vw 0vw 4vw;
+	z-index: -1;
+	width: 10vw;
+	height: auto;
+}
+
+.homepage-image-building {
+	width: 56.5vw;
+}
+.homepage-image-info {
+	height: 30vw;
+	width: 34.5vw;
+	padding-right: 7.5vw;
+}
+.homepage-wie-zijn-we {
+	height: auto;
+	align-items: center;
+}
+.homepage-labs {
+	margin-top: 10vw;
+	width: 84.25vw;
+	align-self: center;
+}
+
+.homepage-lab {
+	height: 44.5vw;
+	width: 27.5vw;
+}
+.homepage-lab-name {
+	height: auto;
+	align-items: center;
+}
+.homepage-lab-image {
+	width: 27vw;
+}
+.GE4 {
+	position: absolute;
+	margin: 0vw 0vw 0vw 3vw;
+	z-index: -1;
+	width: 8vw;
+	height: auto;
+}
+/* --------------------------------------------------------------------------------------------------------------- */

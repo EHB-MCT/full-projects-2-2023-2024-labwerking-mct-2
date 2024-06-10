@@ -1,0 +1,57 @@
+body {
+	background-color: #f3f2f0;
+}
+.color1-bg {
+	background-color: #441e1d;
+}
+.color2-bg {
+	background-color: #ff6035;
+}
+.color3-bg {
+	background-color: #95d0d3;
+}
+.color4-bg {
+	background-color: #f3f2f0;
+}
+.color5-bg {
+	background-color: black;
+}
+.color6-bg {
+	background-color: #f9a084;
+}
+/* ___________________________ */
+.color1 {
+	color: #441e1d;
+}
+.color2 {
+	color: #ff6035;
+}
+.color3 {
+	color: #95d0d3;
+}
+.color4 {
+	color: #f3f2f0;
+}
+.color5 {
+	color: black;
+}
+/* ___________________________ */
+.color1-border {
+	border-color: #441e1d;
+}
+.color2-border {
+	border-color: #ff6035;
+}
+.color3-border {
+	border-color: #95d0d3;
+}
+.color4-border {
+	border-color: #f3f2f0;
+}
+.color5-border {
+	border-color: black;
+}
+.nav-bg {
+	background: rgb(243, 242, 240);
+	background: linear-gradient(90deg, rgba(243, 242, 240, 1) 35%, rgba(144, 208, 211, 1) 100%);
+}

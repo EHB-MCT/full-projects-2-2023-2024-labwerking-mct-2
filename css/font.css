@@ -1,0 +1,42 @@
+.font1 {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+.font2 {
+}
+.font3 {
+}
+.size1 {
+	font-size: 2vw;
+}
+.size2 {
+	font-size: 1.75vw;
+}
+.size3 {
+	font-size: 1.5vw;
+}
+.size4 {
+	font-size: 1vw;
+}
+.no-underline {
+	text-decoration: none;
+}
+.underline {
+	text-decoration: underline;
+}
+.bold {
+	font-weight: 800;
+}
+.regular {
+	font-weight: 600;
+}
+.thin {
+	font-weight: 300;
+}
+h1 {
+	font-size: 10vw;
+}
+.interlinie {
+	line-height: 7.25vw;
+	padding-top: 1.5vw;
+}

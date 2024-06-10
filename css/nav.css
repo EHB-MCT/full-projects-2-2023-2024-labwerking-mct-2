@@ -1,0 +1,39 @@
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0vw;
+	padding-right: 8vw;
+	height: 6vw;
+
+	align-items: center;
+}
+.navigation-secundair {
+	height: 3vw;
+	justify-content: flex-end;
+}
+
+.navigation-items {
+	display: flex;
+	justify-content: space-between;
+	width: 49vw;
+	align-items: center;
+}
+.navigation-items-secundair {
+	display: flex;
+	justify-content: space-between;
+	width: 34.5vw;
+
+	align-items: center;
+}
+
+.logo {
+	width: auto;
+	height: 4.5vw;
+	padding-left: 7.5vw;
+}
+.nav-underline {
+	height: 0.7vw;
+}
+.margin-t {
+	margin-top: 0.5vw;
+}
