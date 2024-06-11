@@ -26,7 +26,6 @@
 }
 .info {
 	width: 34vw;
-	height: 40vw;
 }
 
 .GE1-small {
@@ -52,4 +51,8 @@
 }
 .timetable {
 	width: 100%;
+}
+.praktische-info {
+	height: 40vw;
+	margin-bottom: 10vw;
 }
