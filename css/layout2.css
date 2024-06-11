@@ -112,3 +112,32 @@ textarea {
 .radio-inputs {
 	width: 50vw;
 }
+.blog {
+	margin-top: 5vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+.blog-image {
+	width: 27vw;
+}
+.blog-item {
+	width: 27vw;
+	margin-bottom: 5vw;
+}
+.blog-item-info {
+	border-style: solid;
+	border-width: 1px;
+	padding: 2.5vw 2.5vw 0vw 2.5vw;
+	height: 25vw;
+}
+.blog-www {
+	width: 20vw;
+	margin-top: 2.5vw;
+}
+.icon {
+	width: 1.5vw;
+	height: 1.5vw;
+}
+.margin- {
+	margin-top: -5vw;
+}
