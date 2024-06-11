@@ -27,6 +27,9 @@
 .info {
 	width: 34vw;
 }
+.info1 {
+	height: 13.5vw;
+}
 
 .GE1-small {
 	position: absolute;
@@ -55,4 +58,21 @@
 .praktische-info {
 	height: 40vw;
 	margin-bottom: 10vw;
+}
+.contact-info {
+	height: 20vw;
+	margin-bottom: 4.5vw;
+}
+.text-input {
+	width: 34vw;
+	height: 3vw;
+}
+textarea {
+	height: 11vw;
+	width: 34vw;
+}
+.border-cut {
+	border-top-right-radius: 150vw;
+	border-width: 3px;
+	border-style: solid;
 }
