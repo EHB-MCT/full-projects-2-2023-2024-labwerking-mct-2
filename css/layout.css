@@ -84,22 +84,32 @@
 	height: auto;
 }
 
-.fablab-titel-image {
+/* --------------------------------------------------------------------------------------------------------------- */
+.studio-titel-image {
+
 	position: absolute;
 	z-index: -1;
 	margin-top: -5vw;
 	width: 37.5vw;
 }
-.fablab-titel {
+
+.studio-titel {
 	padding: 1vw 15vw 0vw 22vw;
 	height: 25vw;
 }
-.fablab-titel-info {
+.studio-titel-info {
+
+	padding: 1vw 15vw 0vw 22vw;
+	height: 25vw;
+}
+
 	width: 34vw;
 	height: 12vw;
 	align-self: flex-end;
 }
-.fablab-GE1 {
+
+.studio-GE1 {
+
 	position: absolute;
 	z-index: -1;
 	margin-left: -2.5vw;
@@ -107,7 +117,10 @@
 	width: 17.5vw;
 }
 
-.fablab-GE2 {
+
+.studio-GE2 {
+
+
 	position: absolute;
 	margin: 0.25vw 0vw 0vw 6vw;
 	z-index: -1;
@@ -116,15 +129,16 @@
 }
 
 
-
-.fablab-info {
+.studio-info {
 	width: 41.5vw;
+	height: 80vw;
 	padding-left: 8vw;
 }
-.fablab-info-height {
+.studio-info-height {
 	height: 15vw;
 }
-.fablab-GE3 {
+.studio-GE3 {
+
 	position: absolute;
 	margin: 0.5vw 0vw 0vw 3vw;
 	z-index: -1;
@@ -132,15 +146,20 @@
 	height: auto;
 }
 
-.fablab-GE4 {
+
+.studio-GE4 {
+
 	position: absolute;
 	margin: 0.5vw 0vw 0vw 8vw;
 	z-index: -1;
 	width: 10vw;
 	height: auto;
 }
-.fablab-image2 {
+
+.studio-image2 {
 	width: 38vw;
+
+
 }
 
 /* ------------------------------------------------------------------------------------------------------------- */
@@ -187,4 +206,5 @@
 	width: 40vw;
 }
 /* -------------------------------------------------------------------------------------------------------------- */
+
 
