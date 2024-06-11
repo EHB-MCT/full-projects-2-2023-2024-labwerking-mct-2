@@ -51,9 +51,7 @@
 	flex-direction: column;
 	align-items: baseline;
 }
-.flex {
-	display: flex;
-}
+
 .space-between {
 	display: flex;
 	justify-content: space-between;

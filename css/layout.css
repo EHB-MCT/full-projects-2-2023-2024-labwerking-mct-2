@@ -6,6 +6,13 @@
 .flex {
 	display: flex;
 }
+.space-between {
+	display: flex;
+	justify-content: space-between;
+}
+.space-evenly {
+	justify-content: space-evenly;
+}
 /* ------------------------------------------------------------------------------------------------------- */
 .homepage-titel {
 	padding: 0.8vw 7.5vw;

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="812" height="257" viewBox="0 0 812 257">
+  <g id="Group_560" data-name="Group 560" transform="translate(-968 -744)">
+    <text id="Maandag" transform="translate(968 786)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">Maandag</tspan></text>
+    <text id="_10:00_-_12:00" data-name="10:00 - 12:00" transform="translate(1244 786)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">10:00 - 12:00</tspan></text>
+    <text id="_12:30_-_17:00" data-name="12:30 - 17:00" transform="translate(1520 786)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">12:30 - 17:00</tspan></text>
+    <text id="Dinsdag" transform="translate(968 832)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">Dinsdag</tspan></text>
+    <text id="Woensdag" transform="translate(968 877)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">Woensdag</tspan></text>
+    <text id="Donderdag" transform="translate(968 923)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">Donderdag</tspan></text>
+    <text id="_10:00_-_12:00-2" data-name="10:00 - 12:00" transform="translate(1244 923)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">10:00 - 12:00</tspan></text>
+    <text id="_12:30_-_17:00-2" data-name="12:30 - 17:00" transform="translate(1520 923)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">12:30 - 17:00</tspan></text>
+    <text id="Vrijdag" transform="translate(968 968)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">Vrijdag</tspan></text>
+    <text id="_10:00_-_12:00-3" data-name="10:00 - 12:00" transform="translate(1244 968)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">10:00 - 12:00</tspan></text>
+    <text id="_12:30_-_17:00-3" data-name="12:30 - 17:00" transform="translate(1520 968)" fill="#441e1d" font-size="24" font-family="Omnes-Regular, Omnes"><tspan x="0" y="26">12:30 - 17:00</tspan></text>
+    <text id="Medialab" transform="translate(968 777)" fill="#f34c17" font-size="30" font-family="OmnesMedium, Omnes" letter-spacing="-0.001em"><tspan x="0" y="0">Medialab</tspan></text>
+  </g>
+</svg>
