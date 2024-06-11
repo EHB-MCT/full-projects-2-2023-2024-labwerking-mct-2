@@ -84,7 +84,6 @@
 	height: auto;
 }
 
-/* Fablab--------------------------------------------------------------------------------------------------------------- */
 .fablab-titel-image {
 	position: absolute;
 	z-index: -1;
@@ -107,9 +106,7 @@
 	margin-top: 1vw;
 	width: 17.5vw;
 }
-.fablab-machinepark {
-	padding: 8vw 8vw 0vw 8vw;
-}
+
 .fablab-GE2 {
 	position: absolute;
 	margin: 0.25vw 0vw 0vw 6vw;
@@ -117,15 +114,9 @@
 	width: 8vw;
 	height: auto;
 }
-.fablab-machines {
-	width: 55.75vw;
-}
-.fablab-machine {
-	width: 27vw;
-}
-.fablab-machine img {
-	width: 27vw;
-}
+
+
+
 .fablab-info {
 	width: 41.5vw;
 	padding-left: 8vw;
@@ -151,3 +142,49 @@
 .fablab-image2 {
 	width: 38vw;
 }
+
+/* ------------------------------------------------------------------------------------------------------------- */
+.medialab-titel-image {
+	position: absolute;
+	z-index: -1;
+	margin-top: -5vw;
+	width: 37.5vw;
+}
+.medialab-titel {
+	padding: 1vw 15vw 0vw 22vw;
+	height: 25vw;
+}
+.medialab-titel-info {
+	width: 34vw;
+	height: 12vw;
+	align-self: flex-end;
+}
+.medialab-GE1 {
+	position: absolute;
+	z-index: -1;
+	margin-left: -2.5vw;
+	margin-top: 1vw;
+	width: 17.5vw;
+}
+.machinepark {
+	padding: 8vw 8vw 0vw 8vw;
+}
+.machines {
+	width: 55.75vw;
+}
+.machine {
+	width: 27vw;
+}
+.machine img {
+	width: 27vw;
+}
+.medialab-image2 {
+	width: 10vw;
+}
+.bottom-image {
+	height: 70vw;
+	align-content: flex-start;
+	width: 40vw;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+
