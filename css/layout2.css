@@ -1,7 +1,7 @@
 .grid {
 	position: absolute;
 	width: 100%;
-	display: none;
+	display: ;
 }
 .flex {
 	display: flex;
@@ -65,7 +65,6 @@
 	height: 20vw;
 
 	margin-bottom: 4.5vw;
-
 }
 .text-input {
 	width: 34vw;
@@ -146,4 +145,3 @@ textarea {
 .margin- {
 	margin-top: -5vw;
 }
-
