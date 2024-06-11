@@ -12,7 +12,7 @@
 .space-evenly {
 	justify-content: space-evenly;
 }
-/* ----------------------------------------------------------------------------------------------- */
+
 .title-image-decoration {
 	position: absolute;
 	z-index: -1;
@@ -27,7 +27,10 @@
 .info {
 	width: 34vw;
 }
-
+.info1 {
+	height: 13.5vw;
+}
+/* -------------------------------------------------------------------------------- */
 .GE1-small {
 	position: absolute;
 	margin: 0.25vw 0vw 0vw 2vw;
@@ -55,4 +58,86 @@
 .praktische-info {
 	height: 40vw;
 	margin-bottom: 10vw;
+}
+.contact-info {
+	height: 20vw;
+	margin-bottom: 2.5vw;
+}
+.text-input {
+	width: 34vw;
+	height: 3vw;
+}
+textarea {
+	height: 11vw;
+	width: 34vw;
+}
+.border-cut {
+	border-top-right-radius: 150vw;
+	border-width: 3px;
+	border-style: solid;
+}
+/* ------------------------------------------------------------ */
+.machine-info {
+	height: 27.5vw;
+}
+.tutorial-GE1 {
+	position: absolute;
+	margin: 0.25vw 0vw 0vw 6vw;
+	z-index: -1;
+	width: 8vw;
+	height: auto;
+}
+.padding-left {
+	padding-left: 8.25vw;
+}
+.thumbnail {
+	width: 40vw;
+}
+.machine-GE2 {
+	position: absolute;
+	margin: 20vw 0vw 0vw -7.5vw;
+}
+.tutorial {
+	width: 40vw;
+	height: 32.5vw;
+}
+/* ----------------------------------------------------------- */
+.radio {
+	transform: scale(2);
+	margin-top: 0.75vw;
+}
+.radio-text {
+	width: 8.5vw;
+}
+.radio-inputs {
+	width: 50vw;
+}
+.blog {
+	margin-top: 5vw;
+	display: flex;
+	flex-wrap: wrap;
+}
+.blog-image {
+	width: 27vw;
+}
+.blog-item {
+	width: 27vw;
+	margin-bottom: 5vw;
+}
+.blog-item-info {
+	border-style: solid;
+	border-width: 1px;
+	padding: 2.5vw 2.5vw 0vw 2.5vw;
+	height: 25vw;
+}
+.blog-www {
+	width: 20vw;
+	margin-top: 2.5vw;
+}
+.icon {
+	width: 1.5vw;
+	height: 1.5vw;
+}
+.margin- {
+	margin-top: -5vw;
 }
