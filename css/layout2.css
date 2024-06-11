@@ -30,7 +30,9 @@
 .info1 {
 	height: 13.5vw;
 }
+
 /* -------------------------------------------------------------------------------- */
+
 .GE1-small {
 	position: absolute;
 	margin: 0.25vw 0vw 0vw 2vw;
@@ -61,7 +63,9 @@
 }
 .contact-info {
 	height: 20vw;
-	margin-bottom: 2.5vw;
+
+	margin-bottom: 4.5vw;
+
 }
 .text-input {
 	width: 34vw;
@@ -76,6 +80,7 @@ textarea {
 	border-width: 3px;
 	border-style: solid;
 }
+
 /* ------------------------------------------------------------ */
 .machine-info {
 	height: 27.5vw;
@@ -141,3 +146,4 @@ textarea {
 .margin- {
 	margin-top: -5vw;
 }
+
