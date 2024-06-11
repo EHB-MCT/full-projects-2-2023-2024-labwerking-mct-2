@@ -84,3 +84,60 @@
 	height: auto;
 }
 /* --------------------------------------------------------------------------------------------------------------- */
+.studio-titel-image {
+	position: absolute;
+	z-index: -1;
+	margin-top: -5vw;
+	width: 37.5vw;
+}
+.studio-titel {
+	padding: 1vw 15vw 0vw 22vw;
+	height: 25vw;
+}
+.studio-titel-info {
+	width: 34vw;
+	height: 12vw;
+	align-self: flex-end;
+}
+.studio-GE1 {
+	position: absolute;
+	z-index: -1;
+	margin-left: -2.5vw;
+	margin-top: 1vw;
+	width: 17.5vw;
+}
+
+.studio-GE2 {
+	position: absolute;
+	margin: 0.25vw 0vw 0vw 6vw;
+	z-index: -1;
+	width: 8vw;
+	height: auto;
+}
+
+.studio-info {
+	width: 41.5vw;
+	height: 80vw;
+	padding-left: 8vw;
+}
+.studio-info-height {
+	height: 15vw;
+}
+.studio-GE3 {
+	position: absolute;
+	margin: 0.5vw 0vw 0vw 3vw;
+	z-index: -1;
+	width: 10vw;
+	height: auto;
+}
+
+.studio-GE4 {
+	position: absolute;
+	margin: 0.5vw 0vw 0vw 8vw;
+	z-index: -1;
+	width: 10vw;
+	height: auto;
+}
+.studio-image2 {
+	width: 38vw;
+}
