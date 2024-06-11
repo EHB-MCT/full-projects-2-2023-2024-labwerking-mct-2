@@ -69,5 +69,70 @@
 			<a href="#" class="btn-primary color5-border color6-bg color5 no-underline">btn-primary color5-border color6-bg color5 no-underline</a>
 			<a href="#" class="btn-primary color5-border color3-bg color5 no-underline">btn-primary color5-border color3-bg color5 no-underline</a>
 		</div>
+		<!-- contactformulier ------------------------------------------------------------------------------------------------------------------------------------ -->
+		<div class="contactformulier">
+			<form class="reserveer">
+				<div class="fase-1">
+					<h2>Vraag materiaal aan</h2>
+					<div class="fase-visual">
+						<div class="fase-indicator">
+							<button class="fase-1-indicator black" disabled>1</button>
+							<button class="fase-2-indicator white" disabled>2</button>
+						</div>
+					</div>
+					<p>welk materiaal wilt u lenen en hoeveel, wees zo gedetaileerd mogelijk *</p>
+					<textarea id="contact-textarea"></textarea>
+					<p>korte beschrijving van uw project *</p>
+					<textarea id="contact-textarea"></textarea>
+					<button id="submit">Volgende</button>
+				</div>
+				<div class="fase-2">
+					<h2 class="margin-b">Persoonsgegevens</h2>
+					<div class="fase-visual margin-b">
+						<div class="fase-indicator">
+							<button class="fase-1-indicator white" disabled>1</button>
+							<button class="fase-2-indicator black" disabled>2</button>
+						</div>
+					</div>
+
+					<p class="margin-b">welk materiaal wilt u lenen en hoeveel, wees zo gedetaileerd mogelijk *</p>
+					<div class="flex space-between width">
+						<div class="space-evenly flex-column">
+							<p>Naam</p>
+							<input type="text" required />
+							<p>E-mail</p>
+							<input type="email" required />
+							<p>Telefoonnummer</p>
+							<input type="tel" required />
+						</div>
+						<div class="space-between flex-column">
+							<div class="margin-b">
+								<p>EhB-student</p>
+								<div class="flex-column">
+									<div class="flex">
+										<input id="EhB" type="radio" required />
+										<p>Ja</p>
+									</div>
+									<div class="flex">
+										<input id="EhB" type="radio" required />
+										<p>Nee</p>
+									</div>
+								</div>
+							</div>
+							<div>
+								<p>gewenste datum</p>
+								<input type="date" required />
+								<p>gewenste terugbrengdatum</p>
+								<input type="date" required />
+							</div>
+						</div>
+					</div>
+					<p>opmerkingen</p>
+					<textarea id="contact-textarea"></textarea>
+					<button id="submit">Verzend</button>
+				</div>
+			</form>
+			<div class="uitleendiest"></div>
+		</div>
 	</body>
 </html>

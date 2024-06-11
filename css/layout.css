@@ -1,6 +1,8 @@
 .grid {
 	position: absolute;
 	width: 100%;
+	height: auto;
+	z-index: 1;
 	display: none;
 }
 .flex {
@@ -17,26 +19,43 @@
 .homepage-titel {
 	padding: 0.8vw 7.5vw;
 	height: 34vw;
-	margin-bottom: 12.5vw;
+	margin-bottom: 10vw;
 }
 .homepage-titel-info {
 	height: 9vw;
 	padding-left: 0.5vw;
 }
+.titel-images-behind {
+	padding-top: 7.5vw;
+	padding-left: 1.75vw;
+	z-index: -1;
+	position: absolute;
+	width: 48.25vw;
+}
+.titel-images-front {
+}
+.image-front {
+	padding-top: 5.25vw;
+	width: 25vw;
+}
+
 .elements {
 	position: absolute;
-
-	width: 94vw;
+	width: 98vw;
 	margin-left: -8.5vw;
 }
 .homepage-titel-image {
-	width: 44vw;
-	height: 41vw;
-	z-index: -2;
+	width: 50vw;
+	justify-content: space-around;
+
+	padding-right: 5vw;
+	flex-wrap: wrap;
 }
+
 .GE1 {
-	margin-top: 3vw;
-	width: 17.5vw;
+	margin-top: 1.25vw;
+	margin-left: -10vw;
+	width: 25vw;
 	height: auto;
 	z-index: -1;
 }
@@ -55,19 +74,17 @@
 }
 
 .homepage-image-building {
-	width: 56.5vw;
+	width: 49.75vw;
 }
 .homepage-image-info {
 	height: 30vw;
 	width: 34.5vw;
 	padding-right: 7.5vw;
 }
-.homepage-wie-zijn-we {
-	height: auto;
-	align-items: center;
-}
+
 .homepage-labs {
 	margin-top: 10vw;
+	margin-left: 0.5vw;
 	width: 84.25vw;
 	align-self: center;
 }
@@ -77,8 +94,7 @@
 	width: 27.5vw;
 }
 .homepage-lab-name {
-	height: auto;
-	align-items: center;
+	height: 15vw;
 }
 .homepage-lab-image {
 	width: 27vw;
