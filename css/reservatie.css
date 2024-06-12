@@ -1,0 +1,97 @@
+.reserveer {
+	height: 50vw;
+	width: 85vw;
+}
+/* -------------------------------------------------------------------------------------------------- */
+.fase-indicators {
+	width: 7.5vw;
+}
+
+.fase-indicator {
+	display: flex;
+	width: 1vw;
+	justify-content: space-between;
+}
+.fase-1-indicator {
+	border-radius: 50%;
+	padding: 0vw 0.9vw;
+	border-style: solid;
+}
+.fase-2-indicator {
+	border-radius: 50%;
+	padding: 0vw 0.8vw;
+	border-style: solid;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.radio-inputs {
+	width: 35vw;
+}
+.fase-1 {
+	height: 40vw;
+	width: 85vw;
+	display: none;
+}
+.fase-1-part-1 {
+	height: 30vw;
+}
+.fase-1-part-2 {
+	height: 15vw;
+	width: 27.75vw;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.fase-2 {
+	display: flex;
+	height: 40vw;
+	width: 70vw;
+}
+.fase-2-part-1 {
+	height: 30vw;
+}
+.fase-2-part-2 {
+	height: 15vw;
+	width: 27.75vw;
+}
+
+.contact-textarea {
+	height: 12.5vw;
+	border-width: 3px;
+	resize: none;
+	width: 47.5vw;
+	margin-top: 0.5vw;
+	border-bottom-right-radius: 7.5vw;
+}
+#submit {
+	padding: 0.5vw 2vw;
+}
+.text-input {
+	height: 3vw;
+	border-width: 3px;
+	width: 33.5vw;
+	margin-top: 0.5vw;
+	border-top-right-radius: 7.5vw;
+	border-style: solid;
+}
+.text-input-2{
+    height: 3vw;
+	border-width: 3px;
+	width: 20vw;
+	margin-top: 0.5vw;
+	border-top-right-radius: 7.5vw;
+	border-style: solid;
+}
+}
+#EhB {
+	margin-bottom: 0vw;
+}
+
+.width {
+	width: 50vw;
+}
+::-webkit-calendar-picker-indicator{
+    margin-right: 2vw;
+    
+}
+::-webkit-time-picker-indicator{
+    margin-right: 2vw;
+    
+}
