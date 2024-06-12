@@ -106,7 +106,15 @@
 	width: 8vw;
 	height: auto;
 }
-
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
 /* --------------------------------------------------------------------------------------------------------------- */
 .studio-titel-image {
 	position: absolute;
