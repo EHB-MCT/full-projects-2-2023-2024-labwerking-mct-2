@@ -3,7 +3,7 @@
 	width: 100%;
 	height: auto;
 	z-index: 1;
-	display: ;
+	display: none;
 }
 .flex {
 	display: flex;
