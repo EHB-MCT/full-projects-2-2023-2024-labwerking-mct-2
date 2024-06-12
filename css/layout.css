@@ -117,63 +117,33 @@
 .right {
 	text-align: right;
 }
+.padding-left {
+	padding-left: 8.25vw;
+}
 /* --------------------------------------------------------------------------------------------------------------- */
 .studio-titel-image {
 	position: absolute;
 	z-index: -1;
 	margin-top: -5vw;
-	width: 37.5vw;
+	width: 42.25vw;
 }
 .studio-titel {
-	padding: 1vw 15vw 0vw 22vw;
-	height: 25vw;
+	padding: 2vw 0vw 0vw 50.5vw;
+	height: 32.5vw;
+	margin-bottom: 5vw;
 }
 .studio-titel-info {
 	width: 34vw;
-	height: 12vw;
-	align-self: flex-end;
+	height: 12.5vw;
 }
-.studio-GE1 {
-	position: absolute;
-	z-index: -1;
-	margin-left: -2.5vw;
-	margin-top: 1vw;
-	width: 17.5vw;
-}
-
-.studio-GE2 {
-	position: absolute;
-	margin: 0.25vw 0vw 0vw 6vw;
-	z-index: -1;
-	width: 8vw;
-	height: auto;
-}
-
 .studio-info {
 	width: 41.5vw;
-	height: 80vw;
-	padding-left: 8vw;
-}
-.studio-info-height {
 	height: 15vw;
-}
-.studio-GE3 {
-	position: absolute;
-	margin: 0.5vw 0vw 0vw 3vw;
-	z-index: -1;
-	width: 10vw;
-	height: auto;
+	padding-top: 8vw;
 }
 
-.studio-GE4 {
-	position: absolute;
-	margin: 0.5vw 0vw 0vw 8vw;
-	z-index: -1;
-	width: 10vw;
-	height: auto;
-}
 .studio-image2 {
-	width: 38vw;
+	width: 42.5vw;
 }
 
 /* medialab en fablab------------------------------------------------------------------------------------------------------------- */
@@ -225,7 +195,6 @@
 	align-content: flex-start;
 	width: 40vw;
 }
-/* -------------------------------------------------------------------------------------------------------------- */
 .lab-info {
 	width: 41.5vw;
 	padding-left: 8vw;
@@ -233,3 +202,4 @@
 .lab-info-height {
 	height: 15vw;
 }
+/* -------------------------------------------------------------------------------------------------------------- */
