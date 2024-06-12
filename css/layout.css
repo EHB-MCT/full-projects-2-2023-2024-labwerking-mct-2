@@ -8,6 +8,9 @@
 .flex {
 	display: flex;
 }
+.wrap {
+	flex-wrap: wrap;
+}
 .space-between {
 	display: flex;
 	justify-content: space-between;
@@ -190,13 +193,15 @@
 	width: 17.5vw;
 }
 .machinepark {
-	padding: 8vw 8vw 0vw 8vw;
+	padding: 8vw 5vw 0vw 8vw;
 }
 .machines {
 	width: 55.75vw;
 }
 .machine {
 	width: 27vw;
+	height: 32.5vw;
+	margin-right: 1.5vw;
 }
 .machine img {
 	width: 27vw;
@@ -214,7 +219,7 @@
 	position: absolute;
 	z-index: -1;
 	margin-top: -5vw;
-	width: 37.5vw;
+	width: 42.25vw;
 }
 .fablab-titel {
 	padding: 1vw 15vw 0vw 22vw;
