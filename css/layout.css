@@ -222,7 +222,7 @@
 	width: 42.25vw;
 }
 .fablab-titel {
-	padding: 1vw 0vw 0vw 50vw;
+	padding: 2.5vw 0vw 0vw 50vw;
 	height: 25vw;
 }
 .fablab-titel-info {
@@ -233,9 +233,9 @@
 .fablab-GE1 {
 	position: absolute;
 	z-index: -1;
-	margin-left: -2.5vw;
-	margin-top: 1vw;
-	width: 17.5vw;
+	margin-left: -6vw;
+	margin-top: -1.5vw;
+	width: 15vw;
 }
 .fablab-machinepark {
 	padding: 8vw 8vw 0vw 8vw;
