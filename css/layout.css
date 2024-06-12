@@ -3,7 +3,7 @@
 	width: 100%;
 	height: auto;
 	z-index: 1;
-	display: none;
+	display: ;
 }
 .flex {
 	display: flex;
@@ -109,7 +109,15 @@
 	width: 8vw;
 	height: auto;
 }
-
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
 /* --------------------------------------------------------------------------------------------------------------- */
 .studio-titel-image {
 	position: absolute;
