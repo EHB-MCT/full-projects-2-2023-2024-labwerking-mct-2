@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="js/index.js"></script>
+		<script src="js/reservatie.js"></script>
 		<link rel="stylesheet" href="https://use.typekit.net/zbr4thx.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/ytz2sug.css" />
 		<link href="css/reset.css" rel="stylesheet" />
@@ -49,14 +49,14 @@
 		</div>
 		<!-- contactformulier ------------------------------------------------------------------------------------------------------------------------------------ -->
 		<div class="contactformulier padding flex space-between">
-			<form class="reserveer flex-column space-between">
+			<form class="reserveer flex-column space-between" id="form">
 				<h2 class="color2 font1 size5 bold">Projectgegevens</h2>
 				<div class="fase-indicators flex space-between">
 					<button class="fase-1-indicator color3-bg color3-border color4 font1 size1" disabled>1</button>
 					<button class="fase-2-indicator color4-bg color3 color3-border font1 size1" disabled>2</button>
 				</div>
 
-				<div class="fase-1 flex space-between">
+				<div id="fase-1" class="fase-1 display space-between">
 					<div class="flex-column fase-1-part-1 space-between">
 						<p class="font1 size2 regular">Welk lab wilt u reserveren?</p>
 						<div class="flex space-between radio-inputs">
@@ -86,7 +86,7 @@
 					</div>
 				</div>
 
-				<div class="fase-2">
+				<div id="fase-2" class="fase-2 none">
 					<div class="fase-2 flex space-between">
 						<div class="flex-column fase-2-part-1 space-between">
 							<div>
