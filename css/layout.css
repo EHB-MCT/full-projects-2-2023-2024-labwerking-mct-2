@@ -38,6 +38,9 @@
 	padding-top: 5.25vw;
 	width: 25vw;
 }
+.image-behind {
+	width: 20vw;
+}
 
 .elements {
 	position: absolute;
