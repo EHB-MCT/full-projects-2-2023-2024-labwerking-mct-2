@@ -52,13 +52,6 @@
 	align-items: baseline;
 }
 
-.space-between {
-	display: flex;
-	justify-content: space-between;
-}
-.space-evenly {
-	justify-content: space-evenly;
-}
 input {
 	margin-bottom: 1vw;
 }

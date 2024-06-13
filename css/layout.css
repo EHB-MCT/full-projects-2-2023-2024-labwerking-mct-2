@@ -17,6 +17,11 @@
 .space-evenly {
 	justify-content: space-evenly;
 }
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
 /* ------------------------------------------------------------------------------------------------------- */
 .homepage-titel {
 	padding: 0.8vw 7.5vw;
