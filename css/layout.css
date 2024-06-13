@@ -20,25 +20,24 @@
 /* ------------------------------------------------------------------------------------------------------- */
 .homepage-titel {
 	padding: 0.8vw 7.5vw;
-	height: 34vw;
-	margin-bottom: 10vw;
+	height: 37.5vw;
+	margin-bottom: 15vw;
 }
 .homepage-titel-info {
-	height: 9vw;
+	height: 11vw;
 	padding-left: 0.5vw;
 }
 .titel-images-behind {
 	padding-top: 7.5vw;
-	padding-left: 1.75vw;
 	z-index: -1;
 	position: absolute;
-	width: 48.25vw;
+	width: 49vw;
 }
 .titel-images-front {
 }
 .image-front {
-	padding-top: 5.25vw;
-	width: 25vw;
+	padding-top: 4vw;
+	width: 27.5vw;
 }
 .image-behind {
 	width: 20vw;
@@ -46,21 +45,18 @@
 
 .elements {
 	position: absolute;
-	width: 98vw;
-	margin-left: -8.5vw;
+	width: 85.25vw;
 }
 .homepage-titel-image {
 	width: 50vw;
 	justify-content: space-around;
-
-	padding-right: 5vw;
 	flex-wrap: wrap;
+	padding-top: 5vw;
 }
 
 .GE1 {
-	margin-top: 1.25vw;
-	margin-left: -10vw;
-	width: 25vw;
+	margin-left: -7.5vw;
+	width: 28vw;
 	height: auto;
 	z-index: -1;
 }

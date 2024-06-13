@@ -3,26 +3,24 @@
 	justify-content: space-between;
 	margin-bottom: 0vw;
 	padding-right: 8vw;
-	height: 6vw;
-
+	height: 5.5vw;
 	align-items: center;
 }
 .navigation-secundair {
-	height: 3vw;
+	height: 2.75vw;
 	justify-content: flex-end;
 }
 
 .navigation-items {
 	display: flex;
 	justify-content: space-between;
-	width: 49vw;
+	width: 48vw;
 	align-items: center;
 }
 .navigation-items-secundair {
 	display: flex;
 	justify-content: space-between;
-	width: 34.5vw;
-
+	width: 34vw;
 	align-items: center;
 }
 
@@ -32,8 +30,11 @@
 	padding-left: 8vw;
 }
 .nav-underline {
-	height: 0.7vw;
+	height: 0.6vw;
 }
 .margin-t {
 	margin-top: 0.5vw;
+}
+.navigation-item2 {
+	font-weight: 500;
 }
