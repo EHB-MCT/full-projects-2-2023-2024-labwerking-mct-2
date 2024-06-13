@@ -2,6 +2,12 @@
 	height: 50vw;
 	width: 85vw;
 }
+.none{
+	display: none;
+}
+.display{
+	display: flex;
+}
 /* -------------------------------------------------------------------------------------------------- */
 .fase-indicators {
 	width: 7.5vw;
@@ -29,7 +35,7 @@
 .fase-1 {
 	height: 40vw;
 	width: 85vw;
-	display: none;
+	
 }
 .fase-1-part-1 {
 	height: 30vw;
@@ -40,7 +46,6 @@
 }
 /* ---------------------------------------------------------------------------------------------------- */
 .fase-2 {
-	display: flex;
 	height: 40vw;
 	width: 70vw;
 }

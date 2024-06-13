@@ -31,6 +31,18 @@
 }
 .info {
 	width: 34vw;
+	height: 40vw;
+}
+.info-timetable {
+	width: 34vw;
+	height: 22.5vw;
+}
+.info-height {
+	width: 34vw;
+	height: 7.5vw;
+}
+.info-width {
+	width: 34vw;
 }
 .info1 {
 	height: 13.5vw;

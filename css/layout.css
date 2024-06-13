@@ -3,7 +3,7 @@
 	width: 100%;
 	height: auto;
 	z-index: 1;
-	display: ;
+	display: none;
 }
 .flex {
 	display: flex;
@@ -20,44 +20,43 @@
 /* ------------------------------------------------------------------------------------------------------- */
 .homepage-titel {
 	padding: 0.8vw 7.5vw;
-	height: 34vw;
-	margin-bottom: 10vw;
+	height: 37.5vw;
+	margin-bottom: 15vw;
 }
 .homepage-titel-info {
-	height: 9vw;
+	height: 11vw;
 	padding-left: 0.5vw;
 }
 .titel-images-behind {
 	padding-top: 7.5vw;
-	padding-left: 1.75vw;
 	z-index: -1;
 	position: absolute;
-	width: 48.25vw;
+	width: 49vw;
 }
 .titel-images-front {
 }
 .image-front {
-	padding-top: 5.25vw;
-	width: 25vw;
+	padding-top: 4vw;
+	width: 27.5vw;
+}
+.image-behind {
+	width: 20vw;
 }
 
 .elements {
 	position: absolute;
-	width: 98vw;
-	margin-left: -8.5vw;
+	width: 85.25vw;
 }
 .homepage-titel-image {
 	width: 50vw;
 	justify-content: space-around;
-
-	padding-right: 5vw;
 	flex-wrap: wrap;
+	padding-top: 5vw;
 }
 
 .GE1 {
-	margin-top: 1.25vw;
-	margin-left: -10vw;
-	width: 25vw;
+	margin-left: -7.5vw;
+	width: 28vw;
 	height: auto;
 	z-index: -1;
 }
@@ -117,74 +116,44 @@
 .right {
 	text-align: right;
 }
+.padding-left {
+	padding-left: 8.25vw;
+}
 /* --------------------------------------------------------------------------------------------------------------- */
 .studio-titel-image {
 	position: absolute;
 	z-index: -1;
 	margin-top: -5vw;
-	width: 37.5vw;
+	width: 42.25vw;
 }
 .studio-titel {
-	padding: 1vw 15vw 0vw 22vw;
-	height: 25vw;
+	padding: 2vw 0vw 0vw 50.5vw;
+	height: 32.5vw;
+	margin-bottom: 5vw;
 }
 .studio-titel-info {
 	width: 34vw;
-	height: 12vw;
-	align-self: flex-end;
+	height: 12.5vw;
 }
-.studio-GE1 {
-	position: absolute;
-	z-index: -1;
-	margin-left: -2.5vw;
-	margin-top: 1vw;
-	width: 17.5vw;
-}
-
-.studio-GE2 {
-	position: absolute;
-	margin: 0.25vw 0vw 0vw 6vw;
-	z-index: -1;
-	width: 8vw;
-	height: auto;
-}
-
 .studio-info {
 	width: 41.5vw;
-	height: 80vw;
-	padding-left: 8vw;
-}
-.studio-info-height {
 	height: 15vw;
-}
-.studio-GE3 {
-	position: absolute;
-	margin: 0.5vw 0vw 0vw 3vw;
-	z-index: -1;
-	width: 10vw;
-	height: auto;
+	padding-top: 8vw;
 }
 
-.studio-GE4 {
-	position: absolute;
-	margin: 0.5vw 0vw 0vw 8vw;
-	z-index: -1;
-	width: 10vw;
-	height: auto;
-}
 .studio-image2 {
-	width: 38vw;
+	width: 42.5vw;
 }
 
-/* ------------------------------------------------------------------------------------------------------------- */
-.medialab-titel-image {
+/* medialab en fablab------------------------------------------------------------------------------------------------------------- */
+.lab-titel-image {
 	position: absolute;
 	z-index: -1;
 	margin-top: -5vw;
 	width: 42.25vw;
 }
 .lab-titel {
-	padding: 2.5vw 0vw 0vw 50vw;
+	padding: 2vw 0vw 0vw 50.5vw;
 	height: 25vw;
 }
 
@@ -201,14 +170,18 @@
 }
 .machinepark {
 	padding: 8vw 5vw 0vw 8vw;
+	flex-wrap: wrap;
 }
 .machines {
-	flex-wrap: wrap;
+	margin-top: 2.5vw;
 }
 .machine {
 	width: 27vw;
 	height: 32.5vw;
 	margin-right: 1.5vw;
+}
+.machine-info {
+	height: 10vw;
 }
 .machine img {
 	width: 27vw;
@@ -221,60 +194,11 @@
 	align-content: flex-start;
 	width: 40vw;
 }
-/* -------------------------------------------------------------------------------------------------------------- */
-.fablab-titel-image {
-	position: absolute;
-	z-index: -1;
-	margin-top: -5vw;
-	width: 42.25vw;
-}
-.fablab-titel {
-	padding: 2.5vw 0vw 0vw 50vw;
-	height: 25vw;
-}
-.fablab-titel-info {
-	width: 34vw;
-	height: 12vw;
-}
-.fablab-GE1 {
-	position: absolute;
-	z-index: -1;
-	margin-left: -6vw;
-	margin-top: -1.5vw;
-	width: 15vw;
-}
-.fablab-machinepark {
-	padding: 8vw 8vw 0vw 8vw;
-}
-.fablab-GE2 {
-	position: absolute;
-	margin: 0.25vw 0vw 0vw 6vw;
-	z-index: -1;
-	width: 8vw;
-	height: auto;
-}
-.fablab-info {
+.lab-info {
 	width: 41.5vw;
 	padding-left: 8vw;
 }
-.fablab-info-height {
+.lab-info-height {
 	height: 15vw;
 }
-.fablab-GE3 {
-	position: absolute;
-	margin: 0.5vw 0vw 0vw 3vw;
-	z-index: -1;
-	width: 10vw;
-	height: auto;
-}
-
-.fablab-GE4 {
-	position: absolute;
-	margin: 0.5vw 0vw 0vw 8vw;
-	z-index: -1;
-	width: 10vw;
-	height: auto;
-}
-.fablab-image2 {
-	width: 42vw;
-}
+/* -------------------------------------------------------------------------------------------------------------- */
