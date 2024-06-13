@@ -53,7 +53,7 @@ body {
 }
 .nav-bg {
 	background: rgb(255, 255, 255);
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0.16430322128851538) 40%, rgba(144, 208, 211, 1) 100%);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.16430322128851538) 0%, rgba(144, 208, 211, 1) 100%);
 }
 .radio {
 	accent-color: #ff6035;
@@ -66,5 +66,6 @@ p {
 h1 {
 	color: #441e1d;
 }
-h2{
+h2 {
 	color: #441e1d;
+}
