@@ -9,47 +9,47 @@
 		<link href="css/reset.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/contact.css" />
 		<link rel="stylesheet" href="css/layout.css" />
-		<link rel="stylesheet" href="css/nav.css" />
 		<link rel="stylesheet" href="css/colors.css" />
 		<link rel="stylesheet" href="css/font.css" />
 		<link rel="stylesheet" href="css/button.css" />
+		<link rel="stylesheet" href="css/nav.css" />
 
-		<title>Homepage</title>
+		<title>Home</title>
 	</head>
 	<body>
 		<!-- navigation ------------------------------------------------------------------------------------------------------------------------ -->
-		<img src="images/grid.svgsvg" alt="" class="grid" />
+		<img src="images/overlay.jpg" alt="" class="grid" />
 		<nav class="navigation color1-bg">
 			<a href="index.html"><img class="logo" src="images/logo.webp" alt="" /></a>
 			<div class="navigation-items">
-				<a class="navigation-item size2 font1 bold color4 no-underline" href="medialab.html">MEDIALAB</a>
-				<a class="navigation-item size2 font1 bold color4 no-underline" href="fablab.html">FABLAB</a>
-				<a class="navigation-item size2 font1 bold color4 no-underline" href="studio.html">ECHOLAB</a>
+				<a class="navigation-item size3 font1 bold color4 no-underline" href="fablab.html">FABLAB</a>
+				<a class="navigation-item size3 font1 bold color4 no-underline" href="medialab.html">MEDIALAB</a>
+				<a class="navigation-item size3 font1 bold color4 no-underline" href="studio.html">CONTENTLAB</a>
 				<div class="flex-column">
-					<a class="navigation-item size2 font1 color4 no-underline margin-t" href="reservatie.html">RESERVEREN</a>
+					<a class="navigation-item size3 font1 thin color4 no-underline margin-t" href="reservatie.html">RESERVEREN</a>
 					<img src="images/nav-underline.webp" alt="" class="nav-underline" />
 				</div>
 				<div class="flex-column">
-					<a class="navigation-item size2 font1 color4 no-underline margin-t" href="uitlenen.html">UITLENEN</a>
+					<a class="navigation-item size3 font1 thin color4 no-underline margin-t" href="uitlenen.html">UITLENEN</a>
 					<img src="images/nav-underline2.webp" alt="" class="nav-underline" />
 				</div>
 			</div>
 		</nav>
 		<div class="navigation navigation-secundair nav-bg">
 			<div class="navigation-items-secundair">
-				<a class="navigation-item size2 color5 font1 no-underline" href="activiteiten.html">Activiteiten</a>
-				<a class="navigation-item size2 color5 font1 no-underline" href="blog.html">Blog</a>
-				<a class="navigation-item size2 color5 font1 no-underline" href="praktische-info.html">Praktische info</a>
-				<a class="navigation-item size2 color5 font1 no-underline" href="contact.html">Contact</a>
+				<a class="navigation-item2 size8 color1 font1 no-underline" href="activiteiten.html">ACTIVITEITEN</a>
+				<a class="navigation-item2 size8 color1 font1 no-underline" href="praktische-info.html">PRAKTISCHE INFO</a>
+				<a class="navigation-item2 size8 color1 font1 no-underline" href="blog.html">BLOG</a>
+				<a class="navigation-item2 size8 color1 font1 no-underline" href="contact.html">CONTACT</a>
 			</div>
 		</div>
 		<!-- body---------------------------------------------------------------------------------------------------------------------------------------------------- -->
 		<!-- titel ---------------------------------------------------------------------------- -->
 		<div class="homepage-titel flex space-between">
 			<div class="flex-column space-between">
-				<h1 class="font1 interlinie bold color1">LAB <br />.BRUSSEL</h1>
+				<h1 class="font1 interlinie bold size6 color1">LAB <br />.BXL</h1>
 				<div class="homepage-titel-info flex-column space-between">
-					<p class="font1 size1 regular">
+					<p class="font1 size7 regular">
 						Een ontmoetingsplaats voor <br />
 						creativieit en technologie
 					</p>
@@ -59,19 +59,30 @@
 			<div class="elements flex space-between">
 				<div class="flex-column space-between">
 					<img src="images/GE1.webp" alt="" class="GE1" />
-					<img src="images/GE2.webp" alt="" class="GE2" />
 				</div>
-				<img src="images/titel_image.webp" alt="" class="homepage-titel-image" />
+				<div class="homepage-titel-image flex">
+					<div class="flex space-between titel-images-behind">
+						<div>
+							<a href=""><img src="images/titel_studio.webp" alt="" class="image-behind" /></a>
+							<p class="font1 size1 left bold">Contentlab</p>
+						</div>
+						<div>
+							<a href=""><img src="images/titel_fablab.webp" alt="" class="image-behind" /></a>
+							<p class="font1 size1 right bold">Fablab</p>
+						</div>
+					</div>
+					<div class="titel-image-front">
+						<a href=""><img src="images/titel_medialab.webp" alt="" class="image-front" /></a>
+						<p class="font1 size5 bold center">Medialab</p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- ------------------------------------------------------------------------------- -->
 		<div class="flex space-between">
-			<img src="images/homepage-building.webp" alt="" class="homepage-image-building" />
+			<img src="images/homepage_building.webp" alt="" class="homepage-image-building" />
 			<div class="homepage-image-info flex-column space-between">
-				<div class="flex homepage-wie-zijn-we">
-					<h2 class="font1 size1 regular">Wie zijn we?</h2>
-					<img src="images/GE3.webp" alt="" class="GE3 flex" />
-				</div>
+				<h2 class="font1 size1 bold">Wie zijn we?</h2>
 
 				<p class="font1 size3">Welkom bij Lab.Brussel! bij ons kan je geavanceerd materiaal <strong>uitlenen</strong>, creatieve ruimtes reserveren en inspirerende workshops volgen</p>
 				<p class="font1 size3">Of je nu een student, docent of externe gerbuiker bent, wij biedere je de faciliteiten en ondersteuning aan om jouw ideeen tot leven te brengen.</p>
@@ -82,103 +93,31 @@
 		<!-- ------------------------------------------------------------------------------- -->
 		<div class="flex space-evenly">
 			<div class="flex space-between homepage-labs">
-				<div class="flex-column space-between homepage-lab">
+				<div class="flex-column homepage-lab">
 					<img src="images/homepage_medialab.webp" alt="" class="homepage-lab-image" />
-					<div class="flex homepage-lab-name">
+					<div class="flex-column space-between homepage-lab-name">
 						<h2 class="font1 size1 regular">Medialab</h2>
-						<img src="images/GE4.webp" alt="" class="GE4" />
+						<p class="font1 size3">Maak al je ideeen werkelijkheid in een lab uitgerust met: een greenscreen, LED wall, tekentafels, VR & AR brillen en tal van andere technologische snufjes.</p>
+						<a href="#" class="btn-secundary color5-border color3-bg color5 no-underline font1 size3 regular">ONTDEK MEDIALAB</a>
 					</div>
-
-					<p class="font1 size3">Maak al je ideeen werkelijkheid in een lab uitgerust met: een greenscreen, LED wall, tekentafels, VR & AR brillen en tal van andere technologische snufjes.</p>
-					<a href="#" class="btn-secundary color5-border color3-bg color5 no-underline font1 size3">ONTDEK MEDIALAB</a>
 				</div>
-				<div class="flex-column space-between homepage-lab">
+				<div class="flex-column homepage-lab">
 					<img src="images/homepage_fablab.webp" alt="" class="homepage-lab-image" />
-
-					<div class="flex homepage-lab-name">
+					<div class="flex-column space-between homepage-lab-name">
 						<h2 class="font1 size1 regular">Fablab</h2>
-						<img src="images/GE4.webp" alt="" class="GE4" />
+						<p class="font1 size3">Ontdek een veelzijdig laboratorium met een uitge breide, verzameling hoogtechnologische apperatuur, waaronder lasercutters, 3D-printers en computergestuurde freesmachines</p>
+						<a href="#" class="btn-secundary color5-border color3-bg color5 no-underline font1 size3 regular">ONTDEK FABLAB</a>
 					</div>
-					<p class="font1 size3">Ontdek een veelzijdig laboratorium met een uitge breide, verzameling hoogtechnologische apperatuur, waaronder lasercutters, 3D-printers en computergestuurde freesmachines</p>
-					<a href="#" class="btn-secundary color5-border color3-bg color5 no-underline font1 size3">ONTDEK FABLAB</a>
 				</div>
-				<div class="flex-column space-between homepage-lab">
+				<div class="flex-column homepage-lab">
 					<img src="images/homepage_studio.webp" alt="" class="homepage-lab-image" />
-					<div class="flex homepage-lab-name">
+					<div class="flex-column space-between homepage-lab-name">
 						<h2 class="font1 size1 regular">Echolab</h2>
-						<img src="images/GE4.webp" alt="" class="GE4" />
+						<p class="font1 size3">Stap in onze geavanceerde podcaststudio en kenniscli room waar hoogwaardige opnamematerialen en faciliteiten je helpen om podcast en educatieve clips te creëren</p>
+						<a href="#" class="btn-secundary color5-border color3-bg color5 no-underline font1 size3 regular">ONTDEK ECHOLAB</a>
 					</div>
-
-					<p class="font1 size3">Stap in onze geavanceerde podcaststudio en kenniscli room waar hoogwaardige opnamematerialen en faciliteiten je helpen om podcast en educatieve clips te creëren</p>
-					<a href="#" class="btn-secundary color5-border color3-bg color5 no-underline font1 size3">ONTDEK ECHOLAB</a>
 				</div>
 			</div>
-		</div>
-
-		<!-- contactformulier ------------------------------------------------------------------------------------------------------------------------------------ -->
-		<div class="contactformulier">
-			<form class="reserveer">
-				<div class="fase-1">
-					<h2>Vraag materiaal aan</h2>
-					<div class="fase-visual">
-						<div class="fase-indicator">
-							<button class="fase-1-indicator black" disabled>1</button>
-							<button class="fase-2-indicator white" disabled>2</button>
-						</div>
-					</div>
-					<p>welk materiaal wilt u lenen en hoeveel, wees zo gedetaileerd mogelijk *</p>
-					<textarea id="contact-textarea"></textarea>
-					<p>korte beschrijving van uw project *</p>
-					<textarea id="contact-textarea"></textarea>
-					<button id="submit">Volgende</button>
-				</div>
-				<div class="fase-2">
-					<h2 class="margin-b">Persoonsgegevens</h2>
-					<div class="fase-visual margin-b">
-						<div class="fase-indicator">
-							<button class="fase-1-indicator white" disabled>1</button>
-							<button class="fase-2-indicator black" disabled>2</button>
-						</div>
-					</div>
-
-					<p class="margin-b">welk materiaal wilt u lenen en hoeveel, wees zo gedetaileerd mogelijk *</p>
-					<div class="flex space-between width">
-						<div class="space-evenly flex-column">
-							<p>Naam</p>
-							<input type="text" required />
-							<p>E-mail</p>
-							<input type="email" required />
-							<p>Telefoonnummer</p>
-							<input type="tel" required />
-						</div>
-						<div class="space-between flex-column">
-							<div class="margin-b">
-								<p>EhB-student</p>
-								<div class="flex-column">
-									<div class="flex">
-										<input id="EhB" type="radio" required />
-										<p>Ja</p>
-									</div>
-									<div class="flex">
-										<input id="EhB" type="radio" required />
-										<p>Nee</p>
-									</div>
-								</div>
-							</div>
-							<div>
-								<p>gewenste datum</p>
-								<input type="date" required />
-								<p>gewenste terugbrengdatum</p>
-								<input type="date" required />
-							</div>
-						</div>
-					</div>
-					<p>opmerkingen</p>
-					<textarea id="contact-textarea"></textarea>
-					<button id="submit">Verzend</button>
-				</div>
-			</form>
-			<div class="uitleendiest"></div>
 		</div>
 	</body>
 </html>
