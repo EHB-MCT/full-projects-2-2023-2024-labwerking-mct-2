@@ -21,13 +21,12 @@
 .title-image-decoration {
 	position: absolute;
 	z-index: -1;
-	margin-left: -6vw;
-	margin-top: -1.25vw;
-	width: 12.5vw;
+	margin-left: -7.5vw;
+	margin-top: 0vw;
+	width: 15vw;
 }
 .title {
-	padding-top: 1.5vw;
-	margin-bottom: 7.5vw;
+	margin-bottom: 5vw;
 }
 .info {
 	width: 34vw;
@@ -47,6 +46,10 @@
 .info1 {
 	height: 13.5vw;
 }
+.padding {
+	padding-left: 8vw;
+	padding-right: 8vw;
+}
 
 /* -------------------------------------------------------------------------------- */
 
@@ -64,10 +67,7 @@
 	width: 8vw;
 	height: auto;
 }
-.padding {
-	padding-left: 8.25vw;
-	padding-right: 8.25vw;
-}
+
 .map {
 	width: 100%;
 }
