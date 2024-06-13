@@ -125,7 +125,7 @@ textarea {
 /* ----------------------------------------------------------- */
 .radio {
 	transform: scale(2);
-	margin-top: 0.75vw;
+	margin-right: 1vw;
 }
 .radio-text {
 	width: 8.5vw;
@@ -151,6 +151,7 @@ textarea {
 	border-width: 1px;
 	padding: 2.5vw 2.5vw 0vw 2.5vw;
 	height: 25vw;
+	border-top: none;
 }
 .blog-www {
 	width: 20vw;
@@ -168,4 +169,15 @@ textarea {
 }
 .margin- {
 	margin-top: -5vw;
+}
+/* ----------------------------------------------------------- */
+.activiteit-image-info {
+	width: 10vw;
+	text-align: center;
+	padding: 0.5vw 0vw;
+	border-radius: 0.75vw;
+	z-index: 1;
+	position: absolute;
+	margin-top: 13.5vw;
+	margin-left: 0.5vw;
 }
