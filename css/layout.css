@@ -1,13 +1,17 @@
 .grid {
 	position: absolute;
 	width: 100%;
+	height: auto;
+	z-index: 1;
 	display: none;
 }
 .flex {
 	display: flex;
 }
+.wrap {
+	flex-wrap: wrap;
+}
 .space-between {
-	display: flex;
 	justify-content: space-between;
 }
 .space-evenly {
@@ -17,26 +21,46 @@
 .homepage-titel {
 	padding: 0.8vw 7.5vw;
 	height: 34vw;
-	margin-bottom: 12.5vw;
+	margin-bottom: 10vw;
 }
 .homepage-titel-info {
 	height: 9vw;
 	padding-left: 0.5vw;
 }
+.titel-images-behind {
+	padding-top: 7.5vw;
+	padding-left: 1.75vw;
+	z-index: -1;
+	position: absolute;
+	width: 48.25vw;
+}
+.titel-images-front {
+}
+.image-front {
+	padding-top: 5.25vw;
+	width: 25vw;
+}
+.image-behind {
+	width: 20vw;
+}
+
 .elements {
 	position: absolute;
-
-	width: 94vw;
+	width: 98vw;
 	margin-left: -8.5vw;
 }
 .homepage-titel-image {
-	width: 44vw;
-	height: 41vw;
-	z-index: -2;
+	width: 50vw;
+	justify-content: space-around;
+
+	padding-right: 5vw;
+	flex-wrap: wrap;
 }
+
 .GE1 {
-	margin-top: 3vw;
-	width: 17.5vw;
+	margin-top: 1.25vw;
+	margin-left: -10vw;
+	width: 25vw;
 	height: auto;
 	z-index: -1;
 }
@@ -55,19 +79,17 @@
 }
 
 .homepage-image-building {
-	width: 56.5vw;
+	width: 49.75vw;
 }
 .homepage-image-info {
 	height: 30vw;
 	width: 34.5vw;
 	padding-right: 7.5vw;
 }
-.homepage-wie-zijn-we {
-	height: auto;
-	align-items: center;
-}
+
 .homepage-labs {
 	margin-top: 10vw;
+	margin-left: 0.5vw;
 	width: 84.25vw;
 	align-self: center;
 }
@@ -77,8 +99,7 @@
 	width: 27.5vw;
 }
 .homepage-lab-name {
-	height: auto;
-	align-items: center;
+	height: 15vw;
 }
 .homepage-lab-image {
 	width: 27vw;
@@ -90,102 +111,86 @@
 	width: 8vw;
 	height: auto;
 }
-
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.padding-left {
+	padding-left: 8.25vw;
+}
 /* --------------------------------------------------------------------------------------------------------------- */
 .studio-titel-image {
 	position: absolute;
 	z-index: -1;
 	margin-top: -5vw;
-	width: 37.5vw;
+	width: 42.25vw;
 }
 .studio-titel {
-	padding: 1vw 15vw 0vw 22vw;
-	height: 25vw;
+	padding: 2vw 0vw 0vw 50.5vw;
+	height: 32.5vw;
+	margin-bottom: 5vw;
 }
 .studio-titel-info {
 	width: 34vw;
-	height: 12vw;
-	align-self: flex-end;
+	height: 12.5vw;
 }
-.studio-GE1 {
-	position: absolute;
-	z-index: -1;
-	margin-left: -2.5vw;
-	margin-top: 1vw;
-	width: 17.5vw;
-}
-
-.studio-GE2 {
-	position: absolute;
-	margin: 0.25vw 0vw 0vw 6vw;
-	z-index: -1;
-	width: 8vw;
-	height: auto;
-}
-
 .studio-info {
 	width: 41.5vw;
-	height: 80vw;
-	padding-left: 8vw;
-}
-.studio-info-height {
 	height: 15vw;
-}
-.studio-GE3 {
-	position: absolute;
-	margin: 0.5vw 0vw 0vw 3vw;
-	z-index: -1;
-	width: 10vw;
-	height: auto;
+	padding-top: 8vw;
 }
 
-.studio-GE4 {
-	position: absolute;
-	margin: 0.5vw 0vw 0vw 8vw;
-	z-index: -1;
-	width: 10vw;
-	height: auto;
-}
 .studio-image2 {
-	width: 38vw;
+	width: 42.5vw;
 }
 
-/* ------------------------------------------------------------------------------------------------------------- */
-.medialab-titel-image {
+/* medialab en fablab------------------------------------------------------------------------------------------------------------- */
+.lab-titel-image {
 	position: absolute;
 	z-index: -1;
 	margin-top: -5vw;
-	width: 37.5vw;
+	width: 42.25vw;
 }
-.medialab-titel {
-	padding: 1vw 15vw 0vw 22vw;
+.lab-titel {
+	padding: 2vw 0vw 0vw 50.5vw;
 	height: 25vw;
 }
-.medialab-titel-info {
+
+.lab-titel-info {
 	width: 34vw;
 	height: 12vw;
-	align-self: flex-end;
 }
-.medialab-GE1 {
+.lab-GE1 {
 	position: absolute;
 	z-index: -1;
-	margin-left: -2.5vw;
-	margin-top: 1vw;
-	width: 17.5vw;
+	margin-left: -6vw;
+	margin-top: -1.5vw;
+	width: 15vw;
 }
 .machinepark {
-	padding: 8vw 8vw 0vw 8vw;
+	padding: 8vw 5vw 0vw 8vw;
+	flex-wrap: wrap;
 }
 .machines {
-	width: 55.75vw;
+	margin-top: 2.5vw;
 }
 .machine {
 	width: 27vw;
+	height: 32.5vw;
+	margin-right: 1.5vw;
+}
+.machine-info {
+	height: 10vw;
 }
 .machine img {
 	width: 27vw;
 }
-.medialab-image2 {
+.lab-image2 {
 	width: 10vw;
 }
 .bottom-image {
@@ -193,61 +198,11 @@
 	align-content: flex-start;
 	width: 40vw;
 }
-/* -------------------------------------------------------------------------------------------------------------- */
-.fablab-titel-image {
-	position: absolute;
-	z-index: -1;
-	margin-top: -5vw;
-	width: 37.5vw;
-}
-.fablab-titel {
-	padding: 1vw 15vw 0vw 22vw;
-	height: 25vw;
-}
-.fablab-titel-info {
-	width: 34vw;
-	height: 12vw;
-	align-self: flex-end;
-}
-.fablab-GE1 {
-	position: absolute;
-	z-index: -1;
-	margin-left: -2.5vw;
-	margin-top: 1vw;
-	width: 17.5vw;
-}
-.fablab-machinepark {
-	padding: 8vw 8vw 0vw 8vw;
-}
-.fablab-GE2 {
-	position: absolute;
-	margin: 0.25vw 0vw 0vw 6vw;
-	z-index: -1;
-	width: 8vw;
-	height: auto;
-}
-.fablab-info {
+.lab-info {
 	width: 41.5vw;
 	padding-left: 8vw;
 }
-.fablab-info-height {
+.lab-info-height {
 	height: 15vw;
 }
-.fablab-GE3 {
-	position: absolute;
-	margin: 0.5vw 0vw 0vw 3vw;
-	z-index: -1;
-	width: 10vw;
-	height: auto;
-}
-
-.fablab-GE4 {
-	position: absolute;
-	margin: 0.5vw 0vw 0vw 8vw;
-	z-index: -1;
-	width: 10vw;
-	height: auto;
-}
-.fablab-image2 {
-	width: 38vw;
-}
+/* -------------------------------------------------------------------------------------------------------------- */
