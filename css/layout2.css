@@ -132,9 +132,10 @@ textarea {
 }
 .radio-inputs {
 	width: 50vw;
+	margin-bottom: 2.5vw;
 }
 .blog {
-	margin-top: 5vw;
+	margin-top: 1vw;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -153,11 +154,17 @@ textarea {
 }
 .blog-www {
 	width: 20vw;
-	margin-top: 2.5vw;
+	margin-top: -3vw;
+}
+.blog-waar {
+	width: 22vw;
+}
+.blog-date {
+	width: 8vw;
+	align-items: center;
 }
 .icon {
 	width: 1.5vw;
-	height: 1.5vw;
 }
 .margin- {
 	margin-top: -5vw;
