@@ -17,6 +17,11 @@
 .space-evenly {
 	justify-content: space-evenly;
 }
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+}
 /* ------------------------------------------------------------------------------------------------------- */
 .homepage-titel {
 	padding: 0.8vw 7.5vw;
@@ -56,6 +61,7 @@
 
 .GE1 {
 	margin-left: -7.5vw;
+	padding-top: 1.5vw;
 	width: 28vw;
 	height: auto;
 	z-index: -1;
@@ -75,12 +81,13 @@
 }
 
 .homepage-image-building {
-	width: 49.75vw;
+	width: 50vw;
 }
 .homepage-image-info {
-	height: 30vw;
-	width: 34.5vw;
+	height: 27.5vw;
+	width: 35vw;
 	padding-right: 7.5vw;
+	padding-top: 1vw;
 }
 
 .homepage-labs {
@@ -118,6 +125,9 @@
 }
 .padding-left {
 	padding-left: 8.25vw;
+}
+.padding-right {
+	padding-right: 8.25vw;
 }
 /* --------------------------------------------------------------------------------------------------------------- */
 .studio-titel-image {

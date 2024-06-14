@@ -1,0 +1,19 @@
+.footer {
+	height: 8vw;
+	padding: 1.5vw 8vw;
+}
+.footer-items {
+	height: vw;
+	width: 7vw;
+	margin-right: 7.15vw;
+}
+.footer-item {
+	margin-bottom: 1vw;
+}
+.footer-socials {
+	width: 10vw;
+	align-items: center;
+}
+.footer-icon {
+	height: 2.5vw;
+}

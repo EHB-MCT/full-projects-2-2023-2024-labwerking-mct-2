@@ -1,0 +1,192 @@
+.uitlenen {
+	height: 70vw;
+	width: 85vw;
+}
+.none {
+	display: none;
+}
+.display {
+	display: flex;
+}
+.uitleendienst {
+	margin-bottom: 2.5vw;
+}
+/* -------------------------------------------------------------------------------------------------- */
+.fase-indicators {
+	width: 7.5vw;
+}
+
+.fase-indicator {
+	display: flex;
+	width: 1vw;
+	justify-content: space-between;
+}
+.fase-1-indicator {
+	border-radius: 50%;
+	padding: 0vw 0.9vw;
+	border-style: solid;
+}
+.fase-2-indicator {
+	border-radius: 50%;
+	padding: 0vw 0.8vw;
+	border-style: solid;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.fase-1 {
+	width: 85vw;
+}
+.fase-1-part-1 {
+	height: 55vw;
+	margin-bottom: 5vw;
+}
+/* ------------------- */
+.filter {
+	width: 15vw;
+}
+.filter-inputs {
+	width: 40vw;
+}
+.category {
+	border-radius: 0.75vw;
+	width: 10vw;
+	border-width: 2px;
+}
+.search {
+	border-width: 2px;
+	border-radius: 0.75vw;
+	width: 10vw;
+	border-style: solid;
+}
+/* ----------------------- */
+.catalog {
+	height: 25vw;
+	max-height: 25vw;
+	overflow: scroll;
+	border-width: 3px;
+	border-style: solid;
+	width: 40vw;
+	margin-top: 0.5vw;
+	border-bottom-right-radius: 7.5vw;
+	padding: 1vw;
+	scrollbar-width: none;
+}
+
+.catalog-item {
+	width: 25vw;
+	height: 7.5vw;
+	border-width: 3px;
+	border-style: solid;
+	border-top-right-radius: 4vw;
+	margin-bottom: 1vw;
+}
+.catalog-item-image {
+	height: 7.5vw;
+	max-width: 12.5vw;
+}
+.catalog-item-info {
+	height: 7.5;
+	padding-left: 1vw;
+}
+.item-amount {
+	width: 2vw;
+	border-style: solid;
+	border-width: 0.05vw;
+}
+.item-info {
+	width: 10vw;
+	padding-bottom: 0.5vw;
+}
+.btn-item {
+	background-color: #f9a084;
+	border: none;
+	border-radius: 0.75vw;
+	padding: 0.5vw 1vw;
+}
+.uitleen-textarea {
+	height: 10vw;
+	border-width: 3px;
+	border-style: solid;
+	width: 41.5vw;
+	margin-top: 0.5vw;
+	border-bottom-right-radius: 7.5vw;
+	outline: none;
+}
+.uitleen-textarea:focus {
+	border-color: #f9a084;
+}
+.uitleen-bericht {
+	height: 18vw;
+	width: 42.5vw;
+}
+.materials {
+	height: 25vw;
+	max-height: 25vw;
+	overflow: scroll;
+	border-width: 3px;
+	border-style: solid;
+	resize: none;
+	width: 30vw;
+	margin-top: 7.7vw;
+	scroll-behavior: smooth;
+	padding: 1vw;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+.fase-2 {
+	height: 40vw;
+	width: 70vw;
+}
+.fase-2-part-1 {
+	height: 30vw;
+	margin-top: 2.5vw;
+	width: 45vw;
+}
+.fase-2-part-2 {
+	height: 22.5vw;
+	width: 27.75vw;
+	margin-top: 2.5vw;
+}
+
+/* ------------------------------------ */
+.text-input {
+	height: 3vw;
+	border-width: 3px;
+	width: 33.5vw;
+	margin-top: 0.5vw;
+	border-top-right-radius: 7.5vw;
+	border-style: solid;
+}
+.text-input-2 {
+	height: 3vw;
+	border-width: 3px;
+	width: 27.75vw;
+	margin-top: 0.5vw;
+	border-top-right-radius: 7.5vw;
+	border-style: solid;
+}
+.ehb-choice {
+	height: 5.5vw;
+}
+#EhB {
+	margin-bottom: 0vw;
+	transform: scale(1.5);
+}
+.student {
+	width: 5vw;
+}
+.radio {
+	margin-top: 0;
+	margin-right: 1vw;
+}
+.periode {
+	height: 15vw;
+}
+.width {
+	width: 50vw;
+}
+::-webkit-calendar-picker-indicator {
+	margin-right: 2vw;
+}
+::-webkit-time-picker-indicator {
+	margin-right: 2vw;
+}

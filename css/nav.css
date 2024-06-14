@@ -5,6 +5,7 @@
 	padding-right: 8vw;
 	height: 5.5vw;
 	align-items: center;
+	padding-left: 8vw;
 }
 .navigation-secundair {
 	height: 2.75vw;
@@ -27,7 +28,6 @@
 .logo {
 	width: auto;
 	height: 4vw;
-	padding-left: 8vw;
 }
 .nav-underline {
 	height: 0.6vw;

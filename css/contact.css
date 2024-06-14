@@ -10,10 +10,10 @@
 	background-color: black;
 	color: white;
 }
-#contact-textarea {
-	width: 80vw;
-	height: 10vw;
-	border-color: black;
+.contact-bericht {
+	width: 40vw;
+	height: 15vw;
+	border-top-right-radius: 7.5vw;
 	resize: none;
 	margin-bottom: 2.5vw;
 }
@@ -52,13 +52,6 @@
 	align-items: baseline;
 }
 
-.space-between {
-	display: flex;
-	justify-content: space-between;
-}
-.space-evenly {
-	justify-content: space-evenly;
-}
 input {
 	margin-bottom: 1vw;
 }
@@ -71,4 +64,11 @@ input {
 }
 .width {
 	width: 50vw;
+}
+.info {
+	height: 20vw;
+}
+.info1 {
+	width: 40vw;
+	height: 16vw;
 }
