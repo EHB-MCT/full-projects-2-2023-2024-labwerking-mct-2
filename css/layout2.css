@@ -26,7 +26,7 @@
 	width: 15vw;
 }
 .title {
-	margin-bottom: 5vw;
+	margin-bottom: 2.5vw;
 }
 .info {
 	width: 34vw;
@@ -136,7 +136,7 @@ textarea {
 }
 .radio-inputs {
 	width: 50vw;
-	margin-bottom: 2.5vw;
+	margin-bottom: 0.5vw;
 }
 .blog {
 	margin-top: 1vw;
@@ -148,15 +148,15 @@ textarea {
 }
 .blog-item {
 	width: 27vw;
-	margin-bottom: 5vw;
+	margin-bottom: 2.5vw;
 }
 .blog-item-info {
-	padding: 2.5vw 2.5vw 0vw 2.5vw;
-	height: 25vw;
+	padding: 0.5vw 0vw 0vw 0vw;
+	height: 22.5vw;
 }
 .blog-www {
 	width: 20vw;
-	margin-top: -3vw;
+	margin-top: -1vw;
 }
 .blog-waar {
 	width: 22vw;
@@ -173,10 +173,10 @@ textarea {
 }
 /* ----------------------------------------------------------- */
 .activiteit-image-info {
-	width: 10vw;
+	width: 8vw;
 	text-align: center;
 	padding: 0.5vw 0vw;
-	border-radius: 0.75vw;
+	border-radius: 0.5vw;
 	z-index: 1;
 	position: absolute;
 	margin-top: 13.5vw;
