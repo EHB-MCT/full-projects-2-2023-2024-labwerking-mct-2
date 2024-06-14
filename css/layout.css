@@ -31,6 +31,7 @@
 .homepage-titel-info {
 	height: 11vw;
 	padding-left: 0.5vw;
+	z-index: 2;
 }
 .titel-images-behind {
 	padding-top: 7.5vw;
