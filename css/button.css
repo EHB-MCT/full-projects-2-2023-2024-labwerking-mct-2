@@ -1,6 +1,7 @@
 .btn-primary {
 	padding: 1vw 2.45vw;
 	border-radius: 12.5px;
+	align-items: center;
 }
 .btn-secundary {
 	padding: 1vw 2.25vw;
