@@ -135,6 +135,7 @@ textarea {
 }
 .radio-text {
 	width: 8.5vw;
+	align-items: center;
 }
 .radio-inputs {
 	width: 50vw;
