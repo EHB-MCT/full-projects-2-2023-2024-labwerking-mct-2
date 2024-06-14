@@ -112,6 +112,9 @@ textarea {
 .padding-left {
 	padding-left: 8.25vw;
 }
+.padding-right {
+	padding-right: 8.25vw;
+}
 .thumbnail {
 	width: 40vw;
 }
@@ -178,4 +181,41 @@ textarea {
 	position: absolute;
 	margin-top: 13.5vw;
 	margin-left: 0.5vw;
+}
+/* ------------------------------------------------------------ */
+.workshop-bio {
+	height: 25vw;
+	padding: 5vw 0vw;
+}
+.workshop-bio-www {
+}
+.workshop-bio-www-info {
+	align-items: center;
+}
+.www-image {
+	height: 2vw;
+}
+.www-bio {
+	margin-top: 0.5vw;
+}
+.workshop-image1 {
+	width: 41.5vw;
+}
+.workshop-info {
+	width: 41vw;
+	height: 30vw;
+	padding: 0vw 0vw;
+}
+.workshop-contact {
+	height: 25vw;
+	padding: 2.5vw 0vw;
+}
+.workshop-ref {
+	text-align: left;
+}
+.workshop-ref2 {
+	text-align: right;
+}
+.margin-bottom {
+	margin-bottom: 5vw;
 }
