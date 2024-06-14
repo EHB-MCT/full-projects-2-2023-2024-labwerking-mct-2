@@ -1,5 +1,4 @@
 .navigation {
-	display: flex;
 	justify-content: space-between;
 	margin-bottom: 0vw;
 	padding-right: 8vw;
@@ -37,4 +36,52 @@
 }
 .navigation-item2 {
 	font-weight: 500;
+}
+/* ____________________________________________________________________________ */
+@media screen and (max-width: 768px) {
+	.pc {
+		display: none;
+	}
+	.mobile {
+		display: flex;
+	}
+	/* ----------------------------------- */
+	.navigation {
+		justify-content: space-between;
+		margin-bottom: 0vw;
+		padding-right: 8vw;
+		height: 20vw;
+		align-items: center;
+		padding-left: 8vw;
+	}
+	.navigation-secundair {
+		height: 2.75vw;
+		justify-content: flex-end;
+	}
+
+	.navigation-items {
+		justify-content: space-between;
+		width: 48vw;
+		align-items: center;
+	}
+	.navigation-items-secundair {
+		display: flex;
+		justify-content: space-between;
+		width: 34vw;
+		align-items: center;
+	}
+
+	.logo {
+		width: auto;
+		height: 4vw;
+	}
+	.nav-underline {
+		height: 0.6vw;
+	}
+	.margin-t {
+		margin-top: 0.5vw;
+	}
+	.navigation-item2 {
+		font-weight: 500;
+	}
 }

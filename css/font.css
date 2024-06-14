@@ -55,3 +55,18 @@ h1 {
 .interlinie2 {
 	line-height: 7.5vw;
 }
+/* _____________________________________________________________________________ */
+@media screen and (max-width: 768px) {
+	.size2 {
+		font-size: 5vw;
+	}
+	.size6 {
+		font-size: 22.5vw;
+	}
+	.size7 {
+		font-size: 5.75vw;
+	}
+	.interlinie {
+		line-height: 16.5vw;
+	}
+}

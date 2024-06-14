@@ -19,8 +19,8 @@
 	</head>
 	<body>
 		<!-- navigation ------------------------------------------------------------------------------------------------------------------------ -->
-		<img src="images/grid.svg" alt="" class="grid" />
-		<nav class="navigation color1-bg">
+		<img src="images/overlay.png" alt="" class="grid" />
+		<nav class="navigation color1-bg pc">
 			<a href="index.html"><img class="logo" src="images/logo.webp" alt="" /></a>
 			<div class="navigation-items">
 				<a class="navigation-item size3 font1 bold color4 no-underline" href="fablab.html">FABLAB</a>
@@ -36,7 +36,7 @@
 				</div>
 			</div>
 		</nav>
-		<div class="navigation navigation-secundair nav-bg">
+		<div class="navigation navigation-secundair nav-bg pc">
 			<div class="navigation-items-secundair">
 				<a class="navigation-item2 size8 color1 font1 no-underline" href="activiteiten.html">ACTIVITEITEN</a>
 				<a class="navigation-item2 size8 color1 font1 no-underline" href="praktische-info.html">PRAKTISCHE INFO</a>
@@ -44,22 +44,42 @@
 				<a class="navigation-item2 size8 color1 font1 no-underline" href="contact.html">CONTACT</a>
 			</div>
 		</div>
+		<nav class="navigation color1-bg mobile">
+			<a href="index.html"><img class="logo" src="images/logo.webp" alt="" /></a>
+			<div class="navigation-items hidden">
+				<a class="navigation-item size3 font1 bold color4 no-underline" href="fablab.html">FABLAB</a>
+				<a class="navigation-item size3 font1 bold color4 no-underline" href="medialab.html">MEDIALAB</a>
+				<a class="navigation-item size3 font1 bold color4 no-underline" href="studio.html">CONTENTLAB</a>
+				<div class="flex-column">
+					<a class="navigation-item size3 font1 thin color4 no-underline margin-t" href="reservatie.html">RESERVEREN</a>
+					<img src="images/nav-underline.webp" alt="" class="nav-underline" />
+				</div>
+				<div class="flex-column">
+					<a class="navigation-item size3 font1 thin color4 no-underline margin-t" href="uitlenen.html">UITLENEN</a>
+					<img src="images/nav-underline2.webp" alt="" class="nav-underline" />
+				</div>
+			</div>
+		</nav>
 		<!-- body---------------------------------------------------------------------------------------------------------------------------------------------------- -->
 		<!-- titel ---------------------------------------------------------------------------- -->
-		<div class="homepage-titel flex space-between">
+		<div class="homepage-titel flex flex-responsive space-between">
 			<div class="flex-column space-between">
-				<h1 class="font1 interlinie bold size6 color1">LAB <br />.BXL</h1>
+				<h1 class="font1 interlinie bold size6 color1 pc">LAB <br />.BXL</h1>
+				<div>
+					<h1 class="font1 interlinie bold size6 color1 mobile">LAB <br />.BXL</h1>
+					<img src="" alt="" />
+				</div>
 				<div class="homepage-titel-info flex-column space-between">
 					<p class="font1 size7 regular">
 						Een ontmoetingsplaats voor <br />
 						creativieit en technologie
 					</p>
-					<a href="reservatie.html" class="btn-primary font1 size2 no-underline">RESERVEER EEN LAB</a>
+					<a href="reservatie.html" class="btn-primary font1 size2 no-underline pc">RESERVEER EEN LAB</a>
 				</div>
 			</div>
-			<div class="elements flex space-between">
+			<div class="elements flex-responsive space-between pc">
 				<div class="flex-column space-between">
-					<img src="images/GE1.webp" alt="" class="GE1" />
+					<img src="images/GE1.webp" alt="" class="GE1 pc" />
 				</div>
 				<div class="homepage-titel-image flex">
 					<div class="flex space-between titel-images-behind">
@@ -79,8 +99,15 @@
 				</div>
 			</div>
 		</div>
+		<div class="carousel mobile">
+			<img src="#" alt="" class="carousel" />
+		</div>
+		<div class="flex space-evenly mobile">
+			<a href="reservatie.html" class="btn-primary font1 size2 no-underline">RESERVEER EEN LAB</a>
+		</div>
+
 		<!-- ------------------------------------------------------------------------------- -->
-		<div class="flex space-between">
+		<div class="flex-responsive flex space-between">
 			<img src="images/homepage_building.webp" alt="" class="homepage-image-building" />
 			<div class="homepage-image-info flex-column space-between">
 				<h2 class="font1 size1 bold">Wie zijn we?</h2>
@@ -90,11 +117,11 @@
 				</p>
 				<p class="font1 regular size8">Of je nu een student, docent of externe gerbuiker bent, wij biedere je de faciliteiten en ondersteuning aan om jouw ideeen tot leven te brengen.</p>
 				<p class="font1 regular size8">Van lasercutters tot een gigantische LED wall tot een volledig uitgeruste podcastruimte, onze labs hebben alles wat je nodig hebt voor jouw projecten.</p>
-				<a href="blog.html" class="btn-primary no-underline font1 size2">LEES ONZE BLOG</a>
+				<a href="blog.html" class="btn-secundary no-underline font1 size2">LEES ONZE BLOG</a>
 			</div>
 		</div>
 		<!-- ------------------------------------------------------------------------------- -->
-		<div class="flex space-evenly">
+		<div class="flex space-evenly pc">
 			<div class="flex space-between homepage-labs">
 				<div class="flex-column homepage-lab">
 					<img src="images/homepage_medialab.webp" alt="" class="homepage-lab-image" />
@@ -131,7 +158,7 @@
 			</div>
 		</div>
 		<!-- ---------------------------------------------------------------------------------- -->
-		<div class="footer flex padding color1-bg">
+		<div class="footer flex padding color1-bg pc">
 			<div class="footer-items flex-column">
 				<p class="font1 size3 footer-item color2">onze labs</p>
 				<a class="font1 size4 footer-item color4 no-underline" href="medialab.html">Medialab</a>

@@ -22,6 +22,27 @@
 	flex-direction: column;
 	align-items: baseline;
 }
+.center {
+	text-align: center;
+}
+.left {
+	text-align: left;
+}
+.right {
+	text-align: right;
+}
+.padding-left {
+	padding-left: 8.25vw;
+}
+.padding-right {
+	padding-right: 8.25vw;
+}
+.pc {
+	display: flex;
+}
+.mobile {
+	display: none;
+}
 /* ------------------------------------------------------------------------------------------------------- */
 .homepage-titel {
 	padding: 0.8vw 7.5vw;
@@ -115,21 +136,7 @@
 	width: 8vw;
 	height: auto;
 }
-.center {
-	text-align: center;
-}
-.left {
-	text-align: left;
-}
-.right {
-	text-align: right;
-}
-.padding-left {
-	padding-left: 8.25vw;
-}
-.padding-right {
-	padding-right: 8.25vw;
-}
+
 /* --------------------------------------------------------------------------------------------------------------- */
 .studio-titel-image {
 	position: absolute;
@@ -212,4 +219,98 @@
 .lab-info-height {
 	height: 15vw;
 }
-/* -------------------------------------------------------------------------------------------------------------- */
+/* mobile________________________________________________________________________________________________________- */
+@media screen and (max-width: 768px) {
+	.pc {
+		display: none;
+	}
+	.mobile {
+		display: flex;
+	}
+	.flex-responsive {
+		flex-direction: column;
+	}
+	.grid {
+		display: flex;
+		z-index: -5;
+	}
+	/* --------------------------------- */
+	.homepage-titel {
+		padding: 10vw 5vw;
+		height: 50vw;
+		margin-bottom: 10vw;
+	}
+	.homepage-titel-info {
+		height: 10vw;
+		padding-left: 17vw;
+		padding-top: 12vw;
+
+		text-align: right;
+	}
+	.carousel {
+		height: 80vw;
+		margin-bottom: 5.5vw;
+	}
+	.homepage-titel-image {
+		width: 50vw;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding-top: 5vw;
+	}
+
+	.GE1 {
+		margin-left: -7.5vw;
+		padding-top: 1.5vw;
+		width: 28vw;
+		height: auto;
+		z-index: -1;
+	}
+	.GE2 {
+		width: 15vw;
+		padding-top: 10vw;
+		padding-left: 3vw;
+		z-index: 1;
+	}
+	.GE3 {
+		position: absolute;
+		margin: 0.5vw 0vw 0vw 4vw;
+		z-index: -1;
+		width: 10vw;
+		height: auto;
+	}
+
+	.homepage-image-building {
+		width: 50vw;
+	}
+	.homepage-image-info {
+		height: 27.5vw;
+		width: 35vw;
+		padding-right: 7.5vw;
+		padding-top: 1vw;
+	}
+
+	.homepage-labs {
+		margin-top: 10vw;
+		margin-left: 0.5vw;
+		width: 84.25vw;
+		align-self: center;
+	}
+
+	.homepage-lab {
+		height: 44.5vw;
+		width: 27.5vw;
+	}
+	.homepage-lab-name {
+		height: 15vw;
+	}
+	.homepage-lab-image {
+		width: 27vw;
+	}
+	.GE4 {
+		position: absolute;
+		margin: 0vw 0vw 0vw 3vw;
+		z-index: -1;
+		width: 8vw;
+		height: auto;
+	}
+}
