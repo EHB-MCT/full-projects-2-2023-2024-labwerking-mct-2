@@ -26,7 +26,7 @@
 	width: 15vw;
 }
 .title {
-	margin-bottom: 5vw;
+	margin-bottom: 2.5vw;
 }
 .info {
 	width: 34vw;
@@ -112,6 +112,9 @@ textarea {
 .padding-left {
 	padding-left: 8.25vw;
 }
+.padding-right {
+	padding-right: 8.25vw;
+}
 .thumbnail {
 	width: 40vw;
 }
@@ -133,7 +136,7 @@ textarea {
 }
 .radio-inputs {
 	width: 50vw;
-	margin-bottom: 2.5vw;
+	margin-bottom: 0.5vw;
 }
 .blog {
 	margin-top: 1vw;
@@ -145,15 +148,15 @@ textarea {
 }
 .blog-item {
 	width: 27vw;
-	margin-bottom: 5vw;
+	margin-bottom: 2.5vw;
 }
 .blog-item-info {
-	padding: 2.5vw 2.5vw 0vw 2.5vw;
-	height: 25vw;
+	padding: 0.5vw 0vw 0vw 0vw;
+	height: 22.5vw;
 }
 .blog-www {
 	width: 20vw;
-	margin-top: -3vw;
+	margin-top: -1vw;
 }
 .blog-waar {
 	width: 22vw;
@@ -170,12 +173,49 @@ textarea {
 }
 /* ----------------------------------------------------------- */
 .activiteit-image-info {
-	width: 10vw;
+	width: 8vw;
 	text-align: center;
 	padding: 0.5vw 0vw;
-	border-radius: 0.75vw;
+	border-radius: 0.5vw;
 	z-index: 1;
 	position: absolute;
 	margin-top: 13.5vw;
 	margin-left: 0.5vw;
+}
+/* ------------------------------------------------------------ */
+.workshop-bio {
+	height: 25vw;
+	padding: 5vw 0vw;
+}
+.workshop-bio-www {
+}
+.workshop-bio-www-info {
+	align-items: center;
+}
+.www-image {
+	height: 2vw;
+}
+.www-bio {
+	margin-top: 0.5vw;
+}
+.workshop-image1 {
+	width: 41.5vw;
+}
+.workshop-info {
+	width: 41vw;
+	height: 30vw;
+	padding: 0vw 0vw;
+}
+.workshop-contact {
+	height: 25vw;
+	padding: 2.5vw 0vw;
+}
+.workshop-ref {
+	text-align: left;
+}
+.workshop-ref2 {
+	text-align: right;
+}
+.margin-bottom {
+	margin-bottom: 5vw;
 }
