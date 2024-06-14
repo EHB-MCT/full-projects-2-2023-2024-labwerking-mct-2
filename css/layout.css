@@ -164,7 +164,7 @@
 }
 .lab-titel {
 	padding: 2vw 0vw 0vw 50.5vw;
-	height: 25vw;
+	height: 27.5vw;
 }
 
 .lab-titel-info {
@@ -175,7 +175,7 @@
 	position: absolute;
 	z-index: -1;
 	margin-left: -6vw;
-	margin-top: -1.5vw;
+	margin-top: 1vw;
 	width: 15vw;
 }
 .machinepark {
