@@ -193,6 +193,9 @@
 .machine-info {
 	height: 10vw;
 }
+.machine-info p {
+	margin-bottom: 1vw;
+}
 .machine img {
 	width: 27vw;
 }
