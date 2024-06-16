@@ -3,7 +3,7 @@ function ini() {
 	fetchList();
 }
 function fetchList() {
-	fetch("https://labbxl.pockethost.io/api/collections/Items/records")
+	fetch("https://labbxl.pockethost.io/api/collections/Items/records/?perPage=200")
 		.then(function (response) {
 			return response.json();
 		})
