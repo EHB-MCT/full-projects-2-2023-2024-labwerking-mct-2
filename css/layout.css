@@ -324,4 +324,61 @@
 		width: 8vw;
 		height: auto;
 	}
+	/* lab ------------------------------------------ */
+	.lab-titel-image {
+		position: relative;
+		width: 80vw;
+	}
+	.lab-titel {
+		padding: 0vw 6vw 0vw 6vw;
+		height: 120vw;
+	}
+
+	.lab-titel-info {
+		width: 34vw;
+		height: 12vw;
+	}
+	.lab-GE1 {
+		position: absolute;
+		z-index: -1;
+		margin-left: -6vw;
+		margin-top: 1vw;
+		width: 15vw;
+	}
+	.machinepark {
+		padding: 8vw 5vw 0vw 8vw;
+		flex-wrap: wrap;
+	}
+	.machines {
+		margin-top: 2.5vw;
+	}
+	.machine {
+		width: 27vw;
+		height: 32.5vw;
+		margin-right: 1.5vw;
+	}
+	.machine-info {
+		height: 10vw;
+	}
+	.machine-info p {
+		margin-bottom: 1vw;
+	}
+	.machine img {
+		width: 27vw;
+	}
+	.lab-image2 {
+		width: 10vw;
+	}
+	.bottom-image {
+		height: 70vw;
+		align-content: flex-start;
+		width: 40vw;
+	}
+	.lab-info {
+		width: 41.5vw;
+		padding-left: 8vw;
+	}
+	.lab-info-height {
+		height: 15vw;
+	}
 }
