@@ -1,10 +1,31 @@
-.font1 {
+@import url("https://use.typekit.net/ytz2sug.css");
+ {
 	font-family: "omnes-pro", sans-serif;
 	font-style: normal;
 }
-.font2 {
+h1 {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
 }
-.font3 {
+h2 {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+h3 {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+p {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+a {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+button {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
 }
 .size1 {
 	font-size: 2.5vw;
@@ -60,6 +81,7 @@ h1 {
 	.size2 {
 		font-size: 5vw;
 	}
+
 	.size6 {
 		font-size: 22.5vw;
 	}

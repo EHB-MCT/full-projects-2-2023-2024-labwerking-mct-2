@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://fontawesome.com/v5/icons/times?s=solid&f=classic);
 .navigation {
 	justify-content: space-between;
 	margin-bottom: 0vw;
@@ -52,7 +54,10 @@
 		padding-right: 8vw;
 		height: 20vw;
 		align-items: center;
-		padding-left: 8vw;
+		padding-left: 4vw;
+	}
+	.navigation2 {
+		width: 88vw;
 	}
 	.navigation-secundair {
 		height: 2.75vw;
@@ -60,28 +65,73 @@
 	}
 
 	.navigation-items {
-		justify-content: space-between;
-		width: 48vw;
-		align-items: center;
+		height: 75vw;
 	}
-	.navigation-items-secundair {
-		display: flex;
-		justify-content: space-between;
-		width: 34vw;
-		align-items: center;
-	}
-
 	.logo {
 		width: auto;
-		height: 4vw;
+		height: 14.5vw;
 	}
 	.nav-underline {
-		height: 0.6vw;
+		height: 2.75vw;
 	}
 	.margin-t {
 		margin-top: 0.5vw;
 	}
+	.navigation-item {
+		font-size: 9vw;
+	}
+
 	.navigation-item2 {
-		font-weight: 500;
+		font-size: 5vw;
+	}
+	.navigation-item3 {
+		font-size: 7vw;
+	}
+	.hamburger {
+		width: 20vw;
+		background-color: transparent;
+		border: none;
+		z-index: 5;
+		text-align: right;
+	}
+	.hamburger-menu-icon {
+		font-size: 13vw;
+	}
+	.hamburger-menu-icon2 {
+		height: 15vw;
+		padding-right: 0.5vw;
+	}
+	.hidden {
+		display: none;
+		z-index: -5;
+	}
+	.visible {
+		display: flex;
+		z-index: 4;
+	}
+	.menu {
+		position: fixed;
+		height: 100vh;
+		width: 100%;
+	}
+	.menu-items {
+		height: 75vh;
+	}
+	.menu-items li {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu-items li::before {
+		content: "\2022";
+		font-size: 15vw;
+		margin-right: 2vw;
+		margin-left: 2.5vw;
+	}
+	.menu-items li.active::before {
+		color: #f3f2f0;
+	}
+	.menu-items li.non-active::before {
+		color: #441e1d;
 	}
 }
