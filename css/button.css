@@ -21,3 +21,13 @@
 	background-color: #f9a084;
 	color: black;
 }
+@media screen and (max-width: 768px) {
+	.btn-primary {
+		padding: 3.5vw 5vw;
+		border-radius: 12.5px;
+		align-self: center;
+		background-color: #f9a084;
+		color: black;
+		border: none;
+	}
+}

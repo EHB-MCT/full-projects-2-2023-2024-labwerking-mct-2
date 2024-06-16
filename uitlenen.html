@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="https://use.typekit.net/zbr4thx.css" />
-		<link rel="stylesheet" href="https://use.typekit.net/ytz2sug.css" />
+		<script src="js/nav.js"></script>
+
 		<link href="css/reset.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/layout2.css" />
 		<link rel="stylesheet" href="css/nav.css" />
@@ -19,61 +19,97 @@
 	</head>
 	<body>
 		<!-- navigation ------------------------------------------------------------------------------------------------------------------------ -->
-		<img src="images/overlay.png" alt="" class="grid" />
-		<nav class="navigation color1-bg">
+		<img src="images/grid_mobile.png" alt="" class="grid" />
+		<nav class="navigation color1-bg pc">
 			<a href="index.html"><img class="logo" src="images/logo.webp" alt="" /></a>
 			<div class="navigation-items">
-				<a class="navigation-item size3 font1 bold color4 no-underline" href="fablab.html">FABLAB</a>
-				<a class="navigation-item size3 font1 bold color4 no-underline" href="medialab.html">MEDIALAB</a>
-				<a class="navigation-item size3 font1 bold color4 no-underline" href="studio.html">CONTENTLAB</a>
+				<a class="navigation-item size3 bold color4 no-underline" href="fablab.html">FABLAB</a>
+				<a class="navigation-item size3 bold color4 no-underline" href="medialab.html">MEDIALAB</a>
+				<a class="navigation-item size3 bold color4 no-underline" href="studio.html">CONTENTLAB</a>
 				<div class="flex-column">
-					<a class="navigation-item size3 font1 thin color4 no-underline margin-t" href="reservatie.html">RESERVEREN</a>
+					<a class="navigation-item size3 thin color4 no-underline margin-t" href="reservatie.html">RESERVEREN</a>
 					<img src="images/nav-underline.webp" alt="" class="nav-underline" />
 				</div>
 				<div class="flex-column">
-					<a class="navigation-item size3 font1 thin color4 no-underline margin-t" href="uitlenen.html">UITLENEN</a>
+					<a class="navigation-item size3 thin color4 no-underline margin-t" href="uitlenen.html">UITLENEN</a>
 					<img src="images/nav-underline2.webp" alt="" class="nav-underline" />
 				</div>
 			</div>
 		</nav>
-		<div class="navigation navigation-secundair nav-bg">
+		<div class="navigation navigation-secundair nav-bg pc">
 			<div class="navigation-items-secundair">
-				<a class="navigation-item2 size8 color1 font1 no-underline" href="activiteiten.html">ACTIVITEITEN</a>
-				<a class="navigation-item2 size8 color1 font1 no-underline" href="praktische-info.html">PRAKTISCHE INFO</a>
-				<a class="navigation-item2 size8 color1 font1 no-underline" href="blog.html">BLOG</a>
-				<a class="navigation-item2 size8 color1 font1 no-underline" href="contact.html">CONTACT</a>
+				<a class="navigation-item2 size8 color1 no-underline" href="activiteiten.html">ACTIVITEITEN</a>
+				<a class="navigation-item2 size8 color1 no-underline" href="praktische-info.html">PRAKTISCHE INFO</a>
+				<a class="navigation-item2 size8 color1 no-underline" href="blog.html">BLOG</a>
+				<a class="navigation-item2 size8 color1 no-underline" href="contact.html">CONTACT</a>
 			</div>
+		</div>
+		<nav id="navigation" class="navigation color1-bg mobile visible">
+			<a href="index.html"><img class="logo" src="images/logo_mobile.webp" alt="" /></a>
+			<button id="icon" class="hamburger">
+				<i class="fa fa-bars color4 hamburger-menu-icon"></i>
+			</button>
+		</nav>
+		<div id="menu" class="color4 hidden flex-column color1-bg menu">
+			<div class="navigation2 navigation color1-bg flex space-between">
+				<a href="index.html"><img class="logo" src="images/logo_mobile.webp" alt="" /></a>
+				<button id="icon2" class="hamburger">
+					<img src="images/times-solid.svg" alt="" class="color1-bg hamburger-menu-icon2" />
+				</button>
+			</div>
+			<ul class="menu-items flex-column space-evenly padding">
+				<li class="non-active"><a class="navigation-item bold color4 no-underline" href="index.html">HOME</a></li>
+				<li class="non-active"><a class="navigation-item bold color4 no-underline" href="fablab.html">FABLAB</a></li>
+				<li class="non-active"><a class="navigation-item bold color4 no-underline" href="medialab.html">MEDIALAB</a></li>
+				<li class="non-active"><a class="navigation-item bold color4 no-underline" href="studio.html">CONTENTLAB</a></li>
+				<li class="flex non-active">
+					<div class="flex-column">
+						<a class="navigation-item3 thin color4 no-underline margin-t" href="reservatie.html">RESERVEREN</a>
+						<img src="images/nav-underline.webp" alt="" class="nav-underline" />
+					</div>
+				</li>
+				<li class="flex active2">
+					<div class="flex-column">
+						<a class="navigation-item3 thin color4 no-underline margin-t" href="uitlenen.html">UITLENEN</a>
+						<img src="images/nav-underline2.webp" alt="" class="nav-underline" />
+					</div>
+				</li>
+				<li class="non-active"><a class="navigation-item2 color3 no-underline" href="activiteiten.html">ACTIVITEITEN</a></li>
+				<li class="non-active"><a class="navigation-item2 color3 no-underline" href="praktische-info.html">PRAKTISCHE INFO</a></li>
+				<li class="non-active"><a class="navigation-item2 color3 no-underline" href="blog.html">BLOG</a></li>
+				<li class="non-active"><a class="navigation-item2 color3 no-underline" href="contact.html">CONTACT</a></li>
+			</ul>
 		</div>
 		<!-- ---------------------------------------------------------------------------------------------------------------------- -->
 		<div class="flex title padding">
 			<img src="images/title-decoration.webp" alt="" class="title-image-decoration" />
-			<h1 class="font1 interlinie bold color1">UITLEENDIENST</h1>
+			<h1 class="interlinie bold color1">UITLEENDIENST</h1>
 		</div>
 		<div class="uitleendienst padding flex-column space-between">
 			<div class="uitlenen flex-column space-between" id="form">
-				<h2 class="color2 font1 size5 bold">Projectgegevens</h2>
+				<h2 class="color2 size5 bold">Projectgegevens</h2>
 				<div class="fase-indicators flex space-between">
-					<button class="fase-1-indicator color3-bg color3-border color4 font1 size2" disabled>1</button>
-					<button class="fase-2-indicator color4-bg color3 color3-border font1 size2" disabled>2</button>
+					<button class="fase-1-indicator color3-bg color3-border color4 size2" disabled>1</button>
+					<button class="fase-2-indicator color4-bg color3 color3-border size2" disabled>2</button>
 				</div>
 
 				<div id="fase-1" class="fase-1 display space-between">
 					<div class="flex-column fase-1-part-1 space-between">
-						<p class="font1 size2 regular">Het materiaal</p>
+						<p class="size2 regular">Het materiaal</p>
 						<div class="flex space-between filter-inputs">
 							<div class="flex space-between filter">
-								<h2 class="font1 size2">Zoek</h2>
-								<input type="search" class="search font1 size4 color4-bg color2-border" />
+								<h2 class="size2">Zoek</h2>
+								<input type="search" class="search size4 color4-bg color2-border" />
 							</div>
 							<div class="flex space-between filter">
-								<h2 class="font1 size2">Filter</h2>
+								<h2 class="size2">Filter</h2>
 								<form action="#">
-									<select id="filter" class="category font1 size4 color4-bg color2-border">
+									<select id="filter" class="category size4 color4-bg color2-border">
 										<option value="no-filter">none</option>
-										<option value="VR-brillen" class="font1">VR & ARbrillen</option>
-										<option value="Camera" class="font1">Camera</option>
-										<option value="Lens" class="font1">Lens</option>
-										<option value="Microfoon" class="font1">Microfoon</option>
+										<option value="VR-brillen" class="">VR & ARbrillen</option>
+										<option value="Camera" class="">Camera</option>
+										<option value="Lens" class="">Lens</option>
+										<option value="Microfoon" class="">Microfoon</option>
 									</select>
 								</form>
 							</div>
@@ -83,22 +119,22 @@
 							<div class="catalog-item flex color3-border">
 								<img src="images/item1.webp" class="catalog-item-image" alt="" />
 								<div class="flex-column catalog-item-info space-between">
-									<p class="font1 size2">Name</p>
-									<p class="font1 size4">Item category</p>
+									<p class="size2">Name</p>
+									<p class="size4">Item category</p>
 									<div class="flex item-info space-between">
 										<form action="#">
-											<select id="item-amount" class="item-amount font1 size4 color5-border color4-bg">
-												<option value="0" class="font1">0</option>
-												<option value="1" class="font1">1</option>
-												<option value="2" class="font1">2</option>
-												<option value="3" class="font1">3</option>
-												<option value="4" class="font1">4</option>
-												<option value="5" class="font1">5</option>
-												<option value="6" class="font1">6</option>
-												<option value="7" class="font1">7</option>
+											<select id="item-amount" class="item-amount size4 color5-border color4-bg">
+												<option value="0" class="">0</option>
+												<option value="1" class="">1</option>
+												<option value="2" class="">2</option>
+												<option value="3" class="">3</option>
+												<option value="4" class="">4</option>
+												<option value="5" class="">5</option>
+												<option value="6" class="">6</option>
+												<option value="7" class="">7</option>
 											</select>
 										</form>
-										<button class="font1 size4 btn-item">Voeg toe</button>
+										<button class="size4 btn-item">Voeg toe</button>
 									</div>
 								</div>
 							</div>
@@ -106,22 +142,22 @@
 							<div class="catalog-item flex color3-border">
 								<img src="images/item2.webp" class="catalog-item-image" alt="" />
 								<div class="flex-column catalog-item-info space-between">
-									<p class="font1 size2">Name</p>
-									<p class="font1 size4">Item category</p>
+									<p class="size2">Name</p>
+									<p class="size4">Item category</p>
 									<div class="flex item-info space-between">
 										<form action="#">
-											<select id="item-amount" class="item-amount font1 size4 color5-border color4-bg">
-												<option value="0" class="font1">0</option>
-												<option value="1" class="font1">1</option>
-												<option value="2" class="font1">2</option>
-												<option value="3" class="font1">3</option>
-												<option value="4" class="font1">4</option>
-												<option value="5" class="font1">5</option>
-												<option value="6" class="font1">6</option>
-												<option value="7" class="font1">7</option>
+											<select id="item-amount" class="item-amount size4 color5-border color4-bg">
+												<option value="0" class="">0</option>
+												<option value="1" class="">1</option>
+												<option value="2" class="">2</option>
+												<option value="3" class="">3</option>
+												<option value="4" class="">4</option>
+												<option value="5" class="">5</option>
+												<option value="6" class="">6</option>
+												<option value="7" class="">7</option>
 											</select>
 										</form>
-										<button class="font1 size4 btn-item">Voeg toe</button>
+										<button class="size4 btn-item">Voeg toe</button>
 									</div>
 								</div>
 							</div>
@@ -129,22 +165,22 @@
 							<div class="catalog-item flex color3-border">
 								<img src="images/item1.webp" class="catalog-item-image" alt="" />
 								<div class="flex-column catalog-item-info space-between">
-									<p class="font1 size2">Name</p>
-									<p class="font1 size4">Item category</p>
+									<p class="size2">Name</p>
+									<p class="size4">Item category</p>
 									<div class="flex item-info space-between">
 										<form action="#">
-											<select id="item-amount" class="item-amount font1 size4 color5-border color4-bg">
-												<option value="0" class="font1">0</option>
-												<option value="1" class="font1">1</option>
-												<option value="2" class="font1">2</option>
-												<option value="3" class="font1">3</option>
-												<option value="4" class="font1">4</option>
-												<option value="5" class="font1">5</option>
-												<option value="6" class="font1">6</option>
-												<option value="7" class="font1">7</option>
+											<select id="item-amount" class="item-amount size4 color5-border color4-bg">
+												<option value="0" class="">0</option>
+												<option value="1" class="">1</option>
+												<option value="2" class="">2</option>
+												<option value="3" class="">3</option>
+												<option value="4" class="">4</option>
+												<option value="5" class="">5</option>
+												<option value="6" class="">6</option>
+												<option value="7" class="">7</option>
 											</select>
 										</form>
-										<button class="font1 size4 btn-item">Voeg toe</button>
+										<button class="size4 btn-item">Voeg toe</button>
 									</div>
 								</div>
 							</div>
@@ -152,22 +188,22 @@
 							<div class="catalog-item flex color3-border">
 								<img src="images/item1.webp" class="catalog-item-image" alt="" />
 								<div class="flex-column catalog-item-info space-between">
-									<p class="font1 size2">Name</p>
-									<p class="font1 size4">Item category</p>
+									<p class="size2">Name</p>
+									<p class="size4">Item category</p>
 									<div class="flex item-info space-between">
 										<form action="#">
-											<select id="item-amount" class="item-amount font1 size4 color5-border color4-bg">
-												<option value="0" class="font1">0</option>
-												<option value="1" class="font1">1</option>
-												<option value="2" class="font1">2</option>
-												<option value="3" class="font1">3</option>
-												<option value="4" class="font1">4</option>
-												<option value="5" class="font1">5</option>
-												<option value="6" class="font1">6</option>
-												<option value="7" class="font1">7</option>
+											<select id="item-amount" class="item-amount size4 color5-border color4-bg">
+												<option value="0" class="">0</option>
+												<option value="1" class="">1</option>
+												<option value="2" class="">2</option>
+												<option value="3" class="">3</option>
+												<option value="4" class="">4</option>
+												<option value="5" class="">5</option>
+												<option value="6" class="">6</option>
+												<option value="7" class="">7</option>
 											</select>
 										</form>
-										<button class="font1 size4 btn-item">Voeg toe</button>
+										<button class="size4 btn-item">Voeg toe</button>
 									</div>
 								</div>
 							</div>
@@ -175,30 +211,30 @@
 							<div class="catalog-item flex color3-border">
 								<img src="images/item1.webp" class="catalog-item-image" alt="" />
 								<div class="flex-column catalog-item-info space-between">
-									<p class="font1 size2">Name</p>
-									<p class="font1 size4">Item category</p>
+									<p class="size2">Name</p>
+									<p class="size4">Item category</p>
 									<div class="flex item-info space-between">
 										<form action="#">
-											<select id="item-amount" class="item-amount font1 size4 color5-border color4-bg">
-												<option value="0" class="font1">0</option>
-												<option value="1" class="font1">1</option>
-												<option value="2" class="font1">2</option>
-												<option value="3" class="font1">3</option>
-												<option value="4" class="font1">4</option>
-												<option value="5" class="font1">5</option>
-												<option value="6" class="font1">6</option>
-												<option value="7" class="font1">7</option>
+											<select id="item-amount" class="item-amount size4 color5-border color4-bg">
+												<option value="0" class="">0</option>
+												<option value="1" class="">1</option>
+												<option value="2" class="">2</option>
+												<option value="3" class="">3</option>
+												<option value="4" class="">4</option>
+												<option value="5" class="">5</option>
+												<option value="6" class="">6</option>
+												<option value="7" class="">7</option>
 											</select>
 										</form>
-										<button class="font1 size4 btn-item">Voeg toe</button>
+										<button class="size4 btn-item">Voeg toe</button>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="flex-column space-between uitleen-bericht">
-							<p class="font1 size2 regular">Korte beschrijving van uw project</p>
-							<textarea id="uitleen-textarea " class="uitleen-textarea color3-border color4-bg font1 size4"></textarea>
-							<button class="btn-primary  no-underline font1 size3" id="submit">NAAR PERSOONSGEGEVENS</button>
+							<p class="size2 regular">Korte beschrijving van uw project</p>
+							<textarea id="uitleen-textarea " class="uitleen-textarea color3-border color4-bg size4"></textarea>
+							<button class="btn-primary no-underline size3" id="submit">NAAR PERSOONSGEGEVENS</button>
 						</div>
 					</div>
 					<div class="fase-1-part-2 flex-column space-between">
@@ -210,44 +246,44 @@
 					<div class="fase-2 flex space-between">
 						<div class="flex-column fase-2-part-1 space-between">
 							<div class="ehb-choice flex-column space-between">
-								<p class="font1 size2 regular">EhB-student</p>
+								<p class="size2 regular">EhB-student</p>
 								<div class="flex-column">
 									<div class="flex">
 										<input id="EhB" type="radio" class="radio" required />
-										<p class="font1 size3 regular">Ja</p>
+										<p class="size3 regular">Ja</p>
 									</div>
 									<div class="flex">
 										<input id="EhB" type="radio" class="radio" required />
-										<p class="font1 size3 regular">Nee</p>
+										<p class="size3 regular">Nee</p>
 									</div>
 								</div>
 							</div>
 							<div class="flex-column periode space-between">
-								<p class="font1 size2 regular">Gewenste periode</p>
+								<p class="size2 regular">Gewenste periode</p>
 								<div>
-									<p class="font1 size3">Start</p>
-									<input type="date" class="font1 size3 text-input-2 color3-border color4-bg" required />
+									<p class="size3">Start</p>
+									<input type="date" class="size3 text-input-2 color3-border color4-bg" required />
 								</div>
 								<div>
-									<p class="font1 size3">Einde</p>
-									<input type="date" class="font1 size3 text-input-2 color3-border color4-bg" required />
+									<p class="size3">Einde</p>
+									<input type="date" class="size3 text-input-2 color3-border color4-bg" required />
 								</div>
 							</div>
 
-							<button class="btn-primary no-underline font1 size3" id="submit">UITLENEN</button>
+							<button class="btn-primary no-underline size3" id="submit">UITLENEN</button>
 						</div>
 						<div class="fase-2-part-2 flex-column space-between">
 							<div>
-								<p class="font1 size2 regular">Naam</p>
-								<input type="text " class="text-input font1 size3 color3-border color4-bg" required />
+								<p class="size2 regular">Naam</p>
+								<input type="text " class="text-input size3 color3-border color4-bg" required />
 							</div>
 							<div>
-								<p class="font1 size2 regular">E-mail</p>
-								<input type="email" class="text-input font1 size3 color3-border color4-bg" required />
+								<p class="size2 regular">E-mail</p>
+								<input type="email" class="text-input size3 color3-border color4-bg" required />
 							</div>
 							<div>
-								<p class="font1 size2 regular">Telefoonnummer</p>
-								<input type="text" class="text-input font1 size3 color3-border color4-bg" required />
+								<p class="size2 regular">Telefoonnummer</p>
+								<input type="text" class="text-input size3 color3-border color4-bg" required />
 							</div>
 						</div>
 					</div>
@@ -257,28 +293,28 @@
 		<!-- ---------------------------------------------------------------------------------- -->
 		<div class="footer flex padding color1-bg">
 			<div class="footer-items flex-column">
-				<p class="font1 size3 footer-item color2">onze labs</p>
-				<a class="font1 size4 footer-item color4 no-underline" href="medialab.html">Medialab</a>
-				<a class="font1 size4 footer-item color4 no-underline" href="fablab.html">Fablab</a>
-				<a class="font1 size4 footer-item color4 no-underline" href="studio.html">Contentlab</a>
+				<p class="size3 footer-item color2">onze labs</p>
+				<a class="size4 footer-item color4 no-underline" href="medialab.html">Medialab</a>
+				<a class="size4 footer-item color4 no-underline" href="fablab.html">Fablab</a>
+				<a class="size4 footer-item color4 no-underline" href="studio.html">Contentlab</a>
 			</div>
 			<div class="footer-items flex-column">
-				<p class="font1 size3 footer-item color2">ontdek</p>
-				<a class="font1 size4 footer-item color4 no-underline" href="reservatie.html">reserveren</a>
-				<a class="font1 size4 footer-item color4 no-underline" href="uitlenen.html">uitlenen</a>
+				<p class="size3 footer-item color2">ontdek</p>
+				<a class="size4 footer-item color4 no-underline" href="reservatie.html">reserveren</a>
+				<a class="size4 footer-item color4 no-underline" href="uitlenen.html">uitlenen</a>
 			</div>
 			<div class="footer-items flex-column">
-				<p class="font1 size3 footer-item color1">_</p>
-				<a class="font1 size4 footer-item color4 no-underline" href="activiteiten.html">activiteiten</a>
-				<a class="font1 size4 footer-item color4 no-underline" href="blog.html">blog</a>
+				<p class="size3 footer-item color1">_</p>
+				<a class="size4 footer-item color4 no-underline" href="activiteiten.html">activiteiten</a>
+				<a class="size4 footer-item color4 no-underline" href="blog.html">blog</a>
 			</div>
 			<div class="footer-items flex-column">
-				<p class="font1 size3 footer-item color1">_</p>
-				<a class="font1 size4 footer-item color4 no-underline" href="praktische-info.html">praktische info</a>
-				<a class="font1 size4 footer-item color4 no-underline" href="contact.html">contact</a>
+				<p class="size3 footer-item color1">_</p>
+				<a class="size4 footer-item color4 no-underline" href="praktische-info.html">praktische info</a>
+				<a class="size4 footer-item color4 no-underline" href="contact.html">contact</a>
 			</div>
 			<div class="footer-items flex-column">
-				<p class="font1 size3 footer-item color2">socials</p>
+				<p class="size3 footer-item color2">socials</p>
 				<div class="flex space-between footer-socials">
 					<a href="#"><img src="images/icon_instagram.webp" alt="" /></a>
 					<a href="https://youtube.com"><img src="images/icon_youtube.webp" class="footer-icon" alt="" /></a>
