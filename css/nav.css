@@ -131,6 +131,9 @@
 	.menu-items li.active::before {
 		color: #f3f2f0;
 	}
+	.menu-items li.active2::before {
+		color: #95d0d3;
+	}
 	.menu-items li.non-active::before {
 		color: #441e1d;
 	}
