@@ -30,4 +30,12 @@
 		color: black;
 		border: none;
 	}
+	.btn-secundary {
+		padding: 3.5vw 5vw;
+		border-radius: 15px;
+		align-self: center;
+		background-color: #95d0d3;
+		color: black;
+		border: none;
+	}
 }

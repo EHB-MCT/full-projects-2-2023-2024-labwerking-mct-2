@@ -287,15 +287,17 @@
 		width: 10vw;
 		height: auto;
 	}
+	.button {
+		margin-bottom: 35vw;
+	}
 
 	.homepage-image-building {
-		width: 50vw;
+		width: 100%;
+		margin: 8vw 0vw;
 	}
 	.homepage-image-info {
-		height: 27.5vw;
-		width: 35vw;
-		padding-right: 7.5vw;
-		padding-top: 1vw;
+		height: 40vw;
+		width: 100%;
 	}
 
 	.homepage-labs {

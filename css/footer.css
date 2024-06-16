@@ -17,3 +17,28 @@
 .footer-icon {
 	height: 2.5vw;
 }
+@media screen and (max-width: 768px) {
+	.footer {
+		width: 85.5vw;
+		height: 110vw;
+		padding-top: 10vw;
+		padding-bottom: 10vw;
+	}
+	.footer-items {
+		width: 100%;
+		margin-right: 0vw;
+	}
+	.footer-item {
+		margin-bottom: 2.5vw;
+	}
+	.partner {
+		text-align: center;
+	}
+	.footer-icon {
+		height: 7.5vw;
+	}
+	.footer-socials {
+		width: 22.5vw;
+		align-items: center;
+	}
+}
