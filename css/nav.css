@@ -39,8 +39,30 @@
 .navigation-item2 {
 	font-weight: 500;
 }
+.hidden {
+	display: none;
+	z-index: -5;
+}
+.visible {
+	display: flex;
+	z-index: 4;
+}
+.pc {
+	display: flex;
+}
+.mobile {
+	display: none;
+}
+
 /* ____________________________________________________________________________ */
 @media screen and (max-width: 768px) {
+	.hidden {
+		display: none;
+		z-index: -5;
+	}
+	.visible {
+		display: flex;
+	}
 	.pc {
 		display: none;
 	}
@@ -51,7 +73,7 @@
 	.navigation {
 		justify-content: space-between;
 		margin-bottom: 0vw;
-		padding-right: 8vw;
+		padding-right: 4vw;
 		height: 20vw;
 		align-items: center;
 		padding-left: 4vw;
@@ -88,7 +110,7 @@
 		font-size: 7vw;
 	}
 	.hamburger {
-		width: 20vw;
+		width: 15vw;
 		background-color: transparent;
 		border: none;
 		z-index: 5;
@@ -101,14 +123,7 @@
 		height: 15vw;
 		padding-right: 0.5vw;
 	}
-	.hidden {
-		display: none;
-		z-index: -5;
-	}
-	.visible {
-		display: flex;
-		z-index: 4;
-	}
+
 	.menu {
 		position: fixed;
 		height: 100vh;
