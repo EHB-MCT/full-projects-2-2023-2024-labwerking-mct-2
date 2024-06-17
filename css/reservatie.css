@@ -1,11 +1,12 @@
 .reserveer {
-	height: 50vw;
+	height: 40vw;
 	width: 85vw;
+	margin-bottom: 10vw;
 }
-.none{
+.none {
 	display: none;
 }
-.display{
+.display {
 	display: flex;
 }
 /* -------------------------------------------------------------------------------------------------- */
@@ -35,7 +36,6 @@
 .fase-1 {
 	height: 40vw;
 	width: 85vw;
-	
 }
 .fase-1-part-1 {
 	height: 30vw;
@@ -76,15 +76,15 @@
 	border-top-right-radius: 7.5vw;
 	border-style: solid;
 }
-.text-input-2{
-    height: 3vw;
+.text-input-2 {
+	height: 3vw;
 	border-width: 3px;
 	width: 20vw;
 	margin-top: 0.5vw;
 	border-top-right-radius: 7.5vw;
 	border-style: solid;
 }
-}
+
 #EhB {
 	margin-bottom: 0vw;
 }
@@ -92,11 +92,9 @@
 .width {
 	width: 50vw;
 }
-::-webkit-calendar-picker-indicator{
-    margin-right: 2vw;
-    
+::-webkit-calendar-picker-indicator {
+	margin-right: 2vw;
 }
-::-webkit-time-picker-indicator{
-    margin-right: 2vw;
-    
+::-webkit-time-picker-indicator {
+	margin-right: 2vw;
 }

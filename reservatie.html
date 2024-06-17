@@ -88,65 +88,58 @@
 					<button class="fase-2-indicator color4-bg color3 color3-border size2" disabled>2</button>
 				</div>
 
-				<div id="fase-1" class="fase-1 display space-between">
-					<div class="flex-column fase-1-part-1 space-between">
+				<form id="fase-1" class="fase-1 display flex-column space-between">
+					<div class="fase-1-part-1 flex-column space-between">
 						<p class="size2 regular">Welk lab wilt u reserveren?</p>
 						<div class="flex space-between radio-inputs">
 							<div class="flex space-between radio-text">
-								<input type="radio" class="radio" />
-
+								<input type="radio" name="lab" class="radio" required />
 								<h2 class="size2">Medialab</h2>
 							</div>
 							<div class="flex space-between radio-text">
-								<input type="radio" class="radio" />
+								<input type="radio" name="lab" class="radio" required />
 								<h2 class="size2">Fablab</h2>
 							</div>
 							<div class="flex space-between radio-text">
-								<input type="radio" class="radio" />
-								<h2 class="size2">Echolab</h2>
+								<input type="radio" name="lab" class="radio" required />
+								<h2 class="size2">Contentlab</h2>
 							</div>
 						</div>
 						<p class="size2 regular">Korte beschrijving van uw project</p>
-						<textarea id="contact-textarea " class="contact-textarea color3-border color4-bg" required></textarea>
-						<button class="btn-primary no-underline size3" id="submit">NAAR PERSOONSGEGEVENS</button>
+						<textarea id="contact-textarea" class="contact-textarea color3-border color4-bg" required></textarea>
+						<button class="btn-primary no-underline size3" id="submit1">NAAR PERSOONSGEGEVENS</button>
 					</div>
-					<div class="fase-1-part-2 flex-column space-between">
-						<p class="size2 regular">Tarief</p>
-						<p class="size3"><span class="bold">- dagpas:</span> 12 euro per persoon</p>
-						<p class="size3"><span class="bold">- 10-beurtenkaart:</span> 100 euro per persoon</p>
-						<p class="size3">Prijzen zijn exclusief 21% btw en gelden voor individueel gebruik. Groepstarieven zijn beschikbaar op aanvraag</p>
-					</div>
-				</div>
+				</form>
 
-				<div id="fase-2" class="fase-2 none">
+				<form id="fase-2" class="fase-2 none">
 					<div class="fase-2 flex space-between">
 						<div class="flex-column fase-2-part-1 space-between">
 							<div>
 								<p class="size2 regular">Naam</p>
-								<input type="text " class="text-input size3 color3-border color4-bg" required />
+								<input type="text" name="name" class="text-input size3 color3-border color4-bg" required />
 							</div>
 							<div>
 								<p class="size2 regular">E-mail</p>
-								<input type="email" class="text-input size3 color3-border color4-bg" required />
+								<input type="email" name="email" class="text-input size3 color3-border color4-bg" required />
 							</div>
 							<div>
 								<p class="size2 regular">Telefoonnummer</p>
-								<input type="text" class="text-input size3 color3-border color4-bg" required />
+								<input type="tel" name="phone" class="text-input size3 color3-border color4-bg" required />
 							</div>
-							<button class="btn-primary no-underline size3" id="submit">RESERVEER</button>
+							<button class="btn-primary no-underline size3" id="submit2">RESERVEER</button>
 						</div>
 						<div class="fase-2-part-2 flex-column space-between">
 							<div>
 								<p class="size2 regular">Gewenste datum</p>
-								<input type="date" class="size3 text-input-2 color3-border color4-bg" required />
+								<input type="date" name="date" class="size3 text-input-2 color3-border color4-bg" required />
 							</div>
 							<div>
 								<p class="size2 regular">Gewenste uur</p>
-								<input type="time" step="3600000" class="size3 text-input-2 color3-border color4-bg" required />
+								<input type="time" name="time" step="36000000" class="size3 text-input-2 color3-border color4-bg" required />
 							</div>
 						</div>
 					</div>
-				</div>
+				</form>
 			</form>
 		</div>
 		<!-- ---------------------------------------------------------------------------------- -->
