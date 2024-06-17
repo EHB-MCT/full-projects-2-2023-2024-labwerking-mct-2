@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="js/reservatie.js"></script>
 		<script src="js/nav.js"></script>
-
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" />
+		<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
 		<link href="css/reset.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/layout2.css" />
 		<link rel="stylesheet" href="css/nav.css" />
@@ -93,15 +94,15 @@
 						<p class="size2 regular">Welk lab wilt u reserveren?</p>
 						<div class="flex space-between radio-inputs">
 							<div class="flex space-between radio-text">
-								<input type="radio" name="lab" class="radio" required />
+								<input type="radio" name="lab" class="radio" value="medialab" required />
 								<h2 class="size2">Medialab</h2>
 							</div>
 							<div class="flex space-between radio-text">
-								<input type="radio" name="lab" class="radio" required />
+								<input type="radio" name="lab" class="radio" value="fablab" required />
 								<h2 class="size2">Fablab</h2>
 							</div>
 							<div class="flex space-between radio-text">
-								<input type="radio" name="lab" class="radio" required />
+								<input type="radio" name="lab" class="radio" value="contentlab" required />
 								<h2 class="size2">Contentlab</h2>
 							</div>
 						</div>
@@ -116,15 +117,15 @@
 						<div class="flex-column fase-2-part-1 space-between">
 							<div>
 								<p class="size2 regular">Naam</p>
-								<input type="text" name="name" class="text-input size3 color3-border color4-bg" required />
+								<input type="text" name="name" class="text-input-2 size3 color3-border color4-bg" required />
 							</div>
 							<div>
 								<p class="size2 regular">E-mail</p>
-								<input type="email" name="email" class="text-input size3 color3-border color4-bg" required />
+								<input type="email" name="email" class="text-input-2 size3 color3-border color4-bg" required />
 							</div>
 							<div>
 								<p class="size2 regular">Telefoonnummer</p>
-								<input type="tel" name="phone" class="text-input size3 color3-border color4-bg" required />
+								<input type="tel" name="phone" class="text-input-2 size3 color3-border color4-bg" required />
 							</div>
 							<button class="btn-primary no-underline size3" id="submit2">RESERVEER</button>
 						</div>
@@ -134,10 +135,15 @@
 								<input type="date" name="date" class="size3 text-input-2 color3-border color4-bg" required />
 							</div>
 							<div>
-								<p class="size2 regular">Gewenste uur</p>
-								<input type="time" name="time" step="36000000" class="size3 text-input-2 color3-border color4-bg" required />
+								<p class="size2 regular">Begin uur</p>
+								<input type="time" name="time1" step="36000000" min="09:00" max="17:00" class="size3 text-input-2 color3-border color4-bg" required />
+							</div>
+							<div>
+								<p class="size2 regular">Eind uur</p>
+								<input type="time" name="time2" step="36000000" min="09:00" max="17:00" class="size3 text-input-2 color3-border color4-bg" required />
 							</div>
 						</div>
+						<div id="calendar"></div>
 					</div>
 				</form>
 			</form>

@@ -47,7 +47,7 @@
 /* ---------------------------------------------------------------------------------------------------- */
 .fase-2 {
 	height: 40vw;
-	width: 70vw;
+	width: 80vw;
 }
 .fase-2-part-1 {
 	height: 30vw;
@@ -95,6 +95,72 @@
 ::-webkit-calendar-picker-indicator {
 	margin-right: 2vw;
 }
-::-webkit-time-picker-indicator {
-	margin-right: 2vw;
+input[type="time"]::-webkit-calendar-picker-indicator {
+	background: none;
 }
+#calendar {
+	width: 35vw;
+	height: 27.5vw
+}
+.fc-timegrid-slot {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-frame {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-fill {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-content {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-title {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-time {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-bg {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-fg {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-mirror {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-mirror-bg {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-mirror-fg {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-mirror-time {
+	height: 8.4vh;
+}
+
+.fc-timegrid-event-harness-inset-mirror-title {
+	height: 8
