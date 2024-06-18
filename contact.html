@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="js/nav.js"></script>
-		<script src=""></script>
+		<script src="js/contact.js"></script>
 
 		<link href="css/reset.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/layout2.css" />
@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="css/contact.css" />
 		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="css/nav.css" />
-
+		<form class="form-horizontal" action="contact.php"></form>
 		<title>Contact</title>
 	</head>
 	<body>
@@ -81,27 +81,32 @@
 			<img src="images/title-decoration.webp" alt="" class="title-image-decoration" />
 			<h1 class="interlinie bold color1">CONTACT</h1>
 		</div>
-		<div class="flex space-between padding contact-info">
+		<form class="flex space-between padding contact-info" id="contact-form">
 			<div class="info flex-column space-between">
 				<div>
-					<h2 class="size1 regular">Naam</h2>
-					<input type="text" class="text-input color3-border color4-bg border-cut" />
+					<h2 class="size2 regular">Naam</h2>
+					<input id="name" type="text" class="text-input color3-border color4-bg border-cut" required />
 				</div>
 				<div>
-					<h2 class="size1 regular">E-mail</h2>
-					<input type="text" class="text-input color3-border color4-bg border-cut" />
+					<h2 class="size2 regular">E-mail</h2>
+					<input id="email" type="email" class="text-input color3-border color4-bg border-cut" required />
 				</div>
-				<a href="#" class="btn-5-border no-underline size3">VERZEND</a>
+				<a href="#" class="btn-5-border btn-primary no-underline size3" id="submit-btn" required>VERZEND</a>
 			</div>
 			<div class="info1 flex-column space-between">
-				<h2 class="size1 regular">Bericht</h2>
-				<textarea name="contact-bericht" id="contact-bericht" class="border-cut color3-border color4-bg contact-bericht"></textarea>
+				<h2 class="size2 regular">Bericht</h2>
+				<textarea id="description" name="contact-bericht" class="border-cut color3-border color4-bg contact-bericht" required></textarea>
 			</div>
-		</div>
-		<p class="size8 padding">
+		</form>
+
+		<p class="size8 padding reference">
 			Met extra vragen of andere zaken kan u onze lab verantwoordelijke Gwendolyn <br />
 			Vander Putten contacteren op het e-mailadres <span class="underline">medialab@ehb.be</span>.
 		</p>
+
+		<div id="confirmation-message" style="display: none">
+			<p>Bedankt voor uw bericht! Wij zullen zo snel mogelijk reageren.</p>
+		</div>
 		<!-- ---------------------------------------------------------------------------------- -->
 		<div class="footer flex padding color1-bg">
 			<div class="footer-items flex-column">
