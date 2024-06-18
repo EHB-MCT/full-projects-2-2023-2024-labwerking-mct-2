@@ -209,9 +209,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .fc .fc-today-button.fc-button {
 	background-color: #95d0d3;
 	border-color: #95d0d3;
-	color: #ffffff;
+	color: #441e1d;
+	opacity: 100;
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
 }
 .fc-event {
 	background-color: #ff6035;
 	border-color: #ff6035;
+}
+.fc .fc-timegrid-slot-label-cushion {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+	font-size: 1vw;
 }

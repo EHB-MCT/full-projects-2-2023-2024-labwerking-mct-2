@@ -24,14 +24,20 @@ button {
 	font-style: normal;
 }
 .fc-header,
-.fc-title,
 .fc-body,
 .fc-event,
 .fc-day,
+.fc-button,
 .fc-axis {
 	font-family: "omnes-pro", sans-serif;
 	font-style: normal;
 	font-size: 1vw;
+}
+.fc-today-button {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+	font-size: 1vw;
+	font-weight: 500;
 }
 input {
 	font-family: "omnes-pro", sans-serif;
