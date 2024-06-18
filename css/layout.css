@@ -225,6 +225,10 @@
 .lab-info-height {
 	height: 15vw;
 }
+
+.margin-bottom {
+	margin-bottom: 2vw;
+}
 /* mobile________________________________________________________________________________________________________- */
 @media screen and (max-width: 768px) {
 	.pc {
@@ -236,6 +240,7 @@
 	.flex-responsive {
 		flex-direction: column;
 	}
+
 	.grid {
 		display: none;
 		z-index: 10;
@@ -252,14 +257,10 @@
 	.homepage-titel-info {
 		height: 10vw;
 		padding-left: 17vw;
-		padding-top: 12vw;
 
 		text-align: right;
 	}
-	.carousel {
-		height: 80vw;
-		margin-bottom: 5.5vw;
-	}
+
 	.homepage-titel-image {
 		width: 50vw;
 		justify-content: space-around;
@@ -331,11 +332,11 @@
 	}
 	.lab-titel {
 		padding: 0vw 6vw 0vw 6vw;
-		height: 120vw;
+		height: 160vw;
 	}
 
 	.lab-titel-info {
-		width: 34vw;
+		width: auto;
 		height: 12vw;
 	}
 	.lab-GE1 {
@@ -343,7 +344,7 @@
 		z-index: -1;
 		margin-left: -6vw;
 		margin-top: 1vw;
-		width: 15vw;
+		width: 30vw;
 	}
 	.machinepark {
 		padding: 8vw 5vw 0vw 8vw;
@@ -375,10 +376,226 @@
 		width: 40vw;
 	}
 	.lab-info {
-		width: 41.5vw;
+		width: 90%;
 		padding-left: 8vw;
 	}
 	.lab-info-height {
-		height: 15vw;
+		height: 90vw;
+	}
+
+	/* carousel ----------------------------------*/
+	@keyframes tonext {
+		75% {
+			left: 0;
+		}
+		95% {
+			left: 100%;
+		}
+		98% {
+			left: 100%;
+		}
+		99% {
+			left: 0;
+		}
+	}
+
+	@keyframes tostart {
+		75% {
+			left: 0;
+		}
+		95% {
+			left: -300%;
+		}
+		98% {
+			left: -300%;
+		}
+		99% {
+			left: 0;
+		}
+	}
+
+	@keyframes snap {
+		96% {
+			scroll-snap-align: center;
+		}
+		97% {
+			scroll-snap-align: none;
+		}
+		99% {
+			scroll-snap-align: none;
+		}
+		100% {
+			scroll-snap-align: center;
+		}
+	}
+
+	* {
+		box-sizing: border-box;
+		scrollbar-color: transparent transparent; /* thumb and track color */
+		scrollbar-width: 0px;
+		-ms-overflow-style: none;
+	}
+
+	*::-webkit-scrollbar {
+		width: 0;
+	}
+
+	*::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		background: transparent;
+		border: none;
+	}
+
+	.carousel ol,
+	.carousel li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.carousel {
+		position: relative;
+		padding-top: 10vw;
+		perspective: 100px;
+		height: 120vw;
+		margin-bottom: 5.5vw;
+	}
+
+	.carousel__viewport {
+		margin-left: 0.5vw;
+		width: 84.25vw;
+		align-self: center;
+		display: flex;
+		overflow-x: scroll;
+		scroll-behavior: smooth;
+		scroll-snap-type: x mandatory;
+	}
+
+	.carousel__slide {
+		position: relative;
+		width: 100%;
+	}
+
+	.carousel__snapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 75vw;
+		scroll-snap-align: center;
+	}
+
+	.margin-bottom {
+		margin-bottom: 5vw;
+	}
+
+	.margin-top {
+		margin-top: 25vw;
+	}
+
+	@media (hover: hover) {
+		.carousel__snapper {
+			animation-name: tonext, snap;
+			animation-timing-function: ease;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+
+		.carousel__slide:last-child .carousel__snapper {
+			animation-name: tostart, snap;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.carousel__snapper {
+			animation-name: none;
+		}
+	}
+
+	.carousel:hover .carousel__snapper,
+	.carousel:focus-within .carousel__snapper {
+		animation-name: none;
+	}
+
+	.carousel__navigation {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		text-align: center;
+	}
+
+	.carousel__navigation-list,
+	.carousel__navigation-item {
+		display: inline-block;
+	}
+
+	.carousel__navigation-button {
+		display: inline-block;
+		width: 1.5rem;
+		height: 1.5rem;
+		background-clip: content-box;
+		border: 0.25rem solid transparent;
+		border-radius: 50%;
+		font-size: 0;
+		transition: transform 0.1s;
+	}
+
+	.carousel::before,
+	.carousel::after,
+	.carousel__prev,
+	.carousel__next {
+		/*invis btns waar je op klikt*/
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		margin: 62vw 7vw 0vw 7vw;
+		width: 1.8rem;
+		height: 1.8rem;
+		transform: translateY(-50%);
+		border-radius: 50%;
+		font-size: 0;
+		outline: 0;
+	}
+
+	.carousel::before,
+	.carousel__prev {
+		left: -1rem;
+	}
+
+	.carousel::after,
+	.carousel__next {
+		right: -1rem;
+	}
+
+	.carousel::before,
+	.carousel::after {
+		content: "";
+		margin: 55.5vw 17vw 0vw 13vw;
+		z-index: 1;
+		background-color: #441e1d;
+		background-size: 1rem 1rem; /*driehoekjes*/
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.carousel::before {
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+	}
+
+	.carousel::after {
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+	}
+
+	.carousel img {
+		width: 85vw;
+		height: 80vw;
+	}
+
+	.machine-carousel img {
+		height: 60vw;
 	}
 }

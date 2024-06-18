@@ -121,8 +121,8 @@
 			</div>
 		</div>
 		<!-- dit zal een slideshow/carousel worden	 -->
-		<div class="carousel mobile">
-			<img src="#" alt="" class="carousel" />
+		<div class="carousel-mobile">
+			<img src="#" alt="" class="carousel-mobile" />
 		</div>
 		<div class="flex space-evenly mobile button">
 			<a href="reservatie.html" class="btn-primary size2 no-underline">RESERVEER EEN LAB</a>
@@ -149,7 +149,7 @@
 				<p class="regular size8">
 					Welkom bij Lab.Bxl! bij ons kan je geavanceerd materiaal <span class="bold">uitlenen</span>, creatieve ruimtes <span class="bold">reserveren</span> reserveren en inspirerende <span class="bold">workshops volgen</span>.
 				</p>
-				<a href="blog.html" class="btn-secundary no-underline size2">LEES ONZE BLOG</a>
+				<a href="blog.html" class="btn-secundary no-underline size2 margin-bottom">LEES ONZE BLOG</a>
 			</div>
 		</div>
 		<!-- ------------------------------------------------------------------------------- -->
@@ -166,7 +166,7 @@
 								VR & AR brillen </span
 							>en tal van andere technologische snufjes.
 						</p>
-						<a href="medialab.html" class="btn-secundary no-underline size3 regular">ONTDEK MEDIALAB</a>
+						<a href="medialab.html" class="btn-secundary no-underline size2 margin-bottom">ONTDEK MEDIALAB</a>
 					</div>
 				</div>
 				<div class="flex-column homepage-lab">
@@ -187,8 +187,54 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex space-evenly pc">
-			<!-- dit zal een carousel worden -->
+
+		<section class="carousel padding mobile machines" aria-label="Gallery">
+			<ol class="carousel__viewport">
+				<li id="carousel__slide1" tabindex="0" class="carousel__slide">
+					<h2 class="size1 bold interlinie">Medialab</h2>
+					<a href="#"><img class="margin-bottom" src="images/homepage_medialab.webp" alt="" /></a>
+					<p class="size8 margin-bottom">
+						Maak al je ideeen werkelijkheid in een lab uitgerust met: een
+						<span class="bold"
+							>greenscreen, LED wall, tekentafels, <br />
+							VR & AR brillen </span
+						>en tal van andere technologische snufjes.
+					</p>
+					<div class="center">
+						<a href="medialab.html" class="btn-secundary no-underline size3 regular interlinie">ONTDEK MEDIALAB</a>	</div>
+						<div class="carousel__snapper">
+							<a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+							<a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+	
+					</div>
+				</li>
+				<li id="carousel__slide2" tabindex="0" class="carousel__slide">
+					<h2 class="size1 bold interlinie">Fablab</h2>
+					<a href="#"><img class="margin-bottom" src="images/homepage_fablab.webp" alt="" /></a>
+					<p class="size8 margin-bottom">Ontdek een veelzijdig laboratorium met een uitge breide, verzameling hoogtechnologische apperatuur, waaronder <span class="bold"> lasercutters, 3D-printers en computergestuurde freesmachines</span></p>
+					<div class="center">
+					<a href="fablab.html" class="btn-secundary no-underline size3 regular">ONTDEK FABLAB</a>	</div>
+					<div class="carousel__snapper"></div>
+					<a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+					<a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+				</li>
+				<li id="carousel__slide3" tabindex="0" class="carousel__slide">
+					<h2 class="size1 bold interlinie">Contentlab</h2>
+					<a href="#"><img class="margin-bottom" src="images/homepage_studio.webp" alt="" /></a>
+					<p class="size8 margin-bottom">
+						Stap in onze geavanceerde <span class="bold">podcaststudio</span> en <span class="bold">kenniscliproom</span> waar hoogwaardige opnamematerialen en faciliteiten je helpen om podcast en educatieve clips te creëren
+					</p>
+					<div class="center">
+						<a href="studio.html" class="btn-secundary no-underline size3 regular">ONTDEK CONTENTLAB</a>
+					</div>
+					<div class="carousel__snapper"></div>
+					<a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+					<a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+				</li>
+			</ol>
+		</section>
+		<!-- <div class="flex space-evenly pc">
+			 dit zal een carousel worden 
 			<div class="flex space-between homepage-labs">
 				<div class="flex-column homepage-lab">
 					<img src="images/homepage_medialab.webp" alt="" class="homepage-lab-image" />
@@ -221,7 +267,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<!-- footer ---------------------------------------------------------------------------------- -->
 		<div class="footer flex-responsive padding pc color1-bg">
