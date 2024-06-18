@@ -34,6 +34,7 @@
 .radio-inputs {
 	width: 35vw;
 	margin-bottom: 2vw;
+	margin-top: 0.5vw;
 }
 .fase-1 {
 	height: 45vw;
@@ -48,6 +49,7 @@
 }
 .contact-textarea {
 	margin-bottom: 2vw;
+	margin-top: 0.5vw;
 }
 /* ---------------------------------------------------------------------------------------------------- */
 .fase-2 {
