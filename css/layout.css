@@ -209,6 +209,8 @@
 }
 .machine img {
 	width: 27vw;
+	max-height: 18vw;
+	overflow: hidden;
 }
 .lab-image2 {
 	width: 10vw;
