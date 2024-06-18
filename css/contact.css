@@ -12,9 +12,12 @@
 }
 .contact-bericht {
 	width: 40vw;
-	height: 15vw;
+	height: 12vw;
 	border-top-right-radius: 7.5vw;
 	resize: none;
+	margin-bottom: 2.5vw;
+}
+.contact-info {
 	margin-bottom: 2.5vw;
 }
 #submit {
@@ -66,9 +69,17 @@ input {
 	width: 50vw;
 }
 .info {
-	height: 20vw;
+	height: 15vw;
 }
 .info1 {
 	width: 40vw;
-	height: 16vw;
+	height: 15vw;
+}
+.info a {
+	margin-top: 2.5vw;
+	padding-left: 7.5vw;
+	padding-right: 7.5vw;
+}
+.reference {
+	margin-bottom: 2.5vw;
 }
