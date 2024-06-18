@@ -131,7 +131,7 @@ function renderList(catalogus) {
 				let newHtmlString = "";
 
 				newHtmlString = `			<div class="catalog-item flex color3-border">
-							<img src="${item.Img}" class="catalog-item-image" alt="" />
+							<img src="https://labbxl.pockethost.io/api/files/${item.collectionId}/${item.id}/${item.Img}" class="catalog-item-image" alt="" />
 							<div class="flex-column catalog-item-info space-between">
 								<p class="font1 size2">${item.Naam}</p>
 								<p class="font1 size4">${item.Soort}</p>
@@ -162,7 +162,7 @@ function renderList(catalogus) {
 			let newHtmlString = "";
 			if (basket.indexOf(item.id) !== -1) {
 				newHtmlString = `<div class="catalog-item flex color3-border">
-							<img src="" class="catalog-item-image" alt="" />
+							<img src="https://labbxl.pockethost.io/api/files/${item.collectionId}/${item.id}/${item.Img}" class="catalog-item-image" alt="" />
 							<div class="flex-column catalog-item-info space-between">
 								<p class="font1 size2">${item.Naam}</p>
 								<p class="font1 size4">${item.Soort}</p>
@@ -176,7 +176,7 @@ function renderList(catalogus) {
 				document.querySelector(".materials").innerHTML += newHtmlString;
 			} else {
 				newHtmlString = `<div class="catalog-item flex color3-border">
-							<img src="" class="catalog-item-image" alt="" />
+							<img src="https://labbxl.pockethost.io/api/files/${item.collectionId}/${item.id}/${item.Img}" class="catalog-item-image" alt="" />
 							<div class="flex-column catalog-item-info space-between">
 								<p class="font1 size2">${item.Naam}</p>
 								<p class="font1 size4">${item.Soort}</p>
@@ -191,7 +191,7 @@ function renderList(catalogus) {
 				}
 				newHtmlString += `
 										</select>
-									</form>
+										</form>
 									<button class="font1 size4 btn-item" id="${item.id}">Voeg toe</button>
 								</div>
 							</div>
