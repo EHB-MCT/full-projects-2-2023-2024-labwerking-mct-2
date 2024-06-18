@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 		slotLabelInterval: { hours: 1 },
 		headerToolbar: {
 			left: "prev,next today",
-			center: "title",
-			right: "",
+			center: "",
+			right: "title",
 		},
 		allDaySlot: false,
 		weekends: { start: 1, end: 5 },
