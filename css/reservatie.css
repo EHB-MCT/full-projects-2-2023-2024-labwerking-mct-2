@@ -47,14 +47,13 @@
 /* ---------------------------------------------------------------------------------------------------- */
 .fase-2 {
 	height: 40vw;
-	width: 80vw;
+	width: 85vw;
 }
 .fase-2-part-1 {
 	height: 30vw;
 }
 .fase-2-part-2 {
-	height: 15vw;
-	width: 27.75vw;
+	height: 23.25vw;
 }
 
 .contact-textarea {
@@ -100,7 +99,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 #calendar {
 	width: 35vw;
-	height: 27.5vw;
+	height: 23.5vw;
 }
 .fc-timegrid-slot {
 	height: 8.4vh;
@@ -194,4 +193,25 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 	100% {
 		transform: rotate(360deg);
 	}
+}
+.fc .fc-prev-button.fc-button {
+	background-color: #f9a084;
+	border-color: #f9a084;
+	color: #441e1d;
+}
+
+.fc .fc-next-button.fc-button {
+	background-color: #f9a084;
+	border-color: #f9a084;
+	color: #441e1d;
+}
+
+.fc .fc-today-button.fc-button {
+	background-color: #95d0d3;
+	border-color: #95d0d3;
+	color: #ffffff;
+}
+.fc-event {
+	background-color: #ff6035;
+	border-color: #ff6035;
 }

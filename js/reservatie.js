@@ -37,10 +37,30 @@ document.addEventListener("DOMContentLoaded", function () {
 		headerToolbar: {
 			left: "prev,next today",
 			center: "title",
-			right: "timeGridWeek",
+			right: "",
 		},
 		allDaySlot: false,
 		weekends: { start: 1, end: 5 },
+		themeSystem: {
+			prevButton: {
+				// added colon and comma
+				backgroundColor: "#f9a084",
+				borderColor: "#f9a084",
+				color: "#ffffff",
+			},
+			nextButton: {
+				// added colon and comma
+				backgroundColor: "#f9a084",
+				borderColor: "#f9a084",
+				color: "#ffffff",
+			},
+			todayButton: {
+				// added colon and comma
+				backgroundColor: "#95d0d3",
+				borderColor: "#95d0d3",
+				color: "#ffffff",
+			},
+		},
 		firstDay: 1,
 		events: function (info, successCallback, failureCallback) {
 			fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records")
@@ -58,7 +78,6 @@ document.addEventListener("DOMContentLoaded", function () {
 								start: start,
 								end: end,
 								rendering: "background",
-								color: "red",
 							};
 						});
 
@@ -204,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				// Check if the selected lab is already reserved at the same time
 				const isLabReserved = existingReservations.some((reservation) => {
-					return reservation.lab === selectedLab && ((new Date(datetime1) >= reservation.start && new Date(datetime1) <= reservation.end) || (new Date(datetime2) >= reservation.start && new Date(datetime2) <= reservation.end));
+					return reservation.lab === selectedLab && ((new Date(datetime1) >= reservation.start && new Date(datetime1) < reservation.end) || (new Date(datetime2) >= reservation.start && new Date(datetime2) <= reservation.end));
 				});
 
 				if (isLabReserved) {
