@@ -1,6 +1,7 @@
 let statusFilter = "default";
-let basket = [];
-let catalogus = [];
+let basket = []; // things in my basket
+let catalogus = []; // whole API
+import CatalogItem from "./CatalogItem.js";
 
 function ini() {
 	fetchList();
@@ -39,8 +40,13 @@ function addRemoveItem() {
 	buttons.forEach((button) => {
 		button.addEventListener("click", function () {
 			console.log(`Button id ${this.id} `);
+			const itemID = this.id;
+			const selectElement = document.getElementById(`item-amount${itemID}`);
+			const selectedValue = selectElement.value;
+
 			if (basket.indexOf(this.id) === -1) {
-				basket.push(this.id);
+				const itemCatalogus = new CatalogItem(this.id, selectedValue);
+				basket.push(itemCatalogus);
 			} else {
 				basket.splice(basket.indexOf(this.id), 1);
 			}
@@ -49,7 +55,6 @@ function addRemoveItem() {
 		});
 	});
 }
-function removeItem() {}
 function fetchList() {
 	fetch("https://labbxl.pockethost.io/api/collections/Items/records/?perPage=200")
 		.then(function (response) {
@@ -152,26 +157,17 @@ function renderList(catalogus) {
 		});
 	} else {
 		document.querySelector(".materials").innerHTML = "";
+		document.querySelector(".catalog").innerHTML = "";
 		catalogus.items.forEach(function (item) {
 			let newHtmlString = "";
 			if (basket.indexOf(item.id) !== -1) {
 				newHtmlString = `<div class="catalog-item flex color3-border">
-							<img src="${item.Img}" class="catalog-item-image" alt="" />
+							<img src="" class="catalog-item-image" alt="" />
 							<div class="flex-column catalog-item-info space-between">
 								<p class="font1 size2">${item.Naam}</p>
 								<p class="font1 size4">${item.Soort}</p>
 								<div class="flex item-info space-between">
-									<form action="#">
-										<select id="item-amount" class="item-amount font1 size4 color5-border color4-bg">
-										<option value="0" class="font1">0</option>		
-			`;
-
-				for (let i = 0; i < item.InStock; i++) {
-					newHtmlString += `					<option value="${i + 1}" class="font1">${i + 1}</option>`;
-				}
-				newHtmlString += `
-										</select>
-									</form>
+									<p class="font1 size2">5</p>
 									<button class="font1 size4 btn-item" id="${item.id}">Verwijder</button>
 								</div>
 							</div>
@@ -180,13 +176,13 @@ function renderList(catalogus) {
 				document.querySelector(".materials").innerHTML += newHtmlString;
 			} else {
 				newHtmlString = `<div class="catalog-item flex color3-border">
-							<img src="${item.Img}" class="catalog-item-image" alt="" />
+							<img src="" class="catalog-item-image" alt="" />
 							<div class="flex-column catalog-item-info space-between">
 								<p class="font1 size2">${item.Naam}</p>
 								<p class="font1 size4">${item.Soort}</p>
 								<div class="flex item-info space-between">
 									<form action="#">
-										<select id="item-amount" class="item-amount font1 size4 color5-border color4-bg">
+										<select id="item-amount${item.id}" class="item-amount font1 size4 color5-border color4-bg">
 										<option value="0" class="font1">0</option>		
 			`;
 
@@ -200,7 +196,6 @@ function renderList(catalogus) {
 								</div>
 							</div>
 						</div>`;
-
 				document.querySelector(".catalog").innerHTML += newHtmlString;
 			}
 		});
