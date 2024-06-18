@@ -1,5 +1,5 @@
 .reserveer {
-	height: 40vw;
+	height: 45vw;
 	width: 85vw;
 	margin-bottom: 10vw;
 }
@@ -12,6 +12,7 @@
 /* -------------------------------------------------------------------------------------------------- */
 .fase-indicators {
 	width: 7.5vw;
+	margin: 2vw 0vw;
 }
 
 .fase-indicator {
@@ -32,9 +33,10 @@
 /* ---------------------------------------------------------------------------------------------------- */
 .radio-inputs {
 	width: 35vw;
+	margin-bottom: 2vw;
 }
 .fase-1 {
-	height: 40vw;
+	height: 45vw;
 	width: 85vw;
 }
 .fase-1-part-1 {
@@ -43,6 +45,9 @@
 .fase-1-part-2 {
 	height: 15vw;
 	width: 27.75vw;
+}
+.contact-textarea {
+	margin-bottom: 2vw;
 }
 /* ---------------------------------------------------------------------------------------------------- */
 .fase-2 {
