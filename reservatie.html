@@ -82,8 +82,8 @@
 			<h1 class="interlinie bold color1">RESERVEREN</h1>
 		</div>
 
-		<div class="contactformulier padding flex space-between">
-			<form class="reserveer flex-column space-between" id="form">
+		<div class="contactformulier padding flex-column space-between">
+			<form class="reserveer flex-column space-between">
 				<div id="loading-circle" class="loading none color4-bg color1-border">
 					<div class="spinner-border text-primary" role="status">
 						<span class="sr-only">Loading...</span>
@@ -95,8 +95,8 @@
 					<button class="fase-2-indicator color4-bg color3 color3-border size2" disabled>2</button>
 				</div>
 
-				<form id="fase-1" class="fase-1 flex space-between">
-					<div class="flex space-between fase-1">
+				<div id="fase-1" class="fase-1 display flex space-between">
+					<form class="flex fase-1 space-between">
 						<div class="fase-1-part-1 flex-column">
 							<p class="size2 regular">Welk lab wilt u reserveren?</p>
 							<div class="flex space-between radio-inputs">
@@ -123,11 +123,11 @@
 							<p class="size3"><span class="bold">- 10-beurtenkaart:</span> 100 euro per persoon</p>
 							<p class="size3">Prijzen zijn exclusief 21% btw en gelden voor individueel gebruik. Groepstarieven zijn beschikbaar op aanvraag</p>
 						</div>
-					</div>
-				</form>
+					</form>
+				</div>
 
-				<form id="fase-2" class="fase-2 none">
-					<div class="fase-2 flex space-between">
+				<div id="fase-2" class="fase-2 none space-between">
+					<form class="fase-2 flex space-between">
 						<div class="flex-column fase-2-part-1 space-between">
 							<div>
 								<p class="size2 regular">Naam</p>
@@ -158,8 +158,8 @@
 							</div>
 						</div>
 						<div id="calendar"></div>
-					</div>
-				</form>
+					</form>
+				</div>
 			</form>
 		</div>
 		<!-- ---------------------------------------------------------------------------------- -->
