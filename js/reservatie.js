@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 	const calendarEl = document.getElementById("calendar");
-	const form = document.querySelector("#form");
+	const form = document.querySelector("#fase-1");
 	const submit1 = document.querySelector("#submit1");
 	const fase2 = document.querySelector("#fase-2");
 	let selectedLab = "";
@@ -160,6 +160,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		event.preventDefault();
 		event.stopPropagation();
 
+		document.querySelector(".fase-1-indicator").classList.remove("color3-bg");
+		document.querySelector(".fase-1-indicator").classList.add("color4-bg");
+		document.querySelector(".fase-1-indicator").classList.add("color3");
+		document.querySelector(".fase-1-indicator").classList.remove("color4");
+		document.querySelector(".fase-2-indicator").classList.remove("color4-bg");
+		document.querySelector(".fase-2-indicator").classList.add("color3-bg");
+		document.querySelector(".fase-2-indicator").classList.add("color4");
+		document.querySelector(".fase-2-indicator").classList.remove("color3");
+
 		const lab = document.querySelector('input[name="lab"]').value;
 		const description = document.querySelector("#contact-textarea").value;
 
@@ -261,6 +270,21 @@ document.addEventListener("DOMContentLoaded", function () {
 					});
 			});
 		}
+	});
+	document.querySelector("#submit1").addEventListener("click", function (event) {
+		event.preventDefault();
+
+		// Toggle classes for fase-1 and fase-2
+		document.querySelector("#fase-1").classList.remove("display");
+		document.querySelector("#fase-1").classList.add("none");
+		document.querySelector("#fase-2").classList.remove("none");
+		document.querySelector("#fase-2").classList.add("display");
+
+		// Update classes for fase-1-indicator and fase-2-indicator
+		document.querySelector(".fase-1-indicator").classList.remove("color3-bg");
+		document.querySelector(".fase-1-indicator").classList.add("color4-bg");
+		document.querySelector(".fase-2-indicator").classList.remove("color4-bg");
+		document.querySelector(".fase-2-indicator").classList.add("color3-bg");
 	});
 });
 
