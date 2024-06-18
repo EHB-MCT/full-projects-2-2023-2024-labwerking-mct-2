@@ -3,6 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
 	const form = document.querySelector("#form");
 	const submit1 = document.querySelector("#submit1");
 	const fase2 = document.querySelector("#fase-2");
+	let selectedLab = "";
+	let existingReservations = [];
+
+	// Get the lab input fields
+	const labInputs = document.querySelectorAll('input[name="lab"]');
+
+	// Add event listener to lab input fields
+	labInputs.forEach((input) => {
+		input.addEventListener("change", function () {
+			selectedLab = this.value;
+			calendar.refetchEvents();
+		});
+	});
 
 	// Initialize the calendar
 	const calendar = new FullCalendar.Calendar(calendarEl, {
@@ -28,19 +41,27 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 		allDaySlot: false,
 		weekends: { start: 1, end: 5 },
+		firstDay: 1,
 		events: function (info, successCallback, failureCallback) {
 			fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records")
 				.then((response) => response.json())
 				.then((data) => {
-					const events = data.items.map((item) => {
-						return {
-							title: "Reserved",
-							start: item.Begindatum,
-							end: item.Einddatum,
-							rendering: "background",
-							color: "red",
-						};
-					});
+					const events = data.items
+						.filter((item) => item.Locatie === selectedLab) // Filter events based on the selected lab
+						.map((item) => {
+							const start = new Date(item.Begindatum);
+							const end = new Date(item.Einddatum);
+							start.setHours(start.getHours() - 2);
+							end.setHours(end.getHours() - 2);
+							return {
+								title: "Reserved",
+								start: start,
+								end: end,
+								rendering: "background",
+								color: "red",
+							};
+						});
+
 					successCallback(events);
 				})
 				.catch((error) => {
@@ -48,7 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
 					failureCallback(error);
 				});
 		},
-		selectable: true,
 		select: function (info) {
 			const start = moment(info.startStr).subtract(2, "hours").format();
 			const end = moment(info.endStr).subtract(2, "hours").format();
@@ -78,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					}
 					// Create an object to store the data
 					const data = {
-						Locatie: "Medialab",
+						Locatie: selectedLab,
 						Beschrijving: "Project description",
 						Naam: nameV,
 						Email: emailV,
@@ -108,6 +128,11 @@ document.addEventListener("DOMContentLoaded", function () {
 				});
 			}
 		},
+		eventRender: function (info) {
+			if (info.event.extendedProps.lab === selectedLab) {
+				info.el.style.backgroundColor = getColorForLab(selectedLab);
+			}
+		},
 	});
 
 	calendar.render();
@@ -127,27 +152,18 @@ document.addEventListener("DOMContentLoaded", function () {
 			calendar.render();
 
 			// Fetch existing reservations from API
-			let existingReservations = [];
 			fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records")
 				.then((response) => response.json())
 				.then((data) => {
-					data.items.forEach((item) => {
-						existingReservations.push({
-							start: new Date(item.Begindatum),
-							end: new Date(item.Einddatum),
-							lab: item.Locatie,
-						});
-					});
+					existingReservations = data.items.map((item) => ({
+						start: new Date(item.Begindatum),
+						end: new Date(item.Einddatum),
+						lab: item.Locatie,
+					}));
 				})
 				.catch((error) => {
 					console.error("Error:", error);
 				});
-
-			function isLabReserved(start, end, lab) {
-				return existingReservations.some((reservation) => {
-					return (reservation.lab === lab && new Date(start) >= reservation.start && new Date(start) <= reservation.end) || (new Date(end) >= reservation.start && new Date(end) <= reservation.end);
-				});
-			}
 
 			// Add event listener to submit2 button
 			const submit2 = document.querySelector("#submit2");
@@ -181,9 +197,10 @@ document.addEventListener("DOMContentLoaded", function () {
 					alert("Please enter a valid time (09:00-17:00).");
 					return;
 				}
-				// Check if the selected lab is already reserved at a same time
+
+				// Check if the selected lab is already reserved at the same time
 				const isLabReserved = existingReservations.some((reservation) => {
-					return (reservation.lab === lab && new Date(datetime1) >= reservation.start && new Date(datetime1) <= reservation.end) || (new Date(datetime2) >= reservation.start && new Date(datetime2) <= reservation.end);
+					return reservation.lab === selectedLab && ((new Date(datetime1) >= reservation.start && new Date(datetime1) <= reservation.end) || (new Date(datetime2) >= reservation.start && new Date(datetime2) <= reservation.end));
 				});
 
 				if (isLabReserved) {
@@ -191,9 +208,8 @@ document.addEventListener("DOMContentLoaded", function () {
 					return;
 				}
 
-				// Create an object to store the data
-				const data = {
-					Locatie: lab,
+				const reservationData = {
+					Locatie: selectedLab,
 					Beschrijving: description,
 					Naam: nameV,
 					Email: emailV,
@@ -208,12 +224,10 @@ document.addEventListener("DOMContentLoaded", function () {
 					headers: {
 						"Content-Type": "application/json",
 					},
-					body: JSON.stringify(data),
+					body: JSON.stringify(reservationData),
 				})
 					.then((response) => response.json())
 					.then((data) => {
-						console.log(data);
-
 						alert("Uw reservatie is verstuurd");
 						window.location.href = "index.html";
 					})
@@ -224,3 +238,17 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 });
+
+// Function to get the color for a lab
+function getColorForLab(lab) {
+	switch (lab) {
+		case "medialab":
+			return "red";
+		case "fablab":
+			return "blue";
+		case "contentlab":
+			return "green";
+		default:
+			return "";
+	}
+}
