@@ -100,7 +100,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 #calendar {
 	width: 35vw;
-	height: 27.5vw
+	height: 27.5vw;
 }
 .fc-timegrid-slot {
 	height: 8.4vh;
@@ -163,4 +163,35 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .fc-timegrid-event-harness-inset-mirror-title {
-	height: 8
+	height: 8;
+}
+
+.loading {
+	position: absolute;
+	z-index: 15;
+	height: auto;
+	width: auto;
+	margin-top: -5vw;
+	align-items: center;
+	padding: 5vw 7.5vw;
+	align-self: center;
+	border: solid;
+	border-width: 1px;
+}
+.spinner-border {
+	width: 5vw;
+	height: 5vw;
+	border: 3px solid #ccc;
+	border-top: 3px solid #333;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

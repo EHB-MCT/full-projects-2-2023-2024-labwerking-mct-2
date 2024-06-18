@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Initialize the calendar
 	const calendar = new FullCalendar.Calendar(calendarEl, {
 		initialView: "timeGridWeek",
-		slotMinTime: "07:00:00",
+		slotMinTime: "09:00:00",
 		slotMaxTime: "18:00:00",
 		slotDuration: "01:00:00",
 		slotLabelFormat: {
@@ -170,6 +170,10 @@ document.addEventListener("DOMContentLoaded", function () {
 			submit2.addEventListener("click", function (event) {
 				event.preventDefault();
 
+				// Show the loading circle
+				document.getElementById("loading-circle").classList.add("display");
+				document.getElementById("loading-circle").classList.remove("none");
+
 				const nameV = document.querySelector('input[name="name"]').value;
 				const phoneV = document.querySelector('input[name="phone"]').value;
 				const emailV = document.querySelector('input[name="email"]').value;
@@ -228,6 +232,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				})
 					.then((response) => response.json())
 					.then((data) => {
+						document.getElementById("loading-circle").classList.add("none");
+						document.getElementById("loading-circle").classList.remove("display");
 						alert("Uw reservatie is verstuurd");
 						window.location.href = "index.html";
 					})
