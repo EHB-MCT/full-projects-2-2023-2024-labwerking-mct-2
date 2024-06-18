@@ -17,6 +17,10 @@
 .space-evenly {
 	justify-content: space-evenly;
 }
+.padding {
+	padding-left: 8vw;
+	padding-right: 8vw;
+}
 
 .title-image-decoration {
 	position: absolute;
@@ -28,9 +32,10 @@
 .title {
 	margin-bottom: 2.5vw;
 }
+/*  */
 .info {
 	width: 34vw;
-	height: 40vw;
+	height: 25vw;
 }
 .info-timetable {
 	width: 34vw;
@@ -45,10 +50,6 @@
 }
 .info1 {
 	height: 13.5vw;
-}
-.padding {
-	padding-left: 8vw;
-	padding-right: 8vw;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -117,6 +118,7 @@ textarea {
 }
 .thumbnail {
 	width: 40vw;
+	height: 25vw;
 }
 .machine-GE2 {
 	position: absolute;
@@ -133,6 +135,7 @@ textarea {
 }
 .radio-text {
 	width: 8.5vw;
+	align-items: center;
 }
 .radio-inputs {
 	width: 50vw;
@@ -173,7 +176,7 @@ textarea {
 }
 /* ----------------------------------------------------------- */
 .activiteit-image-info {
-	width: 8vw;
+	width: 6.5vw;
 	text-align: center;
 	padding: 0.5vw 0vw;
 	border-radius: 0.5vw;
