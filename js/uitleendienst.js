@@ -11,25 +11,33 @@ function ini() {
 function filterSelection() {
 	document.addEventListener("DOMContentLoaded", function () {
 		document.querySelector("#filter").addEventListener("change", function () {
-			if (this.value == "Lens") {
-				console.log("Lens");
-				statusFilter = "LENS";
+			if (this.value == "VR & AR BRILLEN") {
+				console.log("VR & AR BRILLEN");
+				statusFilter = "VR & AR BRILLEN";
 				fetchList();
-			} else if (this.value == "Microfoon") {
-				console.log("Microfoon");
-				statusFilter = "MICROFOON";
+			} else if (this.value == "OPNAME") {
+				console.log("OPNAME");
+				statusFilter = "OPNAME";
 				fetchList();
-			} else if (this.value == "Camera") {
-				console.log("Camera");
-				statusFilter = "CAMERA";
+			} else if (this.value == "MOTION") {
+				console.log("MOTION");
+				statusFilter = "MOTION";
 				fetchList();
-			} else if (this.value == "VR-brillen") {
-				console.log("VR & ARbrillen");
-				statusFilter = "VR & AR-BRILLEN";
+			} else if (this.value == "AUDIO") {
+				console.log("AUDIO");
+				statusFilter = "AUDIO";
 				fetchList();
 			} else if (this.value == "Default") {
 				console.log("DEFAULT");
 				statusFilter = "DEFAULT";
+				fetchList();
+			} else if (this.value == "EXTRA") {
+				console.log("EXTRA");
+				statusFilter = "EXTRA";
+				fetchList();
+			} else if (this.value == "BELICHTING") {
+				console.log("BELICHTING");
+				statusFilter = "BELICHTING";
 				fetchList();
 			}
 		});
