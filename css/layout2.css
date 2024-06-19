@@ -239,4 +239,57 @@ textarea {
 	.padding {
 		padding: 0vw 6vw;
 	}
+
+	/*activiteiten*/
+	.radio-inputs {
+		width: 75vw;
+		margin-bottom: 6vw;
+	}
+
+	.blog-image {
+		width: 100%;
+		margin: 2vw 0vw;
+	}
+
+	.blog-waar {
+		width: 75vw;
+	}
+
+	.blog-date {
+		width: 35vw
+	}
+
+	.icon {
+		width: 5vw;
+	}
+
+	.arrow {
+		height: 5vw;
+		align-self: center;
+	}
+
+	.activiteit-image-info {
+		width: 20vw;
+		padding: 2vw 0.5vw;
+		border-radius: 1vw;
+		margin-top: 46vw;
+		margin-left: 3vw;
+	}
+
+	.accordion {
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		text-align: left;
+		border: none;
+		outline: none;
+		transition: 0.4s;
+	  }
+
+	  /* Style the accordion panel. Note: hidden by default */
+	  .panel {
+		padding: 0 18px;
+		display: none;
+		overflow: hidden;
+	  }
 }
