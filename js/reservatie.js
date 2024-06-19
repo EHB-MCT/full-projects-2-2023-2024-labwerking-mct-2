@@ -111,17 +111,6 @@ document.addEventListener("DOMContentLoaded", function () {
 					const phoneV = document.querySelector('input[name="phone"]').value;
 					const emailV = document.querySelector('input[name="email"]').value;
 
-					const phoneRegex = /^\d{10}$/;
-					if (!phoneRegex.test(phoneV)) {
-						alert("Vul een geldig telefoonnummer in (10 cijfers).");
-						return;
-					}
-					const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-					if (!emailRegex.test(emailV)) {
-						alert("Vul een geldig e-mailadres in.");
-						return;
-					}
-
 					const data = {
 						Locatie: selectedLab, // Geselecteerde lab
 						Beschrijving: "Project description", // Beschrijving van het project
@@ -168,24 +157,34 @@ document.addEventListener("DOMContentLoaded", function () {
 		event.preventDefault();
 		event.stopPropagation();
 
-		// Verander de weergave van de indicatoren voor fase 1 en fase 2
-		document.querySelector(".fase-1-indicator").classList.remove("color3-bg");
-		document.querySelector(".fase-1-indicator").classList.add("color4-bg");
-		document.querySelector(".fase-1-indicator").classList.add("color3");
-		document.querySelector(".fase-1-indicator").classList.remove("color4");
-		document.querySelector(".fase-2-indicator").classList.remove("color4-bg");
-		document.querySelector(".fase-2-indicator").classList.add("color3-bg");
-		document.querySelector(".fase-2-indicator").classList.add("color4");
-		document.querySelector(".fase-2-indicator").classList.remove("color3");
+		const lab = document.querySelector('input[name="lab"]:checked');
+		if (!lab) {
+			alert("Selecteer een lab om verder te gaan.");
+			return;
+		}
 
-		const lab = document.querySelector('input[name="lab"]').value;
 		const description = document.querySelector("#contact-textarea").value;
+
+		const descriptionRegex = /^[a-zA-Z ]+$/;
+		if (!descriptionRegex.test(description)) {
+			alert("Vul een bericht in.");
+			return;
+		}
 
 		if (lab && description) {
 			form.classList.remove("display");
 			form.classList.add("none");
 			fase2.classList.remove("none");
 			fase2.classList.add("display");
+			// Verander de weergave van de indicatoren voor fase 1 en fase 2
+			document.querySelector(".fase-1-indicator").classList.remove("color3-bg");
+			document.querySelector(".fase-1-indicator").classList.add("color4-bg");
+			document.querySelector(".fase-1-indicator").classList.add("color3");
+			document.querySelector(".fase-1-indicator").classList.remove("color4");
+			document.querySelector(".fase-2-indicator").classList.remove("color4-bg");
+			document.querySelector(".fase-2-indicator").classList.add("color3-bg");
+			document.querySelector(".fase-2-indicator").classList.add("color4");
+			document.querySelector(".fase-2-indicator").classList.remove("color3");
 			calendar.render(); // Vernieuw de kalender
 
 			fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records")
@@ -238,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
 				if (!dateRegex.test(dateV)) {
-					alert("Vul een geldige datum in (JJJJ-MM-DD).");
+					alert("Vul een geldige datum in (DD-MM-JJJJ).");
 					return;
 				}
 
@@ -290,20 +289,6 @@ document.addEventListener("DOMContentLoaded", function () {
 					});
 			});
 		}
-	});
-
-	document.querySelector("#submit1").addEventListener("click", function (event) {
-		event.preventDefault();
-
-		document.querySelector("#fase-1").classList.remove("display");
-		document.querySelector("#fase-1").classList.add("none");
-		document.querySelector("#fase-2").classList.remove("none");
-		document.querySelector("#fase-2").classList.add("display");
-
-		document.querySelector(".fase-1-indicator").classList.remove("color3-bg");
-		document.querySelector(".fase-1-indicator").classList.add("color4-bg");
-		document.querySelector(".fase-2-indicator").classList.remove("color4-bg");
-		document.querySelector(".fase-2-indicator").classList.add("color3-bg");
 	});
 });
 
