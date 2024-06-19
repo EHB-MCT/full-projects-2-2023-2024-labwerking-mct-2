@@ -115,7 +115,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .loading {
-	position: absolute;
+	position: fixed;
 	z-index: 15;
 	height: auto;
 	width: auto;
@@ -129,8 +129,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .spinner-border {
 	width: 5vw;
 	height: 5vw;
-	border: 3px solid #ccc;
-	border-top: 3px solid #333;
+	border: 5px solid #95d0d3;
+	border-top: 5px solid #ff6035;
 	border-radius: 50%;
 	animation: spin 1s linear infinite;
 }
