@@ -242,7 +242,7 @@ textarea {
 
 	/*activiteiten*/
 	.radio-inputs {
-		width: 75vw;
+		width: 65vw;
 		margin-bottom: 6vw;
 	}
 
@@ -304,5 +304,9 @@ textarea {
 
 	#arrow {
 		transform: rotate(180deg);
+	}
+	
+	.margin-top {
+		margin-top: 10vw;
 	}
 }
