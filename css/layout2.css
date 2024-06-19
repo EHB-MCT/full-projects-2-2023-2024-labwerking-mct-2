@@ -275,7 +275,9 @@ textarea {
 		margin-top: 46vw;
 		margin-left: 3vw;
 	}
-
+	.contact-info {
+		height: 100vw;
+	}
 	.accordion {
 		cursor: pointer;
 		padding: 18px;
@@ -285,7 +287,15 @@ textarea {
 		outline: none;
 		transition: 0.4s;
 	  }
-
+	  .text-input {
+		width: 85vw;
+		height:10vw;
+	}
+	.info1 {
+		height: 60vw;
+	padding:10vw 0vw;
+	
+	}
 	  /* Style the accordion panel. Note: hidden by default */
 	  .panel {
 		padding: 0 18px;

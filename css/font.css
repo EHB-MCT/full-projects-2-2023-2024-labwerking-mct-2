@@ -105,4 +105,8 @@ h1 {
 	.interlinie {
 		line-height: 16.5vw;
 	}
+	
+	.sizeContact {
+		font-size: 15vw ;
+	}
 }

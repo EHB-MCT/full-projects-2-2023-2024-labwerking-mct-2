@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="nl">
 	<head>
+		<link rel="icon" type="image/png" href="./images/favicon.png" />
+		
+
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="js/nav.js"></script>
@@ -79,26 +82,31 @@
 		<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
 		<div class="flex title padding">
 			<img src="images/title-decoration.webp" alt="" class="title-image-decoration" />
-			<h1 class="interlinie bold color1">CONTACT</h1>
+			<h1 class="interlinie bold color1 sizeContact">CONTACT</h1>
 		</div>
-		<div class="flex space-between padding contact-info">
+		<div class="flex-responsive space-between padding contact-info">
 			<div class="info flex-column space-between">
 				<div>
-					<h2 class="size1 regular">Naam</h2>
+					<h2 class="size1 regular pc">Naam</h2>
+					<h2 class="size2 regular mobile">Naam</h2>
 					<input type="text" class="text-input color3-border color4-bg border-cut" />
 				</div>
 				<div>
-					<h2 class="size1 regular">E-mail</h2>
+					<h2 class="size1 regular pc">E-mail</h2>
+					<h2 class="size2 regular mobile">E-mail</h2>
+
 					<input type="text" class="text-input color3-border color4-bg border-cut" />
 				</div>
-				<a href="#" class="btn-5-border no-underline size3">VERZEND</a>
+				<a href="#" class="btn-5-border no-underline size3 pc">VERZEND</a>
 			</div>
 			<div class="info1 flex-column space-between">
-				<h2 class="size1 regular">Bericht</h2>
+				<h2 class="size1 regular pc">Bericht</h2>
+				<h2 class="size2 regular mobile">Bericht</h2>
 				<textarea name="contact-bericht" id="contact-bericht" class="border-cut color3-border color4-bg contact-bericht"></textarea>
+				<a href="#" class="btn-5-border no-underline size3 mobile">VERZEND</a>
 			</div>
 		</div>
-		<p class="size8 padding">
+		<p class="size8 padding contact-down">
 			Met extra vragen of andere zaken kan u onze lab verantwoordelijke Gwendolyn <br />
 			Vander Putten contacteren op het e-mailadres <span class="underline">medialab@ehb.be</span>.
 		</p>

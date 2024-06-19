@@ -72,3 +72,17 @@ input {
 	width: 40vw;
 	height: 16vw;
 }
+@media screen and (max-width: 768px) {
+	.info {
+		height: 40vw;
+	}
+	.contact-bericht {
+		height: 50vw;
+		width: 85vw;
+		padding-bottom: 50vw;
+		margin-bottom: 20vw;
+	}
+	.contact-down {
+		margin-top: 50vw;
+	}
+}
