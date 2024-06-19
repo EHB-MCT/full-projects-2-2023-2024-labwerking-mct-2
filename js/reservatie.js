@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	labInputs.forEach(function (input) {
 		input.addEventListener("change", function () {
 			selectedLab = this.value; // Update de geselecteerde lab
+			console.log(selectedLab);
 			calendar.refetchEvents(); // Vernieuw de kalender om de reserveringen voor de geselecteerde lab te tonen
 		});
 	});
@@ -65,10 +66,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		},
 		firstDay: 1, // Eerste dag van de week is maandag
 		events: function (info, successCallback, failureCallback) {
-			// Ophalen van evenementen
-			fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records")
+			// Return the promise from the fetch call
+			return fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records")
 				.then(function (response) {
-					response.json();
+					return response.json();
 				})
 				.then(function (data) {
 					const events = data.items
@@ -94,60 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
 					console.error("Error:", error);
 					failureCallback(error); // Roep de callback functie aan met de foutmelding
 				});
-		},
-		select: function (info) {
-			// Selecteer een tijdslot
-			const start = moment(info.startStr).subtract(2, "hours").format();
-			const end = moment(info.endStr).subtract(2, "hours").format();
-
-			if (start < end) {
-				form.classList.remove("none");
-				form.classList.add("display");
-
-				submit1.addEventListener("click", function (event) {
-					event.preventDefault();
-
-					const nameV = document.querySelector('input[name="name"]').value;
-					const phoneV = document.querySelector('input[name="phone"]').value;
-					const emailV = document.querySelector('input[name="email"]').value;
-
-					const data = {
-						Locatie: selectedLab, // Geselecteerde lab
-						Beschrijving: "Project description", // Beschrijving van het project
-						Naam: nameV, // Naam van de gebruiker
-						Email: emailV, // E-mail van de gebruiker
-						Tel: phoneV, // Telefoonnummer van de gebruiker
-						Begindatum: start, // Begin tijd van de reservering
-						Einddatum: end, // Eind tijd van de reservering
-					};
-
-					fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records", {
-						method: "POST",
-						headers: {
-							"Content-Type": "application/json",
-						},
-						body: JSON.stringify(data), // Stuur de data naar de server
-					})
-						.then(function (response) {
-							response.json();
-						})
-						.then(function (data) {
-							console.log(data);
-
-							alert("Uw reservatie is verstuurd");
-							window.location.href = "index.html"; // Herlaad de pagina
-						})
-						.catch(function (error) {
-							console.error("Error:", error);
-						});
-				});
-			}
-		},
-		eventRender: function (info) {
-			// Render evenement in de kalender
-			if (info.event.extendedProps.lab === selectedLab) {
-				info.el.style.backgroundColor = getColorForLab(selectedLab); // Geef de achtergrondkleur op basis van de lab
-			}
 		},
 	});
 
@@ -176,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			form.classList.add("none");
 			fase2.classList.remove("none");
 			fase2.classList.add("display");
+
 			// Verander de weergave van de indicatoren voor fase 1 en fase 2
 			document.querySelector(".fase-1-indicator").classList.remove("color3-bg");
 			document.querySelector(".fase-1-indicator").classList.add("color4-bg");
@@ -185,11 +133,23 @@ document.addEventListener("DOMContentLoaded", function () {
 			document.querySelector(".fase-2-indicator").classList.add("color3-bg");
 			document.querySelector(".fase-2-indicator").classList.add("color4");
 			document.querySelector(".fase-2-indicator").classList.remove("color3");
+
 			calendar.render(); // Vernieuw de kalender
+
+			if (lab.value == "medialab") {
+				document.querySelector("#medialab-marker").classList.remove("none");
+				document.querySelector("#medialab-marker").classList.add("display");
+			} else if (lab.value == "fablab") {
+				document.querySelector("#fablab-marker").classList.remove("none");
+				document.querySelector("#fablab-marker").classList.add("display");
+			} else if (lab.value == "contentlab") {
+				document.querySelector("#contentlab-marker").classList.remove("none");
+				document.querySelector("#contentlab-marker").classList.add("display");
+			}
 
 			fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records")
 				.then(function (response) {
-					response.json();
+					return response.json();
 				})
 				.then(function (data) {
 					existingReservations = data.items.map(function (item) {
@@ -276,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
 					body: JSON.stringify(reservationData),
 				})
 					.then(function (response) {
-						response.json();
+						return response.json();
 					})
 					.then(function (data) {
 						document.getElementById("loading-circle").classList.add("none");
@@ -291,17 +251,3 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 });
-
-// Functie om de kleur voor een lab op te halen
-function getColorForLab(lab) {
-	switch (lab) {
-		case "medialab":
-			return "red";
-		case "fablab":
-			return "blue";
-		case "contentlab":
-			return "green";
-		default:
-			return "";
-	}
-}
