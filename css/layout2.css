@@ -256,16 +256,22 @@ textarea {
 	}
 
 	.blog-date {
-		width: 35vw
+		width: 35vw;
 	}
 
 	.icon {
 		width: 5vw;
 	}
 
+	.icon-margin {
+		margin-left: 2vw;
+	}
+
 	.arrow {
 		height: 5vw;
-		align-self: center;
+		position: absolute;
+		right: 0;
+		margin-top: 4vw;
 	}
 
 	.activiteit-image-info {
@@ -284,12 +290,12 @@ textarea {
 		border: none;
 		outline: none;
 		transition: 0.4s;
-	  }
+	}
 
-	  /* Style the accordion panel. Note: hidden by default */
-	  .panel {
+	/* Style the accordion panel. Note: hidden by default */
+	.panel {
 		padding: 0 18px;
 		display: none;
 		overflow: hidden;
-	  }
+	}
 }
