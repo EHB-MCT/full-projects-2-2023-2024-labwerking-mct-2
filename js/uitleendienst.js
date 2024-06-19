@@ -161,7 +161,9 @@ function renderList(catalogus) {
 					basketStatus = true;
 				}
 			});
-			if (!basketStatus && item.Naam.includes(document.querySelector("#SearchInput").value)) {
+			let text1 = item.Naam.toLowerCase();
+			let text2 = document.querySelector("#SearchInput").value.toLowerCase();
+			if (!basketStatus && text1.includes(text2)) {
 				newHtmlString = `<div class="catalog-item flex color3-border">
 					<img src="https://labbxl.pockethost.io/api/files/${item.collectionId}/${item.id}/${item.Img}" class="catalog-item-image" alt="" />
 					<div class="flex-column catalog-item-info space-between">
