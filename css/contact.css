@@ -20,9 +20,7 @@
 .contact-info {
 	margin-bottom: 2.5vw;
 }
-#submit {
-	padding: 0.5vw 2vw;
-}
+
 .fase-visual {
 	display: flex;
 	align-items: center;
@@ -75,7 +73,7 @@ input {
 	width: 40vw;
 	height: 15vw;
 }
-.info a {
+.send-button {
 	margin-top: 2.5vw;
 	padding-left: 7.5vw;
 	padding-right: 7.5vw;

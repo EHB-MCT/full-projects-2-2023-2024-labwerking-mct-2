@@ -1,22 +1,25 @@
 <?php
-  // Configuration
-  $to = 'seppe.ghekiere@gmail.com';
-  $subject = 'Contact Form Submission';
-
-  // Get the form data
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $description = $_POST['description'];
-
-  // Create the email message
-  $message = "Naam: $name\n";
-  $message .= "E-mail: $email\n";
-  $message .= "Bericht: $description\n";
-
-  // Send the email
-  if (mail($to, $subject, $message)) {
-    echo 'Email sent successfully';
-  } else {
-    echo 'Error sending email';
-  }
+// Get data from form  
+$name = $_POST['name'];
+$email= $_POST['email'];
+$message= $_POST['message'];
+ 
+$to = "Ghekiereseppe@gmail.com";
+$subject = "This is the subject line";
+ 
+// The following text will be sent
+// Name = user entered name
+// Email = user entered email
+// Message = user entered message 
+$txt ="Name = ". $name . "\r\n  Email = "
+    . $email . "\r\n Message =" . $message;
+ 
+$headers = "From: noreply@demosite.com" . "\r\n" .
+            "CC: somebodyelse@example.com";
+if($email != NULL) {
+    mail($to, $subject, $txt, $headers);
+}
+ 
+// Redirect to
+header("Location:last.html");
 ?>

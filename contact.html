@@ -4,8 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="js/nav.js"></script>
-		<script src="js/contact.js"></script>
-
 		<link href="css/reset.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/layout2.css" />
 
@@ -81,21 +79,23 @@
 			<img src="images/title-decoration.webp" alt="" class="title-image-decoration" />
 			<h1 class="interlinie bold color1">CONTACT</h1>
 		</div>
-		<form class="flex space-between padding contact-info" id="contact-form">
+		<form class="flex space-between padding contact-info" id="contact-form" method="post" action="contact.php">
 			<div class="info flex-column space-between">
 				<div>
 					<h2 class="size2 regular">Naam</h2>
-					<input id="name" type="text" class="text-input color3-border color4-bg border-cut" required />
+					<input id="name" type="text" class="text-input color3-border color4-bg border-cut" name="name" value="" required />
 				</div>
 				<div>
 					<h2 class="size2 regular">E-mail</h2>
-					<input id="email" type="email" class="text-input color3-border color4-bg border-cut" required />
+					<input id="email" type="email" class="text-input color3-border color4-bg border-cut" id="email" name="email" value="" required />
 				</div>
-				<a href="#" class="btn-5-border btn-primary no-underline size3" id="submit-btn" required>VERZEND</a>
+				<button class="color5-border btn btn-primary size3 send-button" id="submit" type="submit" value="SEND">
+					<span class="send-text">VERZEND</span>
+				</button>
 			</div>
 			<div class="info1 flex-column space-between">
 				<h2 class="size2 regular">Bericht</h2>
-				<textarea id="description" name="contact-bericht" class="border-cut color3-border color4-bg contact-bericht" required></textarea>
+				<textarea id="description" name="contact-bericht" class="border-cut color3-border color4-bg contact-bericht" rows="10" name="message" required></textarea>
 			</div>
 		</form>
 
