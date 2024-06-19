@@ -82,8 +82,16 @@
 }
 .catalog-item-image {
 	height: 7.5vw;
-	max-width: 12.5vw;
+	max-width: 12vw;
+	overflow: hidden;
+	align-items: center;
+	display: flex;
 }
+.catalog-item-image img {
+	height: 7.5vw;
+	width: auto;
+}
+
 .catalog-item-info {
 	height: 7;
 	padding-left: 1vw;
