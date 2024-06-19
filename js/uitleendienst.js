@@ -7,6 +7,15 @@ function ini() {
 	fetchList();
 	nextPage();
 	filterSelection();
+	searchFilter();
+}
+function searchFilter() {
+	const searchInput = document.querySelector("#SearchInput");
+	searchInput.addEventListener("keydown", function (event) {
+		if (event.key == "Enter") {
+			console.log(searchInput.value);
+		}
+	});
 }
 function filterSelection() {
 	document.addEventListener("DOMContentLoaded", function () {
