@@ -242,7 +242,7 @@ textarea {
 
 	/*activiteiten*/
 	.radio-inputs {
-		width: 75vw;
+		width: 65vw;
 		margin-bottom: 6vw;
 	}
 
@@ -256,16 +256,22 @@ textarea {
 	}
 
 	.blog-date {
-		width: 35vw
+		width: 35vw;
 	}
 
 	.icon {
 		width: 5vw;
 	}
 
+	.icon-margin {
+		margin-left: 2vw;
+	}
+
 	.arrow {
 		height: 5vw;
-		align-self: center;
+		position: absolute;
+		right: 0;
+		margin-top: 4vw;
 	}
 
 	.activiteit-image-info {
@@ -301,5 +307,17 @@ textarea {
 		padding: 0 18px;
 		display: none;
 		overflow: hidden;
-	  }
+	}
+
+	#panel {
+		display: block;
+	}
+
+	#arrow {
+		transform: rotate(180deg);
+	}
+	
+	.margin-top {
+		margin-top: 10vw;
+	}
 }
