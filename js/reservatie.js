@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const labInputs = document.querySelectorAll('input[name="lab"]');
 
 	// Add event listener to lab input fields
-	labInputs.forEach((input) => {
+	labInputs.forEach(function (input) {
 		input.addEventListener("change", function () {
 			selectedLab = this.value;
 			calendar.refetchEvents();
@@ -64,11 +64,15 @@ document.addEventListener("DOMContentLoaded", function () {
 		firstDay: 1,
 		events: function (info, successCallback, failureCallback) {
 			fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records")
-				.then((response) => response.json())
-				.then((data) => {
+				.then(function (response) {
+					response.json();
+				})
+				.then(function (data) {
 					const events = data.items
-						.filter((item) => item.Locatie === selectedLab) // Filter events based on the selected lab
-						.map((item) => {
+						.filter(function (item) {
+							item.Locatie === selectedLab;
+						}) // Filter events based on the selected lab
+						.map(function (item) {
 							const start = new Date(item.Begindatum);
 							const end = new Date(item.Einddatum);
 							start.setHours(start.getHours() - 2);
@@ -83,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 					successCallback(events);
 				})
-				.catch((error) => {
+				.catch(function (error) {
 					console.error("Error:", error);
 					failureCallback(error);
 				});
@@ -103,7 +107,6 @@ document.addEventListener("DOMContentLoaded", function () {
 					const phoneV = document.querySelector('input[name="phone"]').value;
 					const emailV = document.querySelector('input[name="email"]').value;
 
-					// Validate phone number
 					const phoneRegex = /^\d{10}$/;
 					if (!phoneRegex.test(phoneV)) {
 						alert("Please enter a valid phone number (10 digits).");
@@ -115,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 						alert("Please enter a valid email address.");
 						return;
 					}
+
 					// Create an object to store the data
 					const data = {
 						Locatie: selectedLab,
@@ -134,14 +138,16 @@ document.addEventListener("DOMContentLoaded", function () {
 						},
 						body: JSON.stringify(data),
 					})
-						.then((response) => response.json())
-						.then((data) => {
+						.then(function (response) {
+							response.json();
+						})
+						.then(function (data) {
 							console.log(data);
 
 							alert("Uw reservatie is verstuurd");
 							window.location.href = "index.html";
 						})
-						.catch((error) => {
+						.catch(function (error) {
 							console.error("Error:", error);
 						});
 				});
@@ -181,15 +187,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			// Fetch existing reservations from API
 			fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records")
-				.then((response) => response.json())
-				.then((data) => {
-					existingReservations = data.items.map((item) => ({
+				.then(function (response) {
+					response.json();
+				})
+				.then(function (data) {
+					existingReservations = data.items.map(function(item) ({
 						start: new Date(item.Begindatum),
 						end: new Date(item.Einddatum),
 						lab: item.Locatie,
 					}));
 				})
-				.catch((error) => {
+				.catch(function (error) {
 					console.error("Error:", error);
 				});
 
@@ -199,8 +207,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				event.preventDefault();
 
 				// Show the loading circle
-				document.getElementById("loading-circle").classList.add("display");
-				document.getElementById("loading-circle").classList.remove("none");
 
 				const nameV = document.querySelector('input[name="name"]').value;
 				const phoneV = document.querySelector('input[name="phone"]').value;
@@ -210,19 +216,34 @@ document.addEventListener("DOMContentLoaded", function () {
 				const time2V = document.querySelector('input[name="time2"]').value;
 				const datetime1 = dateV + " " + time1V + ":00.000";
 				const datetime2 = dateV + " " + time2V + ":00.000";
-
-				// Validate phone number
-				const phoneRegex = /^\d{10}$/;
-				if (!phoneRegex.test(phoneV)) {
-					alert("Please enter a valid phone number (10 digits).");
+				// Validate name
+				const nameRegex = /^[a-zA-Z ]+$/;
+				if (!nameRegex.test(nameV)) {
+					alert("Please enter a valid name (only letters and spaces allowed).");
 					return;
 				}
+
 				// Validate email
 				const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 				if (!emailRegex.test(emailV)) {
 					alert("Please enter a valid email address.");
 					return;
 				}
+
+				// Validate phone
+				const phoneRegex = /^\d{10}$/;
+				if (!phoneRegex.test(phoneV)) {
+					alert("Please enter a valid phone number (10 digits).");
+					return;
+				}
+
+				// Validate date
+				const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+				if (!dateRegex.test(dateV)) {
+					alert("Please enter a valid date (DD-MM-YYYY).");
+					return;
+				}
+
 				// Validate time
 				const timeRegex = /^(0[0-9]|1[0-7]):[0-5][0-9]$/;
 				if (!timeRegex.test(time1V) || !timeRegex.test(time2V)) {
@@ -231,7 +252,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				}
 
 				// Check if the selected lab is already reserved at the same time
-				const isLabReserved = existingReservations.some((reservation) => {
+				const isLabReserved = existingReservations.some(function(reservation) {
 					return reservation.lab === selectedLab && ((new Date(datetime1) >= reservation.start && new Date(datetime1) < reservation.end) || (new Date(datetime2) >= reservation.start && new Date(datetime2) <= reservation.end));
 				});
 
@@ -249,6 +270,8 @@ document.addEventListener("DOMContentLoaded", function () {
 					Begindatum: datetime1,
 					Einddatum: datetime2,
 				};
+				document.getElementById("loading-circle").classList.add("display");
+				document.getElementById("loading-circle").classList.remove("none");
 
 				// Send data to API
 				fetch("https://labbxl.pockethost.io/api/collections/Reservatie/records", {
@@ -258,14 +281,16 @@ document.addEventListener("DOMContentLoaded", function () {
 					},
 					body: JSON.stringify(reservationData),
 				})
-					.then((response) => response.json())
-					.then((data) => {
+					.then(function (response) {
+						response.json();
+					})
+					.then(function (data) {
 						document.getElementById("loading-circle").classList.add("none");
 						document.getElementById("loading-circle").classList.remove("display");
 						alert("Uw reservatie is verstuurd");
 						window.location.href = "index.html";
 					})
-					.catch((error) => {
+					.catch(function (error) {
 						console.error("Error:", error);
 					});
 			});
