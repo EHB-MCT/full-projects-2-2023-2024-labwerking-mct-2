@@ -1,4 +1,4 @@
-let statusFilter = "default";
+let statusFilter = "DEFAULT";
 let basket = []; // things in my basket
 let catalogus = []; // whole API
 import CatalogItem from "./CatalogItem.js";
@@ -85,13 +85,14 @@ function renderList(catalogus) {
 			let newHtmlString = "";
 			basket.forEach(function (BasketItem) {
 				if (item.id == BasketItem._id) {
-					newHtmlString = `<div class="catalog-item flex color3-border">
-							<img src="https://labbxl.pockethost.io/api/files/${item.collectionId}/${item.id}/${item.Img}" class="catalog-item-image" alt="" />
-							<div class="flex-column catalog-item-info space-between">
-								<p class="font1 size2">${item.Naam}</p>
+					newHtmlString = `<div class="catalog-item2 flex color3-border">
+							<div class="catalog-item-image">
+							<img src="https://labbxl.pockethost.io/api/files/${item.collectionId}/${item.id}/${item.Img}"  alt="" />
+							</div>							<div class="flex-column catalog-item-info space-between">
+								<p class="font1 size3">${item.Naam}</p>
 								<p class="font1 size4">${item.Soort}</p>
 								<div class="flex item-info space-between">
-									<p class="font1 size2" id="item-amount${item.id}" value="0">${BasketItem._amount}</p>
+									<p class="font1 size4" id="item-amount${item.id}" value="0">${BasketItem._amount}</p>
 									<button class="font1 size4 btn-item" id="${item.id}">Verwijder</button>
 								</div>
 							</div>
@@ -102,8 +103,9 @@ function renderList(catalogus) {
 			});
 			if (!basketStatus) {
 				newHtmlString = `<div class="catalog-item flex color3-border">
-					<img src="https://labbxl.pockethost.io/api/files/${item.collectionId}/${item.id}/${item.Img}" class="catalog-item-image" alt="" />
-					<div class="flex-column catalog-item-info space-between">
+							<div class="catalog-item-image">
+							<img src="https://labbxl.pockethost.io/api/files/${item.collectionId}/${item.id}/${item.Img}"  alt="" />
+							</div>					<div class="flex-column catalog-item-info space-between">
 						<p class="font1 size2">${item.Naam}</p>
 						<p class="font1 size4">${item.Soort}</p>
 						<div class="flex item-info space-between">

@@ -74,6 +74,14 @@
 
 .catalog-item {
 	width: 35vw;
+	height: 9vw;
+	border-width: 3px;
+	border-style: solid;
+	border-top-right-radius: 4vw;
+	margin-bottom: 1vw;
+}
+.catalog-item2 {
+	width: 30.5vw;
 	height: 7.5vw;
 	border-width: 3px;
 	border-style: solid;
@@ -81,20 +89,21 @@
 	margin-bottom: 1vw;
 }
 .catalog-item-image {
-	height: 7.5vw;
+	height: 9vw;
 	max-width: 12vw;
 	overflow: hidden;
 	align-items: center;
 	display: flex;
 }
 .catalog-item-image img {
-	height: 7.5vw;
+	height: 9vw;
 	width: auto;
 }
 
 .catalog-item-info {
 	height: 7;
 	padding-left: 1vw;
+	max-width: 20vw;
 }
 .item-amount {
 	width: 3vw;
@@ -135,7 +144,7 @@
 	border-width: 3px;
 	border-style: solid;
 	resize: none;
-	width: 30vw;
+	width: 32vw;
 	margin-top: 7.7vw;
 	scroll-behavior: smooth;
 	padding: 1vw;

@@ -27,6 +27,9 @@
 .size8 {
 	font-size: 1.25vw;
 }
+.size9 {
+	font-size: 0.75vw;
+}
 .no-underline {
 	text-decoration: none;
 }
