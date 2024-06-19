@@ -46,6 +46,7 @@
 .mobile {
 	display: none;
 }
+
 /* ------------------------------------------------------------------------------------------------------- */
 .homepage-titel {
 	padding: 0.8vw 7.5vw;
@@ -382,6 +383,29 @@
 	.lab-info-height {
 		height: 90vw;
 	}
+	/*studio----------------------------------------*/
+
+	.studio-titel-info {
+		width: 100%;
+	}
+
+	.studio-image2 {
+		width: 82vw;
+		margin-top: 6vw;
+	}
+
+	.tekst-studio {
+	width: 82vw;
+}
+
+.margin-studio {
+	margin-top: 70vw;
+}
+
+.margin-studio2 {
+	margin-top: 90vw;
+}
+
 
 	/* carousel ----------------------------------*/
 	@keyframes tonext {
@@ -458,9 +482,7 @@
 
 	.carousel {
 		position: relative;
-		padding-top: 10vw;
 		perspective: 100px;
-		height: 120vw;
 		margin-bottom: 5.5vw;
 	}
 
@@ -493,7 +515,7 @@
 	}
 
 	.margin-top {
-		margin-top: 25vw;
+		margin-top: 20vw;
 	}
 
 	@media (hover: hover) {
@@ -574,7 +596,7 @@
 	.carousel::before,
 	.carousel::after {
 		content: "";
-		margin: 55.5vw 17vw 0vw 13vw;
+		margin: 62vw 17vw 0vw 13vw;
 		z-index: 1;
 		background-color: #441e1d;
 		background-size: 1rem 1rem; /*driehoekjes*/
