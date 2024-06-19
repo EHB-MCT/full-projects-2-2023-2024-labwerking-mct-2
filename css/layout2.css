@@ -292,10 +292,17 @@ textarea {
 		transition: 0.4s;
 	}
 
-	/* Style the accordion panel. Note: hidden by default */
 	.panel {
 		padding: 0 18px;
 		display: none;
 		overflow: hidden;
+	}
+
+	#panel {
+		display: block;
+	}
+
+	#arrow {
+		transform: rotate(180deg);
 	}
 }
