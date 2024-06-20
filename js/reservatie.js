@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", function () {
 						document.getElementById("loading-circle").classList.add("none");
 						document.getElementById("loading-circle").classList.remove("display");
 						alert("Uw reservatie is verstuurd");
-						window.location.href = "index.html";
+						window.location.href = "javascript:history.back()";
 					})
 					.catch(function (error) {
 						console.error("Error:", error);
