@@ -176,6 +176,12 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 @media screen and (max-width: 768px) {
+	.contactformulier {
+		height: auto;
+	}
+	.reserveer {
+		height: max-content;
+	}
 	.fase-indicators {
 		width: 18vw;
 		margin: 4vw 0vw;
@@ -192,13 +198,16 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 		margin: 2vw 0vw 6vw 0vw;
 		height: 20vw;
 	}
-
+	.fase-1 {
+		height: 125vw;
+	}
 	.fase-1-part-1 {
-		height: 150vw;
+		height: 100vw;
 	}
 
 	.fase-1-part-2 {
 		width: 80vw;
+		height: 30vw;
 	}
 
 	.contact-textarea {
@@ -213,5 +222,24 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 	.fase-1#submit {
 		order: 2;
+	}
+	.text-input-2 {
+		width: 85vw;
+		height: 10vw;
+	}
+	.fase-2 {
+		height: 300vw;
+	}
+	.fase-2-part-1 {
+		height: 80vw;
+	}
+	.fase-2-part-2 {
+		height: 60vw;
+		margin-bottom: 15vw;
+	}
+	#calendar {
+		width: 85vw;
+		height: auto;
+		margin-bottom: 15vw;
 	}
 }
