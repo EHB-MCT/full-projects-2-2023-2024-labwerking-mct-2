@@ -2,6 +2,7 @@ let statusFilter = "DEFAULT";
 let basket = []; // things in my basket
 let catalogus = []; // whole API
 import CatalogItem from "./CatalogItem.js";
+let projectText = "";
 
 function ini() {
 	fetchList();
@@ -241,6 +242,9 @@ function nextPage() {
 	document.addEventListener("DOMContentLoaded", function () {
 		document.querySelector("#submit").addEventListener("click", function () {
 			console.log("hey");
+
+			projectText = document.querySelector(".uitleen-textarea").value;
+
 			document.querySelector("#fase-1").classList.add("none");
 			document.querySelector("#fase-1").classList.remove("display");
 			document.querySelector("#fase-2").classList.add("display");
