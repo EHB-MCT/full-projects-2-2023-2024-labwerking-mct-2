@@ -52,6 +52,20 @@ body {
 	border-color: black;
 }
 .nav-bg {
-	background: rgb(243, 242, 240);
-	background: linear-gradient(90deg, rgba(243, 242, 240, 1) 35%, rgba(144, 208, 211, 1) 100%);
+	background: rgb(255, 255, 255);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.16430322128851538) 0%, rgba(144, 208, 211, 1) 100%);
+}
+.radio {
+	accent-color: #ff6035;
+	background: none;
+}
+
+p {
+	color: #441e1d;
+}
+h1 {
+	color: #441e1d;
+}
+h2 {
+	color: #441e1d;
 }
