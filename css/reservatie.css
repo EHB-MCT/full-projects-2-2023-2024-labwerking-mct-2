@@ -110,18 +110,30 @@
 		width: 8vw;
 	}
 
-	.radio-inputs  {
+	.radio-inputs {
 		width: 68vw;
 		margin: 2vw 0vw 6vw 0vw;
 	}
 
 	.fase-1-part-1 {
-		height: 150vw
+		height: 150vw;
+	}
+
+	.fase-1-part-2 {
+		width: 80vw;
 	}
 
 	.contact-textarea {
 		height: 30vw;
 		width: 80vw;
 		margin-bottom: 6vw;
+	}
+
+	.fase-1.fase-1-part-2 {
+		order: 1;
+	}
+
+	.fase-1#submit {
+		order: 2;
 	}
 }

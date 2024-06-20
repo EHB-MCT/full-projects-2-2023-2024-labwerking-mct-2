@@ -76,6 +76,10 @@ h1 {
 .interlinie2 {
 	line-height: 7.5vw;
 }
+
+.align-right {
+	text-align: right;
+}
 /* _____________________________________________________________________________ */
 @media screen and (max-width: 768px) {
 	.size1 {
