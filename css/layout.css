@@ -702,7 +702,16 @@
 		height: 80vw;
 	}
 
+.machine-carousel::before, .machine-carousel::after {
+	margin: 30vw 14vw 0vw 10vw;
+}
+
+.machine-carousel .carousel__prev, .machine-carousel .carousel__next {
+	margin: 30vw 4vw 0vw 4vw;
+}
+
 	.machine-carousel img {
 		height: 60vw;
 	}
+
 }
