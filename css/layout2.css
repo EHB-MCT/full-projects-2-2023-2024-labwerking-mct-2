@@ -127,6 +127,7 @@ textarea {
 .tutorial {
 	width: 40vw;
 	height: 32.5vw;
+	padding-right: 2.2vw;
 }
 /* ----------------------------------------------------------- */
 .radio {
