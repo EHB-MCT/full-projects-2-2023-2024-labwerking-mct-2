@@ -120,27 +120,27 @@
 				</div>
 			</div>
 
-			<div id="fase-2" class="fase-2 none">
-				<div class="fase-2 flex space-between">
-					<div class="flex-column fase-2-part-1 space-between">
-						<div>
-							<p class="size2 regular">Naam</p>
-							<input type="text " class="text-input size3 color3-border color4-bg" required />
-						</div>
-						<div>
-							<p class="size2 regular">E-mail</p>
-							<input type="email" class="text-input size3 color3-border color4-bg" required />
-						</div>
-						<div>
-							<p class="size2 regular">Telefoonnummer</p>
-							<input type="text" class="text-input size3 color3-border color4-bg" required />
-						</div>
-						<button class="btn-primary no-underline size3" id="submit">RESERVEER</button>
-					</div>
-					<div class="fase-2-part-2 flex-column space-between">
-						<div>
-							<p class="size2 regular">Gewenste datum</p>
-							<input type="date" class="size3 text-input-2 color3-border color4-bg" required />
+
+				<div id="fase-2" class="fase-2 none space-between">
+					<form class="fase-2 flex space-between">
+						<div class="flex-column fase-2-part-1 space-between">
+							<p id="medialab-marker" class="size2 bold none">Medialab</p>
+							<p id="fablab-marker" class="size2 bold none">Fablab</p>
+							<p id="contentlab-marker" class="size2 bold none">Contentlab</p>
+							<div>
+								<p class="size2 regular">Naam</p>
+								<input type="text" name="name" class="text-input-2 size4 color3-border color4-bg" required />
+							</div>
+							<div>
+								<p class="size2 regular">E-mail</p>
+								<input type="email" name="email" class="text-input-2 size4 color3-border color4-bg" required />
+							</div>
+							<div>
+								<p class="size2 regular">Telefoonnummer</p>
+								<input type="tel" name="phone" class="text-input-2 size4 color3-border color4-bg" required />
+							</div>
+							<button class="btn-primary no-underline size3" id="submit2">RESERVEER</button>
+
 						</div>
 						<div>
 							<p class="size2 regular">Gewenste uur</p>
