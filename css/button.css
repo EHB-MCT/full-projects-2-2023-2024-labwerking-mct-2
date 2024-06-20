@@ -2,8 +2,40 @@
 	padding: 1vw 2.45vw;
 	border-radius: 12.5px;
 	align-items: center;
+	background-color: #f9a084;
+	color: #441e1d;
+	border: none;
+	font-weight: 500;
+}
+.btn-primary:hover {
+	background-color: #95d0d3;
 }
 .btn-secundary {
 	padding: 1vw 2.25vw;
 	border-radius: 15px;
+	background-color: #95d0d3;
+	color: black;
+	border: none;
+	font-weight: 500;
+}
+.btn-secundary:hover {
+	background-color: #f9a084;
+}
+@media screen and (max-width: 768px) {
+	.btn-primary {
+		padding: 3.5vw 5vw;
+		border-radius: 12.5px;
+		align-self: center;
+		background-color: #f9a084;
+		color: #441e1d;
+		border: none;
+	}
+	.btn-secundary {
+		padding: 3.5vw 5vw;
+		border-radius: 15px;
+		align-self: center;
+		background-color: #95d0d3;
+		color: black;
+		border: none;
+	}
 }

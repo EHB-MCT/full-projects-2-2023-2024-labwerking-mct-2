@@ -2,101 +2,158 @@
 	height: 50vw;
 	width: 85vw;
 }
-.none{
+.none {
 	display: none;
 }
-.display{
+.display {
 	display: flex;
 }
 /* -------------------------------------------------------------------------------------------------- */
 .fase-indicators {
 	width: 7.5vw;
 }
-
 .fase-indicator {
-	display: flex;
-	width: 1vw;
-	justify-content: space-between;
+display: flex;
+width: 1vw;
+justify-content: space-between;
 }
 .fase-1-indicator {
-	border-radius: 50%;
-	padding: 0vw 0.9vw;
-	border-style: solid;
+border-radius: 50%;
+padding: 0vw 0.9vw;
+border-style: solid;
 }
 .fase-2-indicator {
-	border-radius: 50%;
-	padding: 0vw 0.8vw;
-	border-style: solid;
+border-radius: 50%;
+padding: 0vw 0.8vw;
+border-style: solid;
 }
-/* ---------------------------------------------------------------------------------------------------- */
+
 .radio-inputs {
-	width: 35vw;
+width: 35vw;
 }
 .fase-1 {
-	height: 40vw;
-	width: 85vw;
-	
+
+height: 40vw;
+width: 85vw;
+
 }
 .fase-1-part-1 {
-	height: 30vw;
+height: 30vw;
 }
 .fase-1-part-2 {
-	height: 15vw;
-	width: 27.75vw;
+
+height: 15vw;
+width: 27.75vw;
 }
-/* ---------------------------------------------------------------------------------------------------- */
+
 .fase-2 {
-	height: 40vw;
-	width: 70vw;
+height: 40vw;
+width: 70vw;
 }
 .fase-2-part-1 {
-	height: 30vw;
+height: 30vw;
 }
 .fase-2-part-2 {
-	height: 15vw;
-	width: 27.75vw;
+height: 15vw;
+width: 27.75vw;
 }
 
 .contact-textarea {
+
 	height: 12.5vw;
 	border-width: 3px;
 	resize: none;
 	width: 47.5vw;
 	margin-top: 0.5vw;
 	border-bottom-right-radius: 7.5vw;
+	margin-bottom: 2vw;
+
 }
-#submit {
-	padding: 0.5vw 2vw;
+#submit, #submit-mobile {
+padding: 0.5vw 2vw;
 }
 .text-input {
-	height: 3vw;
-	border-width: 3px;
-	width: 33.5vw;
-	margin-top: 0.5vw;
-	border-top-right-radius: 7.5vw;
-	border-style: solid;
+height: 3vw;
+border-width: 3px;
+width: 33.5vw;
+margin-top: 0.5vw;
+border-top-right-radius: 7.5vw;
+border-style: solid;
 }
-.text-input-2{
-    height: 3vw;
-	border-width: 3px;
-	width: 20vw;
-	margin-top: 0.5vw;
-	border-top-right-radius: 7.5vw;
-	border-style: solid;
+.text-input-2 {
+
+height: 3vw;
+border-width: 3px;
+width: 20vw;
+margin-top: 0.5vw;
+border-top-right-radius: 7.5vw;
+border-style: solid;
+
 }
-}
+
 #EhB {
-	margin-bottom: 0vw;
+margin-bottom: 0vw;
 }
 
 .width {
-	width: 50vw;
+width: 50vw;
 }
-::-webkit-calendar-picker-indicator{
-    margin-right: 2vw;
-    
+::-webkit-calendar-picker-indicator {
+margin-right: 2vw;
 }
-::-webkit-time-picker-indicator{
-    margin-right: 2vw;
-    
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none
 }
+
+
+.margin-mobile {
+	margin-bottom: 2vw;
+}
+
+#footer-reservatie {
+	margin-top: 110vw;
+}
+.fc .fc-timegrid-slot {
+	height: 2.1vw;
+}
+@media screen and (max-width: 768px) {
+	.fase-indicators {
+		width: 18vw;
+		margin: 4vw 0vw;
+	}
+
+	.fase-1-indicator,
+	.fase-2-indicator {
+		height: 8vw;
+		width: 8vw;
+	}
+
+	.radio-inputs {
+		width: 68vw;
+		margin: 2vw 0vw 6vw 0vw;
+	}
+
+	.fase-1-part-1 {
+		height: 150vw;
+	}
+
+	.fase-1-part-2 {
+		width: 80vw;
+	}
+
+	.contact-textarea {
+		height: 30vw;
+		width: 80vw;
+		margin-bottom: 6vw;
+	}
+
+	.fase-1.fase-1-part-2 {
+		order: 1;
+	}
+
+	.fase-1#submit {
+		order: 2;
+	}
+}
+

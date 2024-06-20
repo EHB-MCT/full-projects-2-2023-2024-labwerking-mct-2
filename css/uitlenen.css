@@ -1,5 +1,4 @@
 .uitlenen {
-	height: 70vw;
 	width: 85vw;
 }
 .none {
@@ -14,6 +13,7 @@
 /* -------------------------------------------------------------------------------------------------- */
 .fase-indicators {
 	width: 7.5vw;
+	margin: 2vw 0vw;
 }
 
 .fase-indicator {
@@ -72,35 +72,53 @@
 }
 
 .catalog-item {
-	width: 25vw;
-	height: 7.5vw;
+	width: 35vw;
+	height: 9vw;
+	border-width: 3px;
+	border-style: solid;
+	border-top-right-radius: 4vw;
+	margin-bottom: 1vw;
+}
+.catalog-item2 {
+	width: 30.5vw;
+	height: 9vw;
 	border-width: 3px;
 	border-style: solid;
 	border-top-right-radius: 4vw;
 	margin-bottom: 1vw;
 }
 .catalog-item-image {
-	height: 7.5vw;
-	max-width: 12.5vw;
+	height: 9vw;
+	max-width: 12vw;
+	overflow: hidden;
+	align-items: center;
+	display: flex;
 }
+.catalog-item-image img {
+	height: 9vw;
+	width: auto;
+}
+
 .catalog-item-info {
-	height: 7.5;
+	height: 7;
 	padding-left: 1vw;
+	max-width: 20vw;
 }
 .item-amount {
-	width: 2vw;
+	width: 3vw;
 	border-style: solid;
 	border-width: 0.05vw;
 }
 .item-info {
 	width: 10vw;
+	margin-top: 2vw;
 	padding-bottom: 0.5vw;
 }
 .btn-item {
 	background-color: #f9a084;
 	border: none;
 	border-radius: 0.75vw;
-	padding: 0.5vw 1vw;
+	padding: 0vw 1vw;
 }
 .uitleen-textarea {
 	height: 10vw;
@@ -125,7 +143,7 @@
 	border-width: 3px;
 	border-style: solid;
 	resize: none;
-	width: 30vw;
+	width: 32vw;
 	margin-top: 7.7vw;
 	scroll-behavior: smooth;
 	padding: 1vw;
@@ -169,7 +187,7 @@
 }
 #EhB {
 	margin-bottom: 0vw;
-	transform: scale(1.5);
+	transform: scale(1);
 }
 .student {
 	width: 5vw;

@@ -2,11 +2,10 @@
 
 <html lang="nl">
 	<head>
+		<link rel="icon" type="image/png" href="./images/favicon.png" />
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="js/index.js"></script>
-		<link rel="stylesheet" href="https://use.typekit.net/zbr4thx.css" />
-		<link rel="stylesheet" href="https://use.typekit.net/ytz2sug.css" />
+        <script src="js/nav.js"></script>
 		<link href="css/reset.css" rel="stylesheet" />
 		
 		<link rel="stylesheet" href="css/layout.css" />
@@ -20,69 +19,105 @@
 	</head>
 	<body>
 		<!-- navigation ------------------------------------------------------------------------------------------------------------------------ -->
-		<img src="images/overlay.jpg" alt="" class="grid" />
-		<nav class="navigation color1-bg">
+		<img src="images/grid_mobile.png" alt="" class="grid" />
+		<nav class="navigation color1-bg pc">
 			<a href="index.html"><img class="logo" src="images/logo.webp" alt="" /></a>
 			<div class="navigation-items">
-				<a class="navigation-item size3 font1 bold color4 no-underline" href="fablab.html">FABLAB</a>
-				<a class="navigation-item size3 font1 bold color4 no-underline" href="medialab.html">MEDIALAB</a>
-				<a class="navigation-item size3 font1 bold color4 no-underline" href="studio.html">CONTENTLAB</a>
+				<a class="navigation-item size3  bold color4 no-underline" href="fablab.html">FABLAB</a>
+				<a class="navigation-item size3  bold color4 no-underline" href="medialab.html">MEDIALAB</a>
+				<a class="navigation-item size3  bold color4 no-underline" href="studio.html">CONTENTLAB</a>
 				<div class="flex-column">
-					<a class="navigation-item size3 font1 thin color4 no-underline margin-t" href="reservatie.html">RESERVEREN</a>
+					<a class="navigation-item size3  thin color4 no-underline margin-t" href="reservatie.html">RESERVEREN</a>
 					<img src="images/nav-underline.webp" alt="" class="nav-underline" />
 				</div>
 				<div class="flex-column">
-					<a class="navigation-item size3 font1 thin color4 no-underline margin-t" href="uitlenen.html">UITLENEN</a>
+					<a class="navigation-item size3  thin color4 no-underline margin-t" href="uitlenen.html">UITLENEN</a>
 					<img src="images/nav-underline2.webp" alt="" class="nav-underline" />
 				</div>
 			</div>
 		</nav>
-		<div class="navigation navigation-secundair nav-bg">
+		<div class="navigation navigation-secundair nav-bg pc">
 			<div class="navigation-items-secundair">
-				<a class="navigation-item2 size8 color1 font1 no-underline" href="activiteiten.html">ACTIVITEITEN</a>
-				<a class="navigation-item2 size8 color1 font1 no-underline" href="praktische-info.html">PRAKTISCHE INFO</a>
-				<a class="navigation-item2 size8 color1 font1 no-underline" href="blog.html">BLOG</a>
-				<a class="navigation-item2 size8 color1 font1 no-underline" href="contact.html">CONTACT</a>
+				<a class="navigation-item2 size8 color1  no-underline" href="activiteiten.html">ACTIVITEITEN</a>
+				<a class="navigation-item2 size8 color1  no-underline" href="praktische-info.html">PRAKTISCHE INFO</a>
+				<a class="navigation-item2 size8 color1  no-underline" href="blog.html">BLOG</a>
+				<a class="navigation-item2 size8 color1  no-underline" href="contact.html">CONTACT</a>
 			</div>
+		</div>
+		<nav id="navigation" class="navigation color1-bg mobile visible">
+			<a href="index.html"><img class="logo" src="images/logo_mobile.webp" alt="" /></a>
+			<button id="icon" class="hamburger">
+				<i class="fa fa-bars color4 hamburger-menu-icon visible" id="bars"></i>
+				<img src="images/times-solid.svg" alt="" class="color1-bg hamburger-menu-icon2 hidden" id="cross" />
+			</button>
+		</nav>
+		<div id="menu" class="color4 hidden flex-column color1-bg menu">
+			<ul class="menu-items flex-column space-evenly padding">
+				<li class="non-active"><a class="navigation-item  bold color4 no-underline" href="index.html">HOME</a></li>
+				<li class="active"><a class="navigation-item  bold color4 no-underline" href="fablab.html">FABLAB</a></li>
+				<li class="non-active"><a class="navigation-item  bold color4 no-underline" href="medialab.html">MEDIALAB</a></li>
+				<li class="non-active"><a class="navigation-item  bold color4 no-underline" href="studio.html">CONTENTLAB</a></li>
+				<li class="flex non-active">
+					<div class="flex-column">
+						<a class="navigation-item3  thin color4 no-underline margin-t" href="reservatie.html">RESERVEREN</a>
+						<img src="images/nav-underline.webp" alt="" class="nav-underline" />
+					</div>
+				</li>
+				<li class="flex non-active">
+					<div class="flex-column">
+						<a class="navigation-item3  thin color4 no-underline margin-t" href="uitlenen.html">UITLENEN</a>
+						<img src="images/nav-underline2.webp" alt="" class="nav-underline" />
+					</div>
+				</li>
+				<li class="non-active"><a class="navigation-item2 color3  no-underline" href="activiteiten.html">ACTIVITEITEN</a></li>
+				<li class="non-active"><a class="navigation-item2 color3  no-underline" href="praktische-info.html">PRAKTISCHE INFO</a></li>
+				<li class="non-active"><a class="navigation-item2 color3  no-underline" href="blog.html">BLOG</a></li>
+				<li class="non-active"><a class="navigation-item2 color3  no-underline" href="contact.html">CONTACT</a></li>
+			</ul>
 		</div>
         <!-- -------------------------------------------------------------------------------------------------------- -->
-        <img src="images/fablab-image1.webp" alt="" class="lab-titel-image"/>
+        <img src="images/fablab-image1.webp" alt="" class="lab-titel-image pc"/>
 		
-		<div class="flex-column space-between lab-titel">
+		<div class="flex-column flex-responsive lab-titel">
                 <div class="flex ">
-                    <h1 class="font1 interlinie bold color1">Fablab</h1>
+                    <h1 class=" interlinie bold color1 margin-bottom pc">FABLAB</h1>
+					<h1 class="machines interlinie bold size6 color1 mobile margin-bottom">FAB<br>LAB</h1>
                     <img src="images/fablab-GE1.webp" alt="" class="lab-GE1">
                 </div>
-                <div class="lab-titel-info flex-column space-between">
-                    <p class="font1 size3">
-                        Welkom bij het Fablab van Lab.Brussel, de ultieme creatieve ruimte waar ideeën tot leven komen! In het Fablab draait alles om het <span class="bold">creëren en innoveren</span>. Hier heb je de vrijheid om je concepten om te zetten in <span class="bold">tastbare objecten</span> .
+				<img src="images/fablab-image1.webp" alt="" class="lab-titel-image mobile machines margin-bottom"/>
+                <div class="lab-titel-info flex-column">
+                    <p class="size3 margin-bottom">
+                       <span class="pc">Welkom bij het Fablab van Lab.Bxl, de ultieme creatieve ruimte waar ideeën tot leven komen!</span> In het Fablab draait alles om het <span class="bold">creëren en innoveren</span>. Hier heb je de vrijheid om je concepten om te zetten in <span class="bold">tastbare objecten</span> .
                     </p>
-                    <a href="reservatie.html" class="btn-primary color5-border color6-bg color5 no-underline font1 size3">RESERVEER DIT LAB</a>
+                    <a href="reservatie.html" class="btn-primary no-underline size2">RESERVEER DIT LAB</a>
                 </div>
 			</div>
 		</div>
-        <div class="flex machinepark">
+        <div class="flex machinepark pc">
             <a href="lasercutter.html" class="no-underline">
                 <div class="machine ">
                     <img src="images/fablab_vacuumvormer.webp" alt="">
-                    <div class="flex-column space-between machine-info">
-                        <p class="font1 size1 bold">Vacuumvormer</p>
-                        <p class="font1 size3">Met onze Desktop Vacuum Former krijght u de
+
+                    <div class="flex-column machine-info">
+                        <p class=" size1 bold">Vacuumvormer</p>
+                        <p class=" size3">Met onze Desktop Vacuum Former krijgt u de
                             mogelijkheid om <span class="bold">mallen</span> of poedervormen te
-                            <span class="bold">maken</span> door middel van dieptrekken.</p>
+                            <span class="bold">maken</span> door middel van vacuum trekken.</p>
                     </div>
                 </div>
             </a>
-           
 
             <a href="lasercutter.html" class="no-underline">
                 <div class="machine ">
                     <img src="images/fablab_3dprinter.webp" alt="">
-                    <div class="flex-column space-between machine-info">
-                        <p class="font1 size1 bold">3D printen</p>
-                        <p class="font1 size3"><span class="bold">Print driedimensionale objecten</span> door lagen van
-                            kunststoffeno tebouwen via een di itaal
-                            wplan te maken op verscheidene programma's</p>
+
+                    <div class="flex-column machine-info">
+                        <p class=" size1 bold">3D printen</p>
+                        <p class=" size3"><span class="bold">Print driedimensionale objecten</span> door lagen van
+                            kunststoffen op te bouwen via een digitaal
+                            bouwwplan te maken op verscheidene programma's</p>
+
+                            kunststoffen op te bouwen via een digitaal bouwplan te maken op verscheidene programma's</p>
                     </div>
                  
                 </div>
@@ -92,9 +127,10 @@
             <a href="lasercutter.html" class="no-underline">
                 <div class="machine ">
                     <img src="images/fablab_lasercutter.webp" alt="">
-                    <div class="flex-column space-between machine-info">
-                        <p class="font1 size1 bold">Lasercutter</p>
-                        <p class="font1 size3"><span class="bold">Snijd en graveer</span> zeer nauwkeurig in: hout, plexi-glas, leer, karton,... met behulp van twee perfect uitgeruste lasercutters.</p>
+                    <div class="flex-column machine-info">
+                        <p class=" size1 bold">Lasercutter</p>
+                        <p class=" size3"><span class="bold">Snijd en graveer</span> zeer nauwkeurig in: hout, plexi-glas, leer, karton,... met behulp van twee perfect uitgeruste lasercutters.</p>
+
                     </div>
                 </div>
             </a>
@@ -104,9 +140,11 @@
                 <div class="machine ">
                     <img src="images/fablab_snijplotter.webp" alt="">
                     
-                    <div class="flex-column space-between machine-info">
-                        <p class="font1 size1 bold">Snijplotter</p>
-                        <p class="font1 size3">Met de snijplotter <span class="bold">snij</span> je onder andere stickermateriaal, papier en <span class="bold">allerlei transfermaterialen</span>  op basis van een digitaal ontwerp.</p>
+
+                    <div class="flex-column machine-info">
+                        <p class=" size1 bold">Snijplotter</p>
+                        <p class=" size3">Met de snijplotter <span class="bold">snij</span> je onder andere stickermateriaal, papier en <span class="bold">allerlei transfermaterialen</span>  op basis van een digitaal ontwerp.</p>
+
     
                     </div>
                    
@@ -117,9 +155,11 @@
             <a href="lasercutter.html" class="no-underline">
                 <div class="machine ">
                     <img src="images/fablab_textielpres.webp" alt="">
-                    <div class="flex-column space-between machine-info">
-                        <p class="font1 size1 bold">Textielpres</p>
-                        <p class="font1 size3">Maak eenvoudig en profesioneel
+
+                    <div class="flex-column machine-info">
+                        <p class=" size1 bold">Textielpress</p>
+                        <p class=" size3">Maak eenvoudig en profesioneel
+
                             <span class="bold">warmteoverdrachtsdrukwerk</span> met de Cricut
                             Autopress</p>
                     </div>
@@ -128,62 +168,140 @@
             </a>
             
          </div>
+
+
+		 <div class="flex-responsive flex space-between mobile margin-t padding">
+			<h2 class="size1 bold">Machinepark</h2> </div>
+		 <section class="carousel padding mobile machine-carousel" aria-label="Gallery">
+			<ol class="carousel__viewport">
+				<li id="carousel__slide1" tabindex="0" class="carousel__slide">
+					<a href="#"><img src="images/fablab_lasercutter.webp" alt=""></a>
+					<p class="size3 footer-item color2 bold machines">Lasercutter</p>
+					<p class="size8 margin-bottom">
+						<span class="bold">Snijd en graveer</span> zeer nauwkeurig in: hout, plexi-glas, leer, karton,... met behulp van twee perfect uitgeruste lasercutters.</p>
+					<div class="blog-www flex space-between">
+						<h1 class="size1 color2 margin- bold">...</h1>
+					</div>
+						<div class="carousel__snapper">
+							<a href="#carousel__slide3" class="carousel__prev">Go to last slide</a>
+							<a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+	
+					</div>
+				</li>
+				<li id="carousel__slide2" tabindex="0" class="carousel__slide">
+					<a href="#"><img src="images/fablab_3dprinter.webp" alt=""></a>
+					<p class="size3 footer-item color2 bold machines">3D printer</p>
+					<p class="size8 margin-bottom"><span class="bold">Print driedimensionale objecten</span> door lagen van
+
+						kunststoffen op te bouwen via een digitaal bouwplan te maken.</p>
+					<div class="blog-www flex space-between">
+						<h1 class="color2 margin- bold">...</h1>
+					</div>
+					<div class="carousel__snapper"></div>
+					<a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+					<a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+				</li>
+				<li id="carousel__slide3" tabindex="0" class="carousel__slide">
+					<a href="#"><img src="images/fablab_vacuumvormer.webp" alt=""></a>
+					<p class="size3 footer-item color2 bold machines">Vaccuumformer</p>
+					<p class="size8 margin-bottom">
+						Met onze Desktop Vacuum Former krijght u de
+
+                            mogelijkheid om <span class="bold">mallen</span> of poedervormen te
+                            <span class="bold">maken</span> door middel van dieptrekken.</p>
+					<div class="blog-www flex space-between">
+						<h1 class="color2 margin- bold">...</h1>
+					</div>
+					</div>
+					<div class="carousel__snapper"></div>
+					<a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+					<a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+				</li>
+			</ol>
+		</section>
+
          <!-- ---------------------------------------------------------------------------------------- -->
          <div class="flex space-between margin-b">
             <div class="flex-column space-evenly lab-info">
 
                 <div class="flex-column space-between lab-info-height">
                    
-                        <h2 class="font1 size1 bold">Webshop</h2>
+                        <h2 class=" size1 bold">Webshop</h2>
                         
-                    <p class="font1 size3">Wilt u gebruik maken van onze labs? U kunt <span class="bold">materialen aankopen</span> 
+                    <p class=" size3">Wilt u gebruik maken van onze labs? U kunt <span class="bold">materialen aankopen</span> 
                         via onze webshop. Voor elke machine is er standaard materiaal
                         beschikbaar dat hier eenvoudig besteld kan worden.</p>
-                    <a href="uitlenen.html" class="btn-secundary color5-border color3-bg color5 no-underline font1 size3">NAAR WEBSHOP</a>
+                    <a href="uitlenen.html" class="btn-secundary  no-underline  size3">NAAR WEBSHOP</a>
                 </div>
                 <div class="flex-column space-between lab-info-height">
 
-                    <h2 class="font1 size1 bold">Praktische info</h2>
-                    <p class="font1 size3">Lab. Brussel is 3 dagen in de week open. Het lab bevindt zich in de gebouwen van Erasmus Hogeschool Brussel campus Kaai en is gemakkelijk bereikbaar met het openbaarvervoer. De labs zijn voor een schappelijktarief bruikbaar</p>
-                    <a href="#" class="btn-secundary color5-border color3-bg color5 no-underline font1 size3">MEER INFO</a>
+                    <h2 class=" size1 bold">Praktische info</h2>
+                    <p class=" size3">Lab.Bxl is 3 dagen in de week open. Het lab bevindt zich in de gebouwen van <span class="bold">Erasmushogeschool Brussel</span> campus Kaai en is gemakkelijk bereikbaar met het openbaar vervoer. De labs zijn voor een schappelijk tarief bruikbaar</p>
+                    <a href="#" class="btn-secundary  no-underline  size3">MEER INFO</a>
 
                 </div>
             </div>
-            <div class="bottom-image" >
+            <div class="bottom-image pc" >
                 <img src="images/fablab_image2.webp" alt="" class="bottom-image">
             </div>
            
           </div>
-          <!-- ---------------------------------------------------------------------------------- -->
-		<div class="footer flex padding color1-bg">
+       		<div class="footer flex-responsive padding pc color1-bg">
 			<div class="footer-items flex-column">
-				<p class="font1 size3 footer-item color2">onze labs</p>
-				<a class="font1 size4 footer-item color4 no-underline" href="medialab.html">Medialab</a>
-				<a class="font1 size4 footer-item color4 no-underline" href="fablab.html">Fablab</a>
-				<a class="font1 size4 footer-item color4 no-underline" href="studio.html">Contentlab</a>
+				<p class="size3 footer-item color2">onze labs</p>
+				<a class="size4 footer-item color4 no-underline" href="medialab.html">Medialab</a>
+				<a class="size4 footer-item color4 no-underline" href="fablab.html">Fablab</a>
+				<a class="size4 footer-item color4 no-underline" href="studio.html">Contentlab</a>
 			</div>
 			<div class="footer-items flex-column">
-				<p class="font1 size3 footer-item color2">ontdek</p>
-				<a class="font1 size4 footer-item color4 no-underline" href="reservatie.html">reserveren</a>
-				<a class="font1 size4 footer-item color4 no-underline" href="uitlenen.html">uitlenen</a>
+				<p class="size3 footer-item color2">ontdek</p>
+				<a class="size4 footer-item color4 no-underline" href="reservatie.html">reserveren</a>
+				<a class="size4 footer-item color4 no-underline" href="uitlenen.html">uitlenen</a>
 			</div>
 			<div class="footer-items flex-column">
-				<p class="font1 size3 footer-item color1">_</p>
-				<a class="font1 size4 footer-item color4 no-underline" href="activiteiten.html">activiteiten</a>
-				<a class="font1 size4 footer-item color4 no-underline" href="blog.html">blog</a>
+				<p class="size3 footer-item color1">_</p>
+				<a class="size4 footer-item color4 no-underline" href="activiteiten.html">activiteiten</a>
+				<a class="size4 footer-item color4 no-underline" href="blog.html">blog</a>
 			</div>
 			<div class="footer-items flex-column">
-				<p class="font1 size3 footer-item color1">_</p>
-				<a class="font1 size4 footer-item color4 no-underline" href="praktische-info.html">praktische info</a>
-				<a class="font1 size4 footer-item color4 no-underline" href="contact.html">contact</a>
+				<p class="size3 footer-item color1">_</p>
+				<a class="size4 footer-item color4 no-underline" href="praktische-info.html">praktische info</a>
+				<a class="size4 footer-item color4 no-underline" href="contact.html">contact</a>
 			</div>
 			<div class="footer-items flex-column">
-				<p class="font1 size3 footer-item color2">socials</p>
+				<p class="size3 footer-item color2">socials</p>
 				<div class="flex space-between footer-socials">
-					<a href="#"><img src="images/icon_instagram.webp" alt="" /></a>
+					<a href="#"><img src="images/icon_instagram.webp" alt="" class="footer-icon"></a>
 					<a href="https://youtube.com"><img src="images/icon_youtube.webp" class="footer-icon" alt="" /></a>
 				</div>
 			</div>
 		</div>
+		<!--mobile footer-->
+		<div class="footer flex-responsive padding mobile space-between color1-bg">
+			<div class="flex space-between footer-socials">
+				<a href="#"><img src="images/icon_instagram.webp" alt="" class="footer-icon" /></a>
+				<a href="https://youtube.com"><img src="images/icon_youtube.webp" class="footer-icon" alt="" /></a>
+			</div>
+
+			<div class="footer-items flex-column">
+				<p class="size3 footer-item color2">Onze labs</p>
+				<a class="size4 footer-item color4 no-underline" href="medialab.html">Medialab</a>
+				<a class="size4 footer-item color4 no-underline" href="fablab.html">Fablab</a>
+				<a class="size4 footer-item color4 no-underline" href="studio.html">Contentlab</a>
+			</div>
+			<div class="footer-items flex-column">
+				<p class="size3 footer-item color2">Ontdek</p>
+				<a class="size4 footer-item color4 no-underline" href="reservatie.html">reserveren</a>
+				<a class="size4 footer-item color4 no-underline" href="uitlenen.html">uitlenen</a>
+				<a class="size4 footer-item color4 no-underline" href="activiteiten.html">activiteiten</a>
+				<a class="size4 footer-item color4 no-underline" href="blog.html">blog</a>
+				<a class="size4 footer-item color4 no-underline" href="praktische-info.html">praktische info</a>
+				<a class="size4 footer-item color4 no-underline" href="contact.html">contact</a>
+			</div>
+			<div class="footer-items">
+				<p class="size4 partner footer-item color4">In samenwerking met Erasmushogeschool Brussel</p>
+			</div>
+		</div>
+
 	</body>
 </html>
