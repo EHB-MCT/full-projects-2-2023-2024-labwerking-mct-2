@@ -310,10 +310,9 @@ function sendInfoSecondPage() {
 				alert("Vul een geldige datum in (DD-MM-JJJJ).");
 				return;
 			}
-
 			basket.forEach(function (Item) {
+				let newStock = 0;
 				const data = {
-					id: `${Item._id}`,
 					Naam: `${naam}`,
 					UitSTock: Item._amount,
 					StartDatum: `${startDatum}`,
@@ -321,6 +320,8 @@ function sendInfoSecondPage() {
 					EHBStudent: ehbStudent,
 					Email: `${email}`,
 					Telefoonnummer: teleNummer,
+					ProjectInformatie: `${projectText}`,
+					ItemID: `${Item._id}`,
 				};
 				fetch("https://labbxl.pockethost.io/api/collections/Uitlenen/records", {
 					method: "POST",
@@ -334,7 +335,9 @@ function sendInfoSecondPage() {
 					})
 					.then(function (data) {});
 			});
-			alert("FUCK YOU BITCH");
+
+			alert("Uw items zijn successvol gereserveerd");
+			window.location.href = "javascript:history.back()";
 		});
 	});
 }
