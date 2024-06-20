@@ -65,7 +65,8 @@
 	height: 30vw;
 }
 .fase-2-part-2 {
-	height: 23.25vw;
+	height: 20.75vw;
+	padding-top: 3.5vw;
 }
 
 .contact-textarea {
@@ -114,11 +115,11 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 #calendar {
 	width: 35vw;
-	height: 23.5vw;
+	height: 24.25vw;
 }
 
 .loading {
-	position: absolute;
+	position: fixed;
 	z-index: 15;
 	height: auto;
 	width: auto;
@@ -132,8 +133,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .spinner-border {
 	width: 5vw;
 	height: 5vw;
-	border: 3px solid #ccc;
-	border-top: 3px solid #333;
+	border: 5px solid #95d0d3;
+	border-top: 5px solid #ff6035;
 	border-radius: 50%;
 	animation: spin 1s linear infinite;
 }
