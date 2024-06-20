@@ -80,74 +80,86 @@
 		<img src="images/title-decoration.webp" alt="" class="title-image-decoration" />
 		<h1 class="sizeActiviteiten interlinie bold color1">RESERVEREN</h1>
 	</div>
-	<div class="contactformulier padding flex space-between">
-		<form class="reserveer flex-column space-between" id="form">
+	<div class="contactformulier padding flex-column space-between">
+		<form class="reserveer flex-column space-between">
+			<div id="loading-circle" class="loading none color4-bg color1-border">
+				<div class="spinner-border text-primary" role="status">
+					<span class="sr-only">Loading...</span>
+				</div>
+			</div>
 			<h2 class="color2 size5 bold">Projectgegevens</h2>
 			<div class="fase-indicators flex space-between">
 				<button class="fase-1-indicator color3-bg color3-border color4 size2" disabled>1</button>
 				<button class="fase-2-indicator color4-bg color3 color3-border size2" disabled>2</button>
 			</div>
 
-			
-				<div id="fase-1" class="fase-1 display flex space-between">
-					<form class="flex fase-1 space-between">
-						<div class="fase-1-part-1 flex-column">
-							<p class="size2 regular">Welk lab wilt u reserveren?</p>
-							<div class="flex space-between radio-inputs">
-								<div class="flex space-between radio-text">
-									<input type="radio" name="lab" class="radio" value="medialab" required />
-									<h2 class="size2">Medialab</h2>
-								</div>
-								<div class="flex space-between radio-text">
-									<input type="radio" name="lab" class="radio" value="fablab" required />
-									<h2 class="size2">Fablab</h2>
-								</div>
-								<div class="flex space-between radio-text">
-									<input type="radio" name="lab" class="radio" value="contentlab" required />
-									<h2 class="size2">Contentlab</h2>
-								</div>
+			<div id="fase-1" class="fase-1 display flex space-between">
+				<form class="flex fase-1 space-between">
+					<div class="fase-1-part-1 flex-column">
+						<p class="size2 regular">Welk lab wilt u reserveren?</p>
+						<div class="flex space-between radio-inputs">
+							<div class="flex space-between radio-text">
+								<input type="radio" name="lab" class="radio" value="medialab" required />
+								<h2 class="size2">Medialab</h2>
 							</div>
-							<p class="size2 regular">Korte beschrijving van uw project</p>
-							<textarea id="contact-textarea" class="contact-textarea color3-border color4-bg" required></textarea>
-							<button class="btn-primary no-underline size3" id="submit1">NAAR PERSOONSGEGEVENS</button>
+							<div class="flex space-between radio-text">
+								<input type="radio" name="lab" class="radio" value="fablab" required />
+								<h2 class="size2">Fablab</h2>
+							</div>
+							<div class="flex space-between radio-text">
+								<input type="radio" name="lab" class="radio" value="contentlab" required />
+								<h2 class="size2">Contentlab</h2>
+							</div>
 						</div>
-						<div class="fase-1-part-2 flex-column space-between">
-							<p class="size2 regular">Tarief</p>
-							<p class="size3"><span class="bold">- dagpas:</span> 12 euro per persoon</p>
-							<p class="size3"><span class="bold">- 10-beurtenkaart:</span> 100 euro per persoon</p>
-							<p class="size3">Prijzen zijn exclusief 21% btw en gelden voor individueel gebruik. Groepstarieven zijn beschikbaar op aanvraag</p>
-						</div>
-					</form>
-				</div>
+						<p class="size2 regular">Korte beschrijving van uw project</p>
+						<textarea id="contact-textarea" class="contact-textarea color3-border color4-bg" required></textarea>
+						<button class="btn-primary no-underline size3" id="submit1">NAAR PERSOONSGEGEVENS</button>
+					</div>
+					<div class="fase-1-part-2 flex-column space-between">
+						<p class="size2 regular">Tarief</p>
+						<p class="size3"><span class="bold">- dagpas:</span> 12 euro per persoon</p>
+						<p class="size3"><span class="bold">- 10-beurtenkaart:</span> 100 euro per persoon</p>
+						<p class="size3">Prijzen zijn exclusief 21% btw en gelden voor individueel gebruik. Groepstarieven zijn beschikbaar op aanvraag</p>
+					</div>
+				</form>
+			</div>
 
-
-				<div id="fase-2" class="fase-2 none space-between">
-					<form class="fase-2 flex space-between">
-						<div class="flex-column fase-2-part-1 space-between">
-							<p id="medialab-marker" class="size2 bold none">Medialab</p>
-							<p id="fablab-marker" class="size2 bold none">Fablab</p>
-							<p id="contentlab-marker" class="size2 bold none">Contentlab</p>
-							<div>
-								<p class="size2 regular">Naam</p>
-								<input type="text" name="name" class="text-input-2 size4 color3-border color4-bg" required />
-							</div>
-							<div>
-								<p class="size2 regular">E-mail</p>
-								<input type="email" name="email" class="text-input-2 size4 color3-border color4-bg" required />
-							</div>
-							<div>
-								<p class="size2 regular">Telefoonnummer</p>
-								<input type="tel" name="phone" class="text-input-2 size4 color3-border color4-bg" required />
-							</div>
-							<button class="btn-primary no-underline size3" id="submit2">RESERVEER</button>
-
+			<div id="fase-2" class="fase-2 none space-between">
+				<form class="fase-2 flex space-between">
+					<div class="flex-column fase-2-part-1 space-between">
+						<p id="medialab-marker" class="size2 bold none">Medialab</p>
+						<p id="fablab-marker" class="size2 bold none">Fablab</p>
+						<p id="contentlab-marker" class="size2 bold none">Contentlab</p>
+						<div>
+							<p class="size2 regular">Naam</p>
+							<input type="text" name="name" class="text-input-2 size4 color3-border color4-bg" required />
 						</div>
 						<div>
-							<p class="size2 regular">Gewenste uur</p>
-							<input type="time" step="3600000" class="size3 text-input-2 color3-border color4-bg" required />
+							<p class="size2 regular">E-mail</p>
+							<input type="email" name="email" class="text-input-2 size4 color3-border color4-bg" required />
+						</div>
+						<div>
+							<p class="size2 regular">Telefoonnummer</p>
+							<input type="tel" name="phone" class="text-input-2 size4 color3-border color4-bg" required />
+						</div>
+						<button class="btn-primary no-underline size3" id="submit2">RESERVEER</button>
+					</div>
+					<div class="fase-2-part-2 flex-column space-between">
+						<div>
+							<p class="size2 regular">Gewenste datum</p>
+							<input type="date" name="date" class="size3 text-input-2 color3-border color4-bg" required />
+						</div>
+						<div>
+							<p class="size2 regular">Begin uur</p>
+							<input type="time" name="time1" step="36000000" min="9:00" class="size3 text-input-2 color3-border color4-bg" required />
+						</div>
+						<div>
+							<p class="size2 regular">Eind uur</p>
+							<input type="time" name="time2" step="36000000" class="size3 text-input-2 color3-border color4-bg" required />
 						</div>
 					</div>
-				</div>
+					<div id="calendar"></div>
+				</form>
 			</div>
 		</form>
 	</div>
