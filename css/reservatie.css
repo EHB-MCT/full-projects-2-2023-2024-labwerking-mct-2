@@ -1,5 +1,5 @@
 .reserveer {
-	height: 45vw;
+	height: 50vw;
 	width: 85vw;
 }
 .contactformulier {
@@ -41,7 +41,7 @@
 	margin-top: 0.5vw;
 }
 .fase-1 {
-	height: 45vw;
+	height: 40vw;
 	width: 85vw;
 }
 .fase-1-part-1 {
@@ -52,10 +52,7 @@
 	width: 27.75vw;
 }
 .contact-textarea {
-	margin-bottom: 2vw;
-	margin-top: 0.5vw;
 }
-
 /* ---------------------------------------------------------------------------------------------------- */
 .fase-2 {
 	height: 40vw;
@@ -76,6 +73,7 @@
 	width: 47.5vw;
 	margin-top: 0.5vw;
 	border-bottom-right-radius: 7.5vw;
+	margin-bottom: 2vw;
 }
 #submit {
 	padding: 0.5vw 2vw;
@@ -90,15 +88,12 @@
 }
 .text-input-2 {
 	height: 3vw;
-.text-input-2 {
-	height: 3vw;
 	border-width: 3px;
 	width: 20vw;
 	margin-top: 0.5vw;
 	border-top-right-radius: 7.5vw;
 	border-style: solid;
 }
-
 
 #EhB {
 	margin-bottom: 0vw;
@@ -110,6 +105,7 @@
 ::-webkit-calendar-picker-indicator {
 	margin-right: 2vw;
 }
+
 input[type="time"]::-webkit-calendar-picker-indicator {
 	background: none;
 }
@@ -175,4 +171,46 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 	font-family: "omnes-pro", sans-serif;
 	font-style: normal;
 	font-size: 1vw;
+}
+.fc .fc-timegrid-slot {
+	height: 2.1vw;
+}
+@media screen and (max-width: 768px) {
+	.fase-indicators {
+		width: 18vw;
+		margin: 4vw 0vw;
+	}
+
+	.fase-1-indicator,
+	.fase-2-indicator {
+		height: 8vw;
+		width: 8vw;
+	}
+
+	.radio-inputs {
+		width: 68vw;
+		margin: 2vw 0vw 6vw 0vw;
+	}
+
+	.fase-1-part-1 {
+		height: 150vw;
+	}
+
+	.fase-1-part-2 {
+		width: 80vw;
+	}
+
+	.contact-textarea {
+		height: 30vw;
+		width: 80vw;
+		margin-bottom: 6vw;
+	}
+
+	.fase-1.fase-1-part-2 {
+		order: 1;
+	}
+
+	.fase-1#submit {
+		order: 2;
+	}
 }

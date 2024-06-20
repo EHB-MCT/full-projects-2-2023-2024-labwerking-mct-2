@@ -99,10 +99,11 @@ h1 {
 }
 .interlinie {
 	line-height: 10vw;
-	padding-top: 2.75vw;
+	padding-bottom: 2.75vw;
 }
 .interlinie2 {
 	line-height: 7.5vw;
+	padding-bottom: 2.75vw;
 }
 
 .align-right {
@@ -122,9 +123,9 @@ h1 {
 	.size4 {
 		font-size: 4vw;
 	}
-.size5 {
-	font-size: 6vw
-}
+	.size5 {
+		font-size: 6vw;
+	}
 
 	.size6 {
 		font-size: 22.5vw;
@@ -141,9 +142,9 @@ h1 {
 	.interlinie {
 		line-height: 16.5vw;
 	}
-	
+
 	.sizeContact {
-		font-size: 15vw ;
+		font-size: 15vw;
 		padding: 13.2vw 0vw 6.8vw 0vw;
 	}
 
