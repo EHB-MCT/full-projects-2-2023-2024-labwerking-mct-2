@@ -4,8 +4,8 @@ $name = $_POST['name'];
 $email= $_POST['email'];
 $message= $_POST['message'];
  
-$to = "Ghekiereseppe@gmail.com";
-$subject = "This is the subject line";
+$to = "medialab@ehb.be";
+$subject = "Deze persoon contacteer u via de website";
  
 // The following text will be sent
 // Name = user entered name
