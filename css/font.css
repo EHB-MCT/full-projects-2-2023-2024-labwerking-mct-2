@@ -111,6 +111,7 @@ h1 {
 
 .align-right {
 	text-align: right;
+	margin-left: 20vw;
 }
 /* _____________________________________________________________________________ */
 @media screen and (max-width: 768px) {
