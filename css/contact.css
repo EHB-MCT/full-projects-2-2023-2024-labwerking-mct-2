@@ -72,17 +72,44 @@ input {
 	width: 40vw;
 	height: 16vw;
 }
+.contact-titel {
+	padding-bottom: 0.3vw;
+}
+.contact-down {
+	margin-bottom: 3vw;
+}
 @media screen and (max-width: 768px) {
 	.info {
 		height: 40vw;
 	}
 	.contact-bericht {
-		height: 50vw;
 		width: 85vw;
-		padding-bottom: 50vw;
+		padding-bottom: 65vw;
 		margin-bottom: 20vw;
 	}
 	.contact-down {
-		margin-top: 50vw;
+		margin-bottom: -10vw;
+	}
+	.contact-down2 {
+		margin-top: 7.5vw;
+	}
+	.contact-titel {
+		padding-bottom: 1.8vw;
+	}
+	.contact-up {
+		justify-content: end;
+		margin-top: 87vw;
+	}
+	.contact-bericht {
+		border-top-right-radius: 0vw;
+
+		border-bottom-right-radius: 14vw;
+	}
+	.contact-btn {
+		text-align: right;
+		padding-left: 32vw;
+		width: 53vw;
+		margin-left: 48vw;
+		margin-top: -10vw;
 	}
 }

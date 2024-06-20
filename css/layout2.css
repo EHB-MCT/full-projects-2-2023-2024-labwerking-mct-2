@@ -281,7 +281,8 @@ textarea {
 		margin-left: 3vw;
 	}
 	.contact-info {
-		height: 100vw;
+		height: auto;
+		margin-bottom: 0vw;
 	}
 	.accordion {
 		cursor: pointer;
@@ -348,5 +349,13 @@ textarea {
 
 	#footer-praktisch {
 		margin-top: 175vw;
+	}
+
+	.title-image-decoration {
+		position: absolute;
+		z-index: -1;
+		margin-left: -5vw;
+		margin-top: 3vw;
+		width: 29vw;
 	}
 }
