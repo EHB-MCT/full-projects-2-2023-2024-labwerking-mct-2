@@ -1,5 +1,4 @@
 .uitlenen {
-	height: 70vw;
 	width: 85vw;
 }
 .none {
@@ -9,12 +8,12 @@
 	display: flex;
 }
 .uitleendienst {
-	margin-bottom: 5vw;
-	height: 47.5vw;
+	margin-bottom: 2.5vw;
 }
 /* -------------------------------------------------------------------------------------------------- */
 .fase-indicators {
 	width: 7.5vw;
+	margin: 2vw 0vw;
 }
 
 .fase-indicator {

@@ -17,25 +17,32 @@
 .space-evenly {
 	justify-content: space-evenly;
 }
+.padding {
+	padding-left: 8vw;
+	padding-right: 8vw;
+}
 
 .title-image-decoration {
 	position: absolute;
 	z-index: -1;
 	margin-left: -7.5vw;
-	margin-top: 0vw;
+	margin-top: -2.5vw;
 	width: 15vw;
 }
 .title {
-	margin-bottom: 5vw;
+	margin-bottom: 2.5vw;
+	margin-top: 2.5vw;
 }
+/*  */
 .info {
 	width: 34vw;
-	height: 40vw;
+	height: 25vw;
 }
 .info-timetable {
 	width: 34vw;
 	height: 22.5vw;
 }
+
 .info-height {
 	width: 34vw;
 	height: 7.5vw;
@@ -45,10 +52,6 @@
 }
 .info1 {
 	height: 13.5vw;
-}
-.padding {
-	padding-left: 8vw;
-	padding-right: 8vw;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -69,14 +72,14 @@
 }
 
 .map {
-	width: 100%;
+	width: 30vw;
+	height: 15vw;
 }
 .timetable {
 	width: 100%;
 }
 .praktische-info {
-	height: 40vw;
-	margin-bottom: 10vw;
+	height: 35vw;
 }
 .contact-info {
 	height: 20vw;
@@ -111,8 +114,12 @@ textarea {
 .padding-left {
 	padding-left: 8.25vw;
 }
+.padding-right {
+	padding-right: 8.25vw;
+}
 .thumbnail {
 	width: 40vw;
+	height: 25vw;
 }
 .machine-GE2 {
 	position: absolute;
@@ -125,16 +132,18 @@ textarea {
 /* ----------------------------------------------------------- */
 .radio {
 	transform: scale(2);
-	margin-top: 0.75vw;
+	margin-right: 1vw;
 }
 .radio-text {
 	width: 8.5vw;
+	align-items: center;
 }
 .radio-inputs {
 	width: 50vw;
+	margin-bottom: 0.5vw;
 }
 .blog {
-	margin-top: 5vw;
+	margin-top: 1vw;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -143,22 +152,211 @@ textarea {
 }
 .blog-item {
 	width: 27vw;
-	margin-bottom: 5vw;
+	margin-bottom: 2.5vw;
 }
 .blog-item-info {
-	border-style: solid;
-	border-width: 1px;
-	padding: 2.5vw 2.5vw 0vw 2.5vw;
-	height: 25vw;
+	padding: 0.5vw 0vw 0vw 0vw;
+	height: 22.5vw;
 }
 .blog-www {
 	width: 20vw;
-	margin-top: 2.5vw;
+	margin-top: -1vw;
+}
+.blog-waar {
+	width: 22vw;
+}
+.blog-date {
+	width: 8vw;
+	align-items: center;
 }
 .icon {
 	width: 1.5vw;
-	height: 1.5vw;
 }
 .margin- {
 	margin-top: -5vw;
+}
+/* ----------------------------------------------------------- */
+.activiteit-image-info {
+	width: 6.5vw;
+	text-align: center;
+	padding: 0.5vw 0vw;
+	border-radius: 0.5vw;
+	z-index: 1;
+	position: absolute;
+	margin-top: 13.5vw;
+	margin-left: 0.5vw;
+}
+/* ------------------------------------------------------------ */
+.workshop-bio {
+	height: 25vw;
+	padding: 5vw 0vw;
+}
+
+.workshop-bio-www-info {
+	align-items: center;
+}
+.www-image {
+	height: 2vw;
+}
+.www-bio {
+	margin-top: 0.5vw;
+}
+.workshop-image1 {
+	width: 41.5vw;
+}
+.workshop-info {
+	width: 41vw;
+	height: 30vw;
+	padding: 0vw 0vw;
+}
+.workshop-contact {
+	height: 25vw;
+	padding: 2.5vw 0vw;
+}
+.workshop-ref {
+	text-align: left;
+}
+.workshop-ref2 {
+	text-align: right;
+}
+.margin-bottom {
+	margin-bottom: 5vw;
+}
+@media screen and (max-width: 768px) {
+	.pc {
+		display: none;
+	}
+	.mobile {
+		display: flex;
+	}
+	.flex-responsive {
+		flex-direction: column;
+	}
+	.grid {
+		display: none;
+		z-index: 10;
+	}
+	.padding {
+		padding: 0vw 6vw;
+	}
+
+	/*activiteiten & blog --------------------------------*/
+	.radio-inputs {
+		width: 65vw;
+		margin-bottom: 6vw;
+	}
+
+	.blog-image {
+		width: 100%;
+		margin: 2vw 0vw;
+	}
+
+	.blog-waar {
+		width: 75vw;
+	}
+
+	.blog-date {
+		width: 35vw;
+	}
+
+	.icon {
+		width: 5vw;
+	}
+
+	.icon-margin {
+		margin-left: 2vw;
+	}
+
+	.arrow {
+		height: 5vw;
+		position: absolute;
+		right: 0;
+		margin-top: 4vw;
+	}
+
+	.activiteit-image-info {
+		width: 20vw;
+		padding: 2vw 0.5vw;
+		border-radius: 1vw;
+		margin-top: 46vw;
+		margin-left: 3vw;
+	}
+	.contact-info {
+		height: auto;
+		margin-bottom: 0vw;
+	}
+	.accordion {
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		text-align: left;
+		border: none;
+		outline: none;
+		transition: 0.4s;
+	}
+	.text-input {
+		width: 85vw;
+		height: 10vw;
+	}
+	.info1 {
+		height: 60vw;
+		padding: 10vw 0vw;
+	}
+
+	.panel {
+		padding: 0 18px;
+		display: none;
+		overflow: hidden;
+	}
+
+	#panel {
+		display: block;
+	}
+
+	#arrow {
+		transform: rotate(180deg);
+	}
+
+	.margin-top {
+		margin-top: 10vw;
+	}
+
+	/*praktische info--------------------------------------------------------------*/
+	.info {
+		width: 100%;
+		height: 60vw;
+	}
+
+	.map {
+		width: 80vw;
+		height: 100vw;
+		align-self: center;
+		margin: 7vw 0vw;
+	}
+
+	.info-timetable {
+		width: 100%;
+		margin: 50vw 0vw;
+	}
+
+	.info-height {
+		height: 100vw;
+		margin: 7vw 0vw;
+	}
+
+	.info-width {
+		width: 80vw;
+	}
+
+	#footer-praktisch {
+		margin-top: 175vw;
+	}
+
+	.title-image-decoration {
+		position: absolute;
+		z-index: -1;
+		margin-left: -5vw;
+		margin-top: 3vw;
+		width: 29vw;
+	}
 }

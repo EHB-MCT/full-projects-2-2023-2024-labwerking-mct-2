@@ -1,0 +1,45 @@
+.footer {
+	height: 8vw;
+	padding: 1.5vw 8vw;
+}
+.footer-items {
+	height: vw;
+	width: 7vw;
+	margin-right: 7.15vw;
+}
+.footer-item {
+	margin-bottom: 1vw;
+}
+.footer-socials {
+	width: 10vw;
+	align-items: center;
+}
+.footer-icon {
+	height: 2.5vw;
+}
+@media screen and (max-width: 768px) {
+	.footer {
+		height: 110vw;
+		padding-top: 10vw;
+		padding-bottom: 10vw;
+		margin-top: 25vw;
+	}
+	.footer-items {
+		width: 100%;
+		margin-right: 0vw;
+	}
+	.footer-item {
+		margin-bottom: 2.5vw;
+	}
+	.partner {
+		text-align: center;
+	}
+	.footer-icon {
+		height: 7.5vw;
+	}
+	.footer-socials {
+		width: 22.5vw;
+		align-items: center;
+	}
+
+}

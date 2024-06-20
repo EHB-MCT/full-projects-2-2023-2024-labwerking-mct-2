@@ -12,14 +12,15 @@
 }
 .contact-bericht {
 	width: 40vw;
-	height: 15vw;
+	height: 12vw;
 	border-top-right-radius: 7.5vw;
 	resize: none;
 	margin-bottom: 2.5vw;
 }
-#submit {
-	padding: 0.5vw 2vw;
+.contact-info {
+	margin-bottom: 2.5vw;
 }
+
 .fase-visual {
 	display: flex;
 	align-items: center;
@@ -66,9 +67,58 @@ input {
 	width: 50vw;
 }
 .info {
-	height: 20vw;
+	height: 15vw;
 }
 .info1 {
 	width: 40vw;
-	height: 16vw;
+	height: 15vw;
+}
+.send-button {
+	margin-top: 2.5vw;
+	padding-left: 7.5vw;
+	padding-right: 7.5vw;
+}
+.reference {
+	margin-bottom: 2.5vw;
+}
+.contact-titel {
+	padding-bottom: 0.3vw;
+}
+.contact-down {
+	margin-bottom: 3vw;
+}
+@media screen and (max-width: 768px) {
+	.info {
+		height: 40vw;
+	}
+	.contact-bericht {
+		width: 85vw;
+		padding-bottom: 65vw;
+		margin-bottom: 20vw;
+	}
+	.contact-down {
+		margin-bottom: -10vw;
+	}
+	.contact-down2 {
+		margin-top: 7.5vw;
+	}
+	.contact-titel {
+		padding-bottom: 1.8vw;
+	}
+	.contact-up {
+		justify-content: end;
+		margin-top: 87vw;
+	}
+	.contact-bericht {
+		border-top-right-radius: 0vw;
+
+		border-bottom-right-radius: 14vw;
+	}
+	.contact-btn {
+		text-align: right;
+		padding-left: 32vw;
+		width: 53vw;
+		margin-left: 48vw;
+		margin-top: -10vw;
+	}
 }
