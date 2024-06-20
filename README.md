@@ -1,7 +1,6 @@
-#  Labwerking MCT 2 - medialab.brussel <img src="./images/logo_mobile.webp" alt="My Image" style="float: right; margin-left: 20px;" />
+# Labwerking MCT 2 - medialab.brussel <img src="./images/logo_mobile.webp" alt="My Image" style="float: right; margin-left: 20px;" />
+
 ---
-
-
 
 ## Beschrijving project
 
@@ -18,8 +17,7 @@ Dit project is een website die gebruikers helpt bij het informeren over de labs,
 - **Javascript date regex DD/MM/YYYY** geraadpleegd 19 juni 2024 [https://stackoverflow.com/questions/5465375/javascript-date-regex-dd-mm-yyyy](https://stackoverflow.com/questions/5465375/javascript-date-regex-dd-mm-yyyy)
 - **Initialize Calendar with Labs** door ChatGPT, geraadpleegd 19 juni 2024 [https://chatgpt.com/share/25e8c2f6-8ff5-40e4-8cfe-2cc169f2e721](https://chatgpt.com/share/25e8c2f6-8ff5-40e4-8cfe-2cc169f2e721)
 - **How TO - Collapsibles/Accordion** door W3chools, geraadpleegd 19 juni 2024 [https://www.w3schools.com/howto/howto_js_accordion.asp](https://www.w3schools.com/howto/howto_js_accordion.asp)
-
-
+- **HTML YouTube Videos** door W3schools, geraadpleegd 20 juni 2024 [https://www.w3schools.com/html/html_youtube.asp](https://www.w3schools.com/html/html_youtube.asp)
 
 ## Credentials
 
