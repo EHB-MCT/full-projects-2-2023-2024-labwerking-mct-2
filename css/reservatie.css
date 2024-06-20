@@ -64,7 +64,7 @@
 	margin-top: 0.5vw;
 	border-bottom-right-radius: 7.5vw;
 }
-#submit {
+#submit, #submit-mobile {
 	padding: 0.5vw 2vw;
 }
 .text-input {
@@ -111,7 +111,7 @@
 	}
 
 	.radio-inputs {
-		width: 68vw;
+		width: 60vw;
 		margin: 2vw 0vw 6vw 0vw;
 	}
 
@@ -129,11 +129,7 @@
 		margin-bottom: 6vw;
 	}
 
-	.fase-1.fase-1-part-2 {
-		order: 1;
-	}
-
-	.fase-1#submit {
-		order: 2;
+	.margin-mobile {
+		margin-bottom: 2vw;
 	}
 }
