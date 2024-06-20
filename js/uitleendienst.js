@@ -13,9 +13,11 @@ let teleNummer = "";
 function ini() {
 	fetchList();
 	nextPage();
+	nextPage2();
 	filterSelection();
 	searchFilter();
 	sendInfoSecondPage();
+	sendInfoSecondPage2();
 	EhbStudentKeuze();
 }
 function searchFilter() {
@@ -261,9 +263,102 @@ function nextPage() {
 		});
 	});
 }
+function nextPage2() {
+	document.addEventListener("DOMContentLoaded", function () {
+		document.querySelector("#submitM").addEventListener("click", function () {
+			console.log("hey");
+
+			projectText = document.querySelector(".uitleen-textarea").value;
+
+			document.querySelector("#fase-1").classList.add("none");
+			document.querySelector("#fase-1").classList.remove("display");
+			document.querySelector("#fase-2").classList.add("display");
+			document.querySelector("#fase-2").classList.remove("none");
+		});
+	});
+}
 function sendInfoSecondPage() {
 	document.addEventListener("DOMContentLoaded", function () {
 		document.querySelector("#submit2").addEventListener("click", function () {
+			console.log("Button Pressed");
+			console.log(document.querySelector("#textID").value);
+			naam = document.querySelector("#textID").value;
+
+			console.log(document.querySelector("#startDatumID").value);
+			startDatum = document.querySelector("#startDatumID").value;
+
+			console.log(document.querySelector("#eindDatumID").value);
+			eindDatum = document.querySelector("#eindDatumID").value;
+
+			console.log(document.querySelector("#emailID").value);
+			email = document.querySelector("#emailID").value;
+
+			console.log(document.querySelector("#teleNummerID").value);
+			teleNummer = document.querySelector("#teleNummerID").value;
+
+			console.log(ehbStudent);
+			console.log(projectText);
+
+			const nameRegex = /^[a-zA-Z ]+$/;
+			if (!nameRegex.test(naam)) {
+				alert("Vul een geldige naam in (alleen letters en spaties toegestaan).");
+				return;
+			}
+
+			const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+			if (!emailRegex.test(email)) {
+				alert("Vul een geldig e-mailadres in.");
+				return;
+			}
+
+			const phoneRegex = /^\d{10}$/;
+			if (!phoneRegex.test(teleNummer)) {
+				alert("Vul een geldig telefoonnummer in (10 cijfers).");
+				return;
+			}
+
+			const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+			if (!dateRegex.test(startDatum)) {
+				alert("Vul een geldige datum in (DD-MM-JJJJ).");
+				return;
+			}
+			if (!dateRegex.test(eindDatum)) {
+				alert("Vul een geldige datum in (DD-MM-JJJJ).");
+				return;
+			}
+			basket.forEach(function (Item) {
+				const data = {
+					Naam: `${naam}`,
+					UitSTock: Item._amount,
+					StartDatum: `${startDatum}`,
+					EindDatum: `${eindDatum}`,
+					EHBStudent: ehbStudent,
+					Email: `${email}`,
+					Telefoonnummer: teleNummer,
+					ProjectInformatie: `${projectText}`,
+					ItemID: `${Item._id}`,
+				};
+				fetch("https://labbxl.pockethost.io/api/collections/Uitlenen/records", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(data),
+				})
+					.then(function (response) {
+						return response.json();
+					})
+					.then(function (data) {});
+			});
+
+			alert("Uw items zijn successvol gereserveerd");
+			window.location.href = "javascript:history.back()";
+		});
+	});
+}
+function sendInfoSecondPage2() {
+	document.addEventListener("DOMContentLoaded", function () {
+		document.querySelector("#submitM2").addEventListener("click", function () {
 			console.log("Button Pressed");
 			console.log(document.querySelector("#textID").value);
 			naam = document.querySelector("#textID").value;

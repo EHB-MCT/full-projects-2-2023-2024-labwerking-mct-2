@@ -38,11 +38,11 @@
 	width: 85vw;
 }
 .fase-1-part-1 {
-	height: 50vw;
+	height: 55vw;
 	margin-bottom: 5vw;
 }
 .fase-1-part-2 {
-	margin-top: 2.75vw;
+	margin-top: 1.5vw;
 }
 
 /* ------------------- */
@@ -135,12 +135,14 @@
 	margin-top: 0.5vw;
 	border-bottom-right-radius: 7.5vw;
 	outline: none;
+
+	margin-bottom: 2.5vw;
 }
 .uitleen-textarea:focus {
 	border-color: #f9a084;
 }
 .uitleen-bericht {
-	height: 10vw;
+	height: 17.5vw;
 	width: 42.5vw;
 }
 .materials {
