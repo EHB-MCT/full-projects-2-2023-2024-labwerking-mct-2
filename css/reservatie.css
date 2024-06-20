@@ -1,6 +1,9 @@
 .reserveer {
-	height: 50vw;
+	height: 45vw;
 	width: 85vw;
+}
+.contactformulier {
+	height: 45vw;
 }
 .none {
 	display: none;
@@ -11,6 +14,7 @@
 /* -------------------------------------------------------------------------------------------------- */
 .fase-indicators {
 	width: 7.5vw;
+	margin: 2vw 0vw;
 }
 
 .fase-indicator {
@@ -20,20 +24,24 @@
 }
 .fase-1-indicator {
 	border-radius: 50%;
-	padding: 0vw 0.9vw;
+	padding: 0vw 1vw;
 	border-style: solid;
+	border-width: 2.5px;
 }
 .fase-2-indicator {
 	border-radius: 50%;
 	padding: 0vw 0.8vw;
 	border-style: solid;
+	border-width: 2.5px;
 }
 /* ---------------------------------------------------------------------------------------------------- */
 .radio-inputs {
 	width: 35vw;
+	margin-bottom: 2vw;
+	margin-top: 0.5vw;
 }
 .fase-1 {
-	height: 40vw;
+	height: 45vw;
 	width: 85vw;
 }
 .fase-1-part-1 {
@@ -43,17 +51,22 @@
 	height: 15vw;
 	width: 27.75vw;
 }
+.contact-textarea {
+	margin-bottom: 2vw;
+	margin-top: 0.5vw;
+}
+
 /* ---------------------------------------------------------------------------------------------------- */
 .fase-2 {
 	height: 40vw;
-	width: 70vw;
+	width: 85vw;
 }
 .fase-2-part-1 {
 	height: 30vw;
 }
 .fase-2-part-2 {
-	height: 15vw;
-	width: 27.75vw;
+	height: 20.75vw;
+	padding-top: 3.5vw;
 }
 
 .contact-textarea {
@@ -84,6 +97,7 @@
 	border-style: solid;
 }
 
+
 #EhB {
 	margin-bottom: 0vw;
 }
@@ -94,22 +108,43 @@
 ::-webkit-calendar-picker-indicator {
 	margin-right: 2vw;
 }
-::-webkit-time-picker-indicator {
-	margin-right: 2vw;
+input[type="time"]::-webkit-calendar-picker-indicator {
+	background: none;
+}
+#calendar {
+	width: 35vw;
+	height: 24.25vw;
 }
 
-@media screen and (max-width: 768px) {
-	.fase-indicators {
-		width: 18vw;
-		margin: 4vw 0vw;
-	}
+.loading {
+	position: fixed;
+	z-index: 15;
+	height: auto;
+	width: auto;
+	margin-top: -5vw;
+	align-items: center;
+	padding: 5vw 7.5vw;
+	align-self: center;
+	border: solid;
+	border-width: 1px;
+}
+.spinner-border {
+	width: 5vw;
+	height: 5vw;
+	border: 5px solid #95d0d3;
+	border-top: 5px solid #ff6035;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
 
-	.fase-1-indicator,
-	.fase-2-indicator {
-		height: 8vw;
-		width: 8vw;
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
 	}
-
+	100% {
+		transform: rotate(360deg);
+	}
+}
 	.radio-inputs {
 		width: 60vw;
 		margin: 2vw 0vw 6vw 0vw;
@@ -132,4 +167,33 @@
 	.margin-mobile {
 		margin-bottom: 2vw;
 	}
+
+.fc .fc-prev-button.fc-button {
+	background-color: #f9a084;
+	border-color: #f9a084;
+	color: #441e1d;
+}
+
+.fc .fc-next-button.fc-button {
+	background-color: #f9a084;
+	border-color: #f9a084;
+	color: #441e1d;
+}
+
+.fc .fc-today-button.fc-button {
+	background-color: #95d0d3;
+	border-color: #95d0d3;
+	color: #441e1d;
+	opacity: 100;
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+.fc-event {
+	background-color: #ff6035;
+	border-color: #ff6035;
+}
+.fc .fc-timegrid-slot-label-cushion {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+	font-size: 1vw;
 }

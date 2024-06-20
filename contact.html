@@ -6,8 +6,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<script src="js/nav.js"></script>
-		<script src=""></script>
-
 		<link href="css/reset.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/layout2.css" />
 
@@ -17,7 +15,7 @@
 		<link rel="stylesheet" href="css/contact.css" />
 		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="css/nav.css" />
-
+		<form class="form-horizontal" action="contact.php"></form>
 		<title>Contact</title>
 	</head>
 	<body>
@@ -83,32 +81,34 @@
 			<img src="images/title-decoration.webp" alt="" class="title-image-decoration" />
 			<h1 class="interlinie bold color1 sizeContact">CONTACT</h1>
 		</div>
-		<div class="flex flex-responsive space-between padding contact-info">
+		<form class="flex space-between padding contact-info" id="contact-form" method="post" action="contact.php">
 			<div class="info flex-column space-between">
 				<div>
-					<h2 class="size2 regular pc contact-titel">Naam</h2>
-					<h2 class="size3 regular mobile contact-titel">Naam</h2>
-					<input type="text" class="text-input color3-border color4-bg border-cut" />
+					<h2 class="size2 regular">Naam</h2>
+					<input id="name" type="text" class="text-input color3-border color4-bg border-cut" name="name" value="" required />
 				</div>
 				<div>
-					<h2 class="size2 regular pc contact-titel">E-mail</h2>
-					<h2 class="size3 regular mobile contact-down2 contact-titel">E-mail</h2>
-
-					<input type="text" class="text-input color3-border color4-bg border-cut" />
+					<h2 class="size2 regular">E-mail</h2>
+					<input id="email" type="email" class="text-input color3-border color4-bg border-cut" id="email" name="email" value="" required />
 				</div>
-				<a href="#" class="btn-5-border no-underline size3 btn-primary pc">VERZEND</a>
+				<button class="color5-border btn btn-primary size3 send-button" id="submit" type="submit" value="SEND">
+					<span class="send-text">VERZEND</span>
+				</button>
 			</div>
-			<div class="info1 flex-column space-between contact-up">
-				<h2 class="size2 regular pc contact-titel">Bericht</h2>
-				<h2 class="size3 regular mobile contact-titel">Bericht</h2>
-				<textarea name="contact-bericht" id="contact-bericht" class="border-cut color3-border color4-bg contact-bericht"></textarea>
-				<a href="#" class="btn-5-border no-underline size3 mobile btn-primary contact-btn">VERZEND</a>
+			<div class="info1 flex-column space-between">
+				<h2 class="size2 regular">Bericht</h2>
+				<textarea id="description" name="contact-bericht" class="border-cut color3-border color4-bg contact-bericht" rows="10" name="message" required></textarea>
 			</div>
-		</div>
-		<p class="size8 padding contact-down">
+		</form>
+
+		<p class="size8 padding reference">
 			Met extra vragen of andere zaken kan u onze lab verantwoordelijke Gwendolyn <br />
 			Vander Putten contacteren op het e-mailadres <span class="underline">medialab@ehb.be</span>.
 		</p>
+
+		<div id="confirmation-message" style="display: none">
+			<p>Bedankt voor uw bericht! Wij zullen zo snel mogelijk reageren.</p>
+		</div>
 		<!-- ---------------------------------------------------------------------------------- -->
 		<div class="footer flex-responsive padding pc color1-bg">
 			<div class="footer-items flex-column">

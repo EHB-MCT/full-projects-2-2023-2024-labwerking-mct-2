@@ -1,8 +1,4 @@
 @import url("https://use.typekit.net/ytz2sug.css");
- {
-	font-family: "omnes-pro", sans-serif;
-	font-style: normal;
-}
 h1 {
 	font-family: "omnes-pro", sans-serif;
 	font-style: normal;
@@ -27,26 +23,58 @@ button {
 	font-family: "omnes-pro", sans-serif;
 	font-style: normal;
 }
+.fc-header,
+.fc-body,
+.fc-event,
+.fc-day,
+.fc-button,
+.fc-axis {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+	font-size: 1vw;
+}
+.fc-today-button {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+	font-size: 1vw;
+	font-weight: 500;
+}
+input {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+textarea {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+	font-size: 1vw;
+}
 .size1 {
 	font-size: 2.5vw;
+	font-weight: 500;
 }
 .size2 {
 	font-size: 1.75vw;
+	font-weight: 500;
 }
 .size3 {
 	font-size: 1.5vw;
+	font-weight: 500;
 }
 .size4 {
 	font-size: 1vw;
+	font-weight: 500;
 }
 .size5 {
 	font-size: 3vw;
+	font-weight: 500;
 }
 .size7 {
 	font-size: 2.5vw;
+	font-weight: 500;
 }
 .size8 {
 	font-size: 1.25vw;
+	font-weight: 500;
 }
 .no-underline {
 	text-decoration: none;

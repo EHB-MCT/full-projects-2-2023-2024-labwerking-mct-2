@@ -76,7 +76,7 @@
 
 .elements {
 	position: absolute;
-	width: 85.25vw;
+	width: 82.25vw;
 }
 .homepage-titel-image {
 	width: 50vw;
@@ -210,6 +210,8 @@
 }
 .machine img {
 	width: 27vw;
+	max-height: 18vw;
+	overflow: hidden;
 }
 .lab-image2 {
 	width: 10vw;
@@ -227,9 +229,47 @@
 	height: 15vw;
 }
 
-.margin-bottom {
-	margin-bottom: 2vw;
+
+.slideshow-container {
+	margin-top: 12.5vw;
+	margin-left: 30vw;
+	width: 100vw;
+	perspective: 1000px;
 }
+
+.mySlides {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20vw;
+	height: 20vw;
+	transform-style: preserve-3d;
+	transition: transform 0.5s ease-in-out;
+}
+.mySlides img {
+	width: 15vw;
+	height: 15vw;
+}
+
+.mySlides:nth-child(1) {
+	transform: translateX(80%) translateY(0%) rotateY(0deg) scale(1);
+	font-size: 2vw;
+	text-align: center;
+}
+
+.mySlides:nth-child(2) {
+	transform: translateX(0) rotateY(0deg) scale(1.5);
+	font-size: 2vw;
+	text-align: right;
+}
+
+.mySlides:nth-child(3) {
+	transform: translateX(80%) translateY(-0%) rotateY(0deg) scale(1);
+	text-align: left;
+	font-size: 2vw;
+}
+
+
 /* mobile________________________________________________________________________________________________________- */
 @media screen and (max-width: 768px) {
 	.pc {
