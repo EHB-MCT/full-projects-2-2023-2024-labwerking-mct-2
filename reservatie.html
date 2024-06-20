@@ -88,37 +88,37 @@
 				<button class="fase-2-indicator color4-bg color3 color3-border size2" disabled>2</button>
 			</div>
 
-			<div id="fase-1" class="fase-1 display space-between flex-responsive">
-				<div class="flex-column fase-1-part-1 space-between">
-					<p class="size2 regular">Welk lab wilt u reserveren?</p>
-					<div class="flex flex-responsive space-between radio-inputs">
-						<div class="flex space-between radio-text">
-							<input type="radio" class="radio" />
-
-							<h2 class="size2">Medialab</h2>
+			
+				<div id="fase-1" class="fase-1 display flex space-between">
+					<form class="flex fase-1 space-between">
+						<div class="fase-1-part-1 flex-column">
+							<p class="size2 regular">Welk lab wilt u reserveren?</p>
+							<div class="flex space-between radio-inputs">
+								<div class="flex space-between radio-text">
+									<input type="radio" name="lab" class="radio" value="medialab" required />
+									<h2 class="size2">Medialab</h2>
+								</div>
+								<div class="flex space-between radio-text">
+									<input type="radio" name="lab" class="radio" value="fablab" required />
+									<h2 class="size2">Fablab</h2>
+								</div>
+								<div class="flex space-between radio-text">
+									<input type="radio" name="lab" class="radio" value="contentlab" required />
+									<h2 class="size2">Contentlab</h2>
+								</div>
+							</div>
+							<p class="size2 regular">Korte beschrijving van uw project</p>
+							<textarea id="contact-textarea" class="contact-textarea color3-border color4-bg" required></textarea>
+							<button class="btn-primary no-underline size3" id="submit1">NAAR PERSOONSGEGEVENS</button>
 						</div>
-						<div class="flex space-between radio-text">
-							<input type="radio" class="radio" />
-							<h2 class="size2">Fablab</h2>
+						<div class="fase-1-part-2 flex-column space-between">
+							<p class="size2 regular">Tarief</p>
+							<p class="size3"><span class="bold">- dagpas:</span> 12 euro per persoon</p>
+							<p class="size3"><span class="bold">- 10-beurtenkaart:</span> 100 euro per persoon</p>
+							<p class="size3">Prijzen zijn exclusief 21% btw en gelden voor individueel gebruik. Groepstarieven zijn beschikbaar op aanvraag</p>
 						</div>
-						<div class="flex space-between radio-text">
-							<input type="radio" class="radio" />
-							<h2 class="size2">Contentlab</h2>
-						</div>
-					</div>
-					<p class="size2 regular">Korte beschrijving van uw project</p>
-					<textarea id="contact-textarea " class="contact-textarea color3-border color4-bg" required></textarea>
-					<button class="btn-primary no-underline size3 pc" id="submit">NAAR PERSOONSGEGEVENS</button>
+					</form>
 				</div>
-				<div class="fase-1-part-2 flex-column space-between">
-					<p class="size2 regular margin-mobile">Tarief</p>
-					<p class="size8 margin-mobile"><span class="bold">- dagpas:</span> 12 euro per persoon</p>
-					<p class="size8 margin-mobile"><span class="bold">- 10-beurtenkaart:</span> 100 euro per persoon</p>
-					<p class="size8 pc">Prijzen zijn exclusief 21% btw en gelden voor individueel gebruik. Groepstarieven zijn beschikbaar op aanvraag</p>
-					<p class="size8 mobile margin-mobile">exclusief 21% btw<br> Groepstarief op aanvraag</p>
-					<button class="btn-primary no-underline size3 mobile" id="submit-mobile">NAAR PERSOONSGEGEVENS</button>
-				</div>
-			</div>
 
 
 				<div id="fase-2" class="fase-2 none space-between">
