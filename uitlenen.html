@@ -90,10 +90,10 @@
 					<button class="fase-2-indicator color4-bg color3 color3-border size2" disabled>2</button>
 				</div>
 
-				<div id="fase-1" class="fase-1 display space-between">
+				<div id="fase-1" class="fase-1 flex flex-responsive space-between">
 					<div class="flex-column fase-1-part-1 space-between">
 						<p class="size2 regular">Het materiaal</p>
-						<div class="flex space-between filter-inputs">
+						<div class="flex-responsive space-between filter-inputs">
 							<div class="flex space-between filter">
 								<h2 class="font1 size2">Zoek</h2>
 								<input type="search" id="SearchInput" class="search font1 size4 color4-bg color2-border" placeholder="Type uw item" />
@@ -118,16 +118,16 @@
 						<div class="flex-column space-between uitleen-bericht">
 							<p class="font1 size2 regular">Korte beschrijving van uw project</p>
 							<textarea id="uitleen-textarea" class="uitleen-textarea color3-border color4-bg font1 size4"></textarea>
-							<button class="btn-primary color4-border color6-bg color5 no-underline font1 size3" id="submit">NAAR PERSOONSGEGEVENS</button>
 						</div>
 					</div>
 					<div class="fase-1-part-2 flex-column space-between">
 						<div class="materials color3-border color4-bg"></div>
 					</div>
+					<button class="btn-primary color4-border color6-bg color5 no-underline font1 size3 mobile" id="submit">NAAR PERSOONSGEGEVENS</button>
 				</div>
 
 				<div id="fase-2" class="fase-2 none space-between">
-					<div class="fase-2 flex space-between">
+					<div class="fase-2 flex flex-responsive space-between">
 						<div class="flex-column fase-2-part-1 space-between">
 							<div class="ehb-choice flex-column space-between">
 								<p class="size2 regular">EhB-student</p>
@@ -154,7 +154,7 @@
 								</div>
 							</div>
 
-							<button class="btn-primary color4-border color6-bg color5 no-underline font1 size3" id="submit2">UITLENEN</button>
+							<button class="btn-primary color4-border color6-bg color5 no-underline font1 size3 pc" id="submit2">UITLENEN</button>
 						</div>
 						<div class="fase-2-part-2 flex-column space-between">
 							<div>
@@ -170,6 +170,7 @@
 								<input type="text" id="teleNummerID" class="text-input font1 size3 color3-border color4-bg" required />
 							</div>
 						</div>
+						<button class="btn-primary color4-border color6-bg color5 no-underline font1 size3 mobile" id="submit2">UITLENEN</button>
 					</div>
 				</div>
 			</div>
