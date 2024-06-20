@@ -241,14 +241,14 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 20vw;
-	height: 20vw;
+	width: 15vw;
+	height: 15vw;
 	transform-style: preserve-3d;
 	transition: transform 0.5s ease-in-out;
 }
 .mySlides img {
-	width: 15vw;
-	height: 15vw;
+	width: 100%;
+	height: 100%;
 }
 
 .mySlides:nth-child(1) {
@@ -366,6 +366,45 @@
 		z-index: -1;
 		width: 8vw;
 		height: auto;
+	}
+	.slideshow-container2 {
+		margin-top: 20vw;
+		margin-left: 32vw;
+		width: 100vw;
+		height: 60vw;
+		perspective: 1000px;
+	}
+
+	.mySlides2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35vw;
+		height: 35vw;
+		transform-style: preserve-3d;
+		transition: transform 0.5s ease-in-out;
+	}
+	.mySlides2 img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.mySlides2:nth-child(1) {
+		transform: translateX(80%) translateY(0%) rotateY(0deg) scale(1);
+		font-size: 3vw;
+		text-align: center;
+	}
+
+	.mySlides2:nth-child(2) {
+		transform: translateX(0) rotateY(0deg) scale(1.5);
+		font-size: 3vw;
+		text-align: right;
+	}
+
+	.mySlides2:nth-child(3) {
+		transform: translateX(80%) translateY(-0%) rotateY(0deg) scale(1);
+		text-align: left;
+		font-size: 3vw;
 	}
 
 	/* lab ------------------------------------------ */
