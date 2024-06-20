@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		const description = document.querySelector("#contact-textarea").value;
 
-		const descriptionRegex = /^[a-zA-Z ]+$/;
+		const descriptionRegex = /^[\w\s.,!?]+$/;
 		if (!descriptionRegex.test(description)) {
 			alert("Vul een bericht in.");
 			return;
