@@ -311,7 +311,6 @@ function sendInfoSecondPage() {
 				return;
 			}
 			basket.forEach(function (Item) {
-				let newStock = 0;
 				const data = {
 					Naam: `${naam}`,
 					UitSTock: Item._amount,
