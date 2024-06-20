@@ -227,11 +227,11 @@
 								<p class="font1 size2 regular">EhB-student</p>
 								<div class="flex-column">
 									<div class="flex">
-										<input name="EHB-Student" id="EhB" type="radio" class="radio" required />
+										<input name="EHB-Student" id="EhB" type="radio" class="radio" value="TRUE" required />
 										<p class="font1 size3 regular">Ja</p>
 									</div>
 									<div class="flex">
-										<input name="EHB-Student" id="EhB" type="radio" class="radio" required />
+										<input name="EHB-Student" id="EhB" type="radio" class="radio" value="FALSE" required />
 										<p class="font1 size3 regular">Nee</p>
 									</div>
 								</div>
@@ -240,28 +240,28 @@
 								<p class="font1 size2 regular">Gewenste periode</p>
 								<div>
 									<p class="font1 size3">Start</p>
-									<input type="date" class="font1 size3 text-input-2 color3-border color4-bg" required />
+									<input type="date" id="startDatumID" class="font1 size3 text-input-2 color3-border color4-bg" required />
 								</div>
 								<div>
 									<p class="font1 size3">Einde</p>
-									<input type="date" class="font1 size3 text-input-2 color3-border color4-bg" required />
+									<input type="date" id="eindDatumID" class="font1 size3 text-input-2 color3-border color4-bg" required />
 								</div>
 							</div>
 
-							<button class="btn-primary color4-border color6-bg color5 no-underline font1 size3" id="submit">UITLENEN</button>
+							<button class="btn-primary color4-border color6-bg color5 no-underline font1 size3" id="submit2">UITLENEN</button>
 						</div>
 						<div class="fase-2-part-2 flex-column space-between">
 							<div>
 								<p class="font1 size2 regular">Naam</p>
-								<input type="text " class="text-input font1 size3 color3-border color4-bg" required />
+								<input type="text " id="textID" class="text-input font1 size3 color3-border color4-bg" required />
 							</div>
 							<div>
 								<p class="font1 size2 regular">E-mail</p>
-								<input type="email" class="text-input font1 size3 color3-border color4-bg" required />
+								<input type="email" id="emailID" class="text-input font1 size3 color3-border color4-bg" required />
 							</div>
 							<div>
 								<p class="font1 size2 regular">Telefoonnummer</p>
-								<input type="text" class="text-input font1 size3 color3-border color4-bg" required />
+								<input type="text" id="teleNummerID" class="text-input font1 size3 color3-border color4-bg" required />
 							</div>
 						</div>
 					</div>

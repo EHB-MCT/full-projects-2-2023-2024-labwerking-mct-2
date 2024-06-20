@@ -3,12 +3,20 @@ let basket = []; // things in my basket
 let catalogus = []; // whole API
 import CatalogItem from "./CatalogItem.js";
 let projectText = "";
+let naam = "";
+let startDatum = "";
+let eindDatum = "";
+let ehbStudent = false;
+let email = "";
+let teleNummer = "";
 
 function ini() {
 	fetchList();
 	nextPage();
 	filterSelection();
 	searchFilter();
+	sendInfoSecondPage();
+	EhbStudentKeuze();
 }
 function searchFilter() {
 	const searchInput = document.querySelector("#SearchInput");
@@ -249,6 +257,93 @@ function nextPage() {
 			document.querySelector("#fase-1").classList.remove("display");
 			document.querySelector("#fase-2").classList.add("display");
 			document.querySelector("#fase-2").classList.remove("none");
+		});
+	});
+}
+function sendInfoSecondPage() {
+	document.addEventListener("DOMContentLoaded", function () {
+		document.querySelector("#submit2").addEventListener("click", function () {
+			console.log("Button Pressed");
+			console.log(document.querySelector("#textID").value);
+			naam = document.querySelector("#textID").value;
+
+			console.log(document.querySelector("#startDatumID").value);
+			startDatum = document.querySelector("#startDatumID").value;
+
+			console.log(document.querySelector("#eindDatumID").value);
+			eindDatum = document.querySelector("#eindDatumID").value;
+
+			console.log(document.querySelector("#emailID").value);
+			email = document.querySelector("#emailID").value;
+
+			console.log(document.querySelector("#teleNummerID").value);
+			teleNummer = document.querySelector("#teleNummerID").value;
+
+			console.log(ehbStudent);
+			console.log(projectText);
+
+			const nameRegex = /^[a-zA-Z ]+$/;
+			if (!nameRegex.test(naam)) {
+				alert("Vul een geldige naam in (alleen letters en spaties toegestaan).");
+				return;
+			}
+
+			const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+			if (!emailRegex.test(email)) {
+				alert("Vul een geldig e-mailadres in.");
+				return;
+			}
+
+			const phoneRegex = /^\d{10}$/;
+			if (!phoneRegex.test(teleNummer)) {
+				alert("Vul een geldig telefoonnummer in (10 cijfers).");
+				return;
+			}
+
+			const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+			if (!dateRegex.test(startDatum)) {
+				alert("Vul een geldige datum in (DD-MM-JJJJ).");
+				return;
+			}
+			if (!dateRegex.test(eindDatum)) {
+				alert("Vul een geldige datum in (DD-MM-JJJJ).");
+				return;
+			}
+
+			const data = {
+				Naam: `${naam}`,
+				UitSTock: 123,
+				StartDatum: `${startDatum}`,
+				EindDatum: `${eindDatum}`,
+				EHBStudent: ehbStudent,
+				Email: `${email}`,
+				Telefoonnummer: teleNummer,
+			};
+			fetch("https://labbxl.pockethost.io/api/collections/Uitlenen/records", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(data),
+			})
+				.then(function (response) {
+					return response.json();
+				})
+				.then(function (data) {
+					alert("FUCK YOU BITCH");
+				});
+		});
+	});
+}
+function EhbStudentKeuze() {
+	const EhbKeuzeButton = document.querySelectorAll("input[name='EHB-Student']");
+	EhbKeuzeButton.forEach((button) => {
+		button.addEventListener("change", function () {
+			if (this.value === "TRUE") {
+				ehbStudent = true;
+			} else if (this.value === "FALSE") {
+				ehbStudent = false;
+			}
 		});
 	});
 }
