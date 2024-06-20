@@ -13,8 +13,8 @@
 		<link rel="stylesheet" href="css/font.css" />
 		<link rel="stylesheet" href="css/button.css" />
 		<link rel="stylesheet" href="css/uitlenen.css" />
+		<script type="module" src="js/uitleendienst.js"></script>
 		<link rel="stylesheet" href="css/footer.css" />
-		<script src="js/uitleendienst.js"></script>
 
 		<title>Uitleendienst</title>
 	</head>
@@ -94,18 +94,22 @@
 						<p class="size2 regular">Het materiaal</p>
 						<div class="flex space-between filter-inputs">
 							<div class="flex space-between filter">
-								<h2 class="size2">Zoek</h2>
-								<input type="search" class="search size4 color4-bg color2-border" />
+								<h2 class="font1 size2">Zoek</h2>
+								<input type="search" id="SearchInput" class="search font1 size4 color4-bg color2-border" placeholder="Type uw item" />
+
 							</div>
 							<div class="flex space-between filter">
 								<h2 class="size2">Filter</h2>
 								<form action="#">
-									<select id="filter" class="category size4 color4-bg color2-border">
-										<option value="no-filter">none</option>
-										<option value="VR-brillen" class="">VR & ARbrillen</option>
-										<option value="Camera" class="">Camera</option>
-										<option value="Lens" class="">Lens</option>
-										<option value="Microfoon" class="">Microfoon</option>
+									<select id="filter" class="category font1 size4 color4-bg color2-border">
+										<option value="DEFAULT" class="Default">Default</option>
+										<option value="VR & AR BRILLEN" class="font1">VR & AR Brillen</option>
+										<option value="OPNAME" class="font1">Opname</option>
+										<option value="MOTION" class="font1">Motion</option>
+										<option value="AUDIO" class="font1">Audio</option>
+										<option value="BELICHTING" class="font1">Belichting</option>
+										<option value="EXTRA" class="font1">Extra</option>
+
 									</select>
 								</form>
 							</div>
@@ -113,10 +117,13 @@
 						<!-- ------------------------------------------------------------------------------------------------ -->
 						<div class="catalog color3-border color4-bg">
 							<div class="catalog-item flex color3-border">
-								<img src="images/item1.webp" class="catalog-item-image" alt="" />
+								<div class="catalog-item-image">
+									<img src="images/item1.webp" alt="" />
+								</div>
+
 								<div class="flex-column catalog-item-info space-between">
-									<p class="size2">Name</p>
-									<p class="size4">Item category</p>
+									<p class="font1 size3">Name</p>
+									<p class="font1 size4">Item category</p>
 									<div class="flex item-info space-between">
 										<form action="#">
 											<select id="item-amount" class="item-amount size4 color5-border color4-bg">
@@ -136,10 +143,13 @@
 							</div>
 							<!-- --------------------------------- -->
 							<div class="catalog-item flex color3-border">
-								<img src="images/item2.webp" class="catalog-item-image" alt="" />
+								<div class="catalog-item-image">
+									<img src="images/item1.webp" alt="" />
+								</div>
+
 								<div class="flex-column catalog-item-info space-between">
-									<p class="size2">Name</p>
-									<p class="size4">Item category</p>
+									<p class="font1 size3">Name</p>
+									<p class="font1 size4">Item category</p>
 									<div class="flex item-info space-between">
 										<form action="#">
 											<select id="item-amount" class="item-amount size4 color5-border color4-bg">
@@ -159,10 +169,12 @@
 							</div>
 							<!-- --------------------------------------- -->
 							<div class="catalog-item flex color3-border">
-								<img src="images/item1.webp" class="catalog-item-image" alt="" />
+								<div class="catalog-item-image">
+									<img src="images/item2.webp" alt="" />
+								</div>
 								<div class="flex-column catalog-item-info space-between">
-									<p class="size2">Name</p>
-									<p class="size4">Item category</p>
+									<p class="font1 size3">Name</p>
+									<p class="font1 size4">Item category</p>
 									<div class="flex item-info space-between">
 										<form action="#">
 											<select id="item-amount" class="item-amount size4 color5-border color4-bg">
@@ -182,10 +194,13 @@
 							</div>
 							<!-- ------------------------------------ -->
 							<div class="catalog-item flex color3-border">
-								<img src="images/item1.webp" class="catalog-item-image" alt="" />
+								<div class="catalog-item-image">
+									<img src="images/item1.webp" alt="" />
+								</div>
+
 								<div class="flex-column catalog-item-info space-between">
-									<p class="size2">Name</p>
-									<p class="size4">Item category</p>
+									<p class="font1 size3">Name</p>
+									<p class="font1 size4">Item category</p>
 									<div class="flex item-info space-between">
 										<form action="#">
 											<select id="item-amount" class="item-amount size4 color5-border color4-bg">
@@ -205,10 +220,12 @@
 							</div>
 							<!-- -------------------------------------- -->
 							<div class="catalog-item flex color3-border">
-								<img src="images/item1.webp" class="catalog-item-image" alt="" />
+								<div class="catalog-item-image">
+									<img src="images/item1.webp" alt="" />
+								</div>
 								<div class="flex-column catalog-item-info space-between">
-									<p class="size2">Name</p>
-									<p class="size4">Item category</p>
+									<p class="font1 size3">Name</p>
+									<p class="font1 size4">Item category</p>
 									<div class="flex item-info space-between">
 										<form action="#">
 											<select id="item-amount" class="item-amount size4 color5-border color4-bg">
@@ -228,9 +245,9 @@
 							</div>
 						</div>
 						<div class="flex-column space-between uitleen-bericht">
-							<p class="size2 regular">Korte beschrijving van uw project</p>
-							<textarea id="uitleen-textarea " class="uitleen-textarea color3-border color4-bg size4"></textarea>
-							<button class="btn-primary no-underline size3" id="submit">NAAR PERSOONSGEGEVENS</button>
+							<p class="font1 size2 regular">Korte beschrijving van uw project</p>
+							<textarea id="uitleen-textarea" class="uitleen-textarea color3-border color4-bg font1 size4"></textarea>
+							<button class="btn-primary color4-border color6-bg color5 no-underline font1 size3" id="submit">NAAR PERSOONSGEGEVENS</button>
 						</div>
 					</div>
 					<div class="fase-1-part-2 flex-column space-between">
@@ -245,41 +262,41 @@
 								<p class="size2 regular">EhB-student</p>
 								<div class="flex-column">
 									<div class="flex">
-										<input id="EhB" type="radio" class="radio" required />
-										<p class="size3 regular">Ja</p>
+										<input name="EHB-Student" id="EhB" type="radio" class="radio" value="TRUE" required />
+										<p class="font1 size3 regular">Ja</p>
 									</div>
 									<div class="flex">
-										<input id="EhB" type="radio" class="radio" required />
-										<p class="size3 regular">Nee</p>
+										<input name="EHB-Student" id="EhB" type="radio" class="radio" value="FALSE" required />
+										<p class="font1 size3 regular">Nee</p>
 									</div>
 								</div>
 							</div>
 							<div class="flex-column periode space-between">
 								<p class="size2 regular">Gewenste periode</p>
 								<div>
-									<p class="size3">Start</p>
-									<input type="date" class="size3 text-input-2 color3-border color4-bg" required />
+									<p class="font1 size3">Start</p>
+									<input type="date" id="startDatumID" class="font1 size3 text-input-2 color3-border color4-bg" required />
 								</div>
 								<div>
-									<p class="size3">Einde</p>
-									<input type="date" class="size3 text-input-2 color3-border color4-bg" required />
+									<p class="font1 size3">Einde</p>
+									<input type="date" id="eindDatumID" class="font1 size3 text-input-2 color3-border color4-bg" required />
 								</div>
 							</div>
 
-							<button class="btn-primary no-underline size3" id="submit">UITLENEN</button>
+							<button class="btn-primary color4-border color6-bg color5 no-underline font1 size3" id="submit2">UITLENEN</button>
 						</div>
 						<div class="fase-2-part-2 flex-column space-between">
 							<div>
-								<p class="size2 regular">Naam</p>
-								<input type="text " class="text-input size3 color3-border color4-bg" required />
+								<p class="font1 size2 regular">Naam</p>
+								<input type="text " id="textID" class="text-input font1 size3 color3-border color4-bg" required />
 							</div>
 							<div>
-								<p class="size2 regular">E-mail</p>
-								<input type="email" class="text-input size3 color3-border color4-bg" required />
+								<p class="font1 size2 regular">E-mail</p>
+								<input type="email" id="emailID" class="text-input font1 size3 color3-border color4-bg" required />
 							</div>
 							<div>
-								<p class="size2 regular">Telefoonnummer</p>
-								<input type="text" class="text-input size3 color3-border color4-bg" required />
+								<p class="font1 size2 regular">Telefoonnummer</p>
+								<input type="text" id="teleNummerID" class="text-input font1 size3 color3-border color4-bg" required />
 							</div>
 						</div>
 					</div>

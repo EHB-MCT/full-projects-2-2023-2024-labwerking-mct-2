@@ -32,13 +32,16 @@ border-style: solid;
 width: 35vw;
 }
 .fase-1 {
+
 height: 40vw;
 width: 85vw;
+
 }
 .fase-1-part-1 {
 height: 30vw;
 }
 .fase-1-part-2 {
+
 height: 15vw;
 width: 27.75vw;
 }
@@ -56,12 +59,15 @@ width: 27.75vw;
 }
 
 .contact-textarea {
-height: 12.5vw;
-border-width: 3px;
-resize: none;
-width: 47.5vw;
-margin-top: 0.5vw;
-border-bottom-right-radius: 7.5vw;
+
+	height: 12.5vw;
+	border-width: 3px;
+	resize: none;
+	width: 47.5vw;
+	margin-top: 0.5vw;
+	border-bottom-right-radius: 7.5vw;
+	margin-bottom: 2vw;
+
 }
 #submit, #submit-mobile {
 padding: 0.5vw 2vw;
@@ -75,12 +81,14 @@ border-top-right-radius: 7.5vw;
 border-style: solid;
 }
 .text-input-2 {
+
 height: 3vw;
 border-width: 3px;
 width: 20vw;
 margin-top: 0.5vw;
 border-top-right-radius: 7.5vw;
 border-style: solid;
+
 }
 
 #EhB {
@@ -93,42 +101,11 @@ width: 50vw;
 ::-webkit-calendar-picker-indicator {
 margin-right: 2vw;
 }
-::-webkit-time-picker-indicator {
-margin-right: 2vw;
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  background: none
 }
 
-@media screen and (max-width: 768px) {
-.fase-indicators {
-width: 18vw;
-margin: 4vw 0vw;
-}
-
-.fase-1-indicator,
-.fase-2-indicator {
-	height: 8vw;
-	width: 8vw;
-}
-
-.radio-inputs {
-	width: 60vw;
-	height: 30vw;
-	margin: 2vw 0vw 6vw 0vw;
-}
-
-.fase-1-part-1 {
-	height: 80vw;
-}
-
-.fase-1-part-2 {
-	width: 80vw;
-}
-
-.contact-textarea {
-	height: 30vw;
-	width: 80vw;
-	margin-bottom: 6vw;
-	font-size: large;
-}
 
 .margin-mobile {
 	margin-bottom: 2vw;
@@ -137,4 +114,46 @@ margin: 4vw 0vw;
 #footer-reservatie {
 	margin-top: 110vw;
 }
+.fc .fc-timegrid-slot {
+	height: 2.1vw;
 }
+@media screen and (max-width: 768px) {
+	.fase-indicators {
+		width: 18vw;
+		margin: 4vw 0vw;
+	}
+
+	.fase-1-indicator,
+	.fase-2-indicator {
+		height: 8vw;
+		width: 8vw;
+	}
+
+	.radio-inputs {
+		width: 68vw;
+		margin: 2vw 0vw 6vw 0vw;
+	}
+
+	.fase-1-part-1 {
+		height: 150vw;
+	}
+
+	.fase-1-part-2 {
+		width: 80vw;
+	}
+
+	.contact-textarea {
+		height: 30vw;
+		width: 80vw;
+		margin-bottom: 6vw;
+	}
+
+	.fase-1.fase-1-part-2 {
+		order: 1;
+	}
+
+	.fase-1#submit {
+		order: 2;
+	}
+}
+
