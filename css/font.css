@@ -110,4 +110,9 @@ h1 {
 		font-size: 15vw ;
 		padding: 13.2vw 0vw 6.8vw 0vw;
 	}
+
+	.sizeActiviteiten {
+		font-size: 13vw;
+		padding: 13.2vw 0vw 6.8vw 0vw;
+	}
 }
