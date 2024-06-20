@@ -90,12 +90,15 @@
 }
 .text-input-2 {
 	height: 3vw;
+.text-input-2 {
+	height: 3vw;
 	border-width: 3px;
 	width: 20vw;
 	margin-top: 0.5vw;
 	border-top-right-radius: 7.5vw;
 	border-style: solid;
 }
+
 
 #EhB {
 	margin-bottom: 0vw;

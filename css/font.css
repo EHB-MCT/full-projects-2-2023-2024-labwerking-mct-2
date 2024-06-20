@@ -105,11 +105,26 @@ h1 {
 	line-height: 7.5vw;
 }
 
+.align-right {
+	text-align: right;
+}
 /* _____________________________________________________________________________ */
 @media screen and (max-width: 768px) {
+	.size1 {
+		font-size: 9vw;
+	}
 	.size2 {
 		font-size: 5vw;
 	}
+	.size3 {
+		font-size: 6vw;
+	}
+	.size4 {
+		font-size: 4vw;
+	}
+.size5 {
+	font-size: 6vw
+}
 
 	.size6 {
 		font-size: 22.5vw;
@@ -117,7 +132,23 @@ h1 {
 	.size7 {
 		font-size: 5.75vw;
 	}
+	.size8 {
+		font-size: 4vw;
+	}
+	.size9 {
+		font-size: 16vw;
+	}
 	.interlinie {
 		line-height: 16.5vw;
+	}
+	
+	.sizeContact {
+		font-size: 15vw ;
+		padding: 13.2vw 0vw 6.8vw 0vw;
+	}
+
+	.sizeActiviteiten {
+		font-size: 13vw;
+		padding: 13.2vw 0vw 6.8vw 0vw;
 	}
 }
