@@ -94,7 +94,6 @@ input {
 	.contact-bericht {
 		width: 85vw;
 		padding-bottom: 65vw;
-		margin-bottom: 20vw;
 	}
 	.contact-down {
 		margin-bottom: -10vw;
@@ -111,8 +110,8 @@ input {
 	}
 	.contact-bericht {
 		border-top-right-radius: 0vw;
-
 		border-bottom-right-radius: 14vw;
+		font-size: large;
 	}
 	.contact-btn {
 		text-align: right;
