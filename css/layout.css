@@ -229,7 +229,6 @@
 	height: 15vw;
 }
 
-
 .slideshow-container {
 	margin-top: 12.5vw;
 	margin-left: 30vw;
@@ -269,7 +268,6 @@
 	font-size: 2vw;
 }
 
-
 /* mobile________________________________________________________________________________________________________- */
 @media screen and (max-width: 768px) {
 	.pc {
@@ -292,13 +290,13 @@
 	/* --------------------------------- */
 	.homepage-titel {
 		padding: 10vw 5vw;
-		height: 50vw;
+		height: 70vw;
 		margin-bottom: 10vw;
 	}
 	.homepage-titel-info {
 		height: 10vw;
 		padding-left: 17vw;
-
+		padding-top: 10vw;
 		text-align: right;
 	}
 
@@ -310,11 +308,13 @@
 	}
 
 	.GE1 {
-		margin-left: -7.5vw;
-		padding-top: 1.5vw;
-		width: 28vw;
+		position: absolute;
+		margin-left: -5vw;
+		margin-top: -30vw;
+		width: 55vw;
 		height: auto;
 		z-index: -1;
+		margin-bottom: 25vw;
 	}
 	.GE2 {
 		width: 15vw;
@@ -330,7 +330,7 @@
 		height: auto;
 	}
 	.button {
-		margin-bottom: 35vw;
+		margin-bottom: 15vw;
 	}
 
 	.homepage-image-building {
@@ -365,6 +365,46 @@
 		z-index: -1;
 		width: 8vw;
 		height: auto;
+	}
+	.slideshow-container {
+		margin-top: 22.5vw;
+		margin-left: 32vw;
+
+		width: 100vw;
+		height: 60vw;
+		perspective: 1000px;
+	}
+
+	.mySlides {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35vw;
+		height: 35vw;
+		transform-style: preserve-3d;
+		transition: transform 0.5s ease-in-out;
+	}
+	.mySlides img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.mySlides:nth-child(1) {
+		transform: translateX(80%) translateY(0%) rotateY(0deg) scale(1);
+		font-size: 2vw;
+		text-align: center;
+	}
+
+	.mySlides:nth-child(2) {
+		transform: translateX(0) rotateY(0deg) scale(1.5);
+		font-size: 2vw;
+		text-align: right;
+	}
+
+	.mySlides:nth-child(3) {
+		transform: translateX(80%) translateY(-0%) rotateY(0deg) scale(1);
+		text-align: left;
+		font-size: 2vw;
 	}
 	/* lab ------------------------------------------ */
 	.lab-titel-image {
@@ -435,17 +475,16 @@
 	}
 
 	.tekst-studio {
-	width: 82vw;
-}
+		width: 82vw;
+	}
 
-.margin-studio {
-	margin-top: 70vw;
-}
+	.margin-studio {
+		margin-top: 70vw;
+	}
 
-.margin-studio2 {
-	margin-top: 90vw;
-}
-
+	.margin-studio2 {
+		margin-top: 90vw;
+	}
 
 	/* carousel ----------------------------------*/
 	@keyframes tonext {
