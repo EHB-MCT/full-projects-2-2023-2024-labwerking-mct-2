@@ -1,9 +1,6 @@
 .reserveer {
-	height: 45vw;
+	height: 50vw;
 	width: 85vw;
-}
-.contactformulier {
-	height: 45vw;
 }
 .none {
 	display: none;
@@ -14,186 +11,130 @@
 /* -------------------------------------------------------------------------------------------------- */
 .fase-indicators {
 	width: 7.5vw;
-	margin: 2vw 0vw;
 }
-
 .fase-indicator {
-	display: flex;
-	width: 1vw;
-	justify-content: space-between;
+display: flex;
+width: 1vw;
+justify-content: space-between;
 }
 .fase-1-indicator {
-	border-radius: 50%;
-	padding: 0vw 1vw;
-	border-style: solid;
-	border-width: 2.5px;
+border-radius: 50%;
+padding: 0vw 0.9vw;
+border-style: solid;
 }
 .fase-2-indicator {
-	border-radius: 50%;
-	padding: 0vw 0.8vw;
-	border-style: solid;
-	border-width: 2.5px;
+border-radius: 50%;
+padding: 0vw 0.8vw;
+border-style: solid;
 }
-/* ---------------------------------------------------------------------------------------------------- */
+
 .radio-inputs {
-	width: 35vw;
-	margin-bottom: 2vw;
-	margin-top: 0.5vw;
+width: 35vw;
 }
 .fase-1 {
-	height: 45vw;
-	width: 85vw;
+height: 40vw;
+width: 85vw;
 }
 .fase-1-part-1 {
-	height: 30vw;
+height: 30vw;
 }
 .fase-1-part-2 {
-	height: 15vw;
-	width: 27.75vw;
-}
-.contact-textarea {
-	margin-bottom: 2vw;
-	margin-top: 0.5vw;
+height: 15vw;
+width: 27.75vw;
 }
 
-/* ---------------------------------------------------------------------------------------------------- */
 .fase-2 {
-	height: 40vw;
-	width: 85vw;
+height: 40vw;
+width: 70vw;
 }
 .fase-2-part-1 {
-	height: 30vw;
+height: 30vw;
 }
 .fase-2-part-2 {
-	height: 20.75vw;
-	padding-top: 3.5vw;
+height: 15vw;
+width: 27.75vw;
 }
 
 .contact-textarea {
-	height: 12.5vw;
-	border-width: 3px;
-	resize: none;
-	width: 47.5vw;
-	margin-top: 0.5vw;
-	border-bottom-right-radius: 7.5vw;
+height: 12.5vw;
+border-width: 3px;
+resize: none;
+width: 47.5vw;
+margin-top: 0.5vw;
+border-bottom-right-radius: 7.5vw;
 }
 #submit, #submit-mobile {
-	padding: 0.5vw 2vw;
+padding: 0.5vw 2vw;
 }
 .text-input {
-	height: 3vw;
-	border-width: 3px;
-	width: 33.5vw;
-	margin-top: 0.5vw;
-	border-top-right-radius: 7.5vw;
-	border-style: solid;
+height: 3vw;
+border-width: 3px;
+width: 33.5vw;
+margin-top: 0.5vw;
+border-top-right-radius: 7.5vw;
+border-style: solid;
 }
 .text-input-2 {
-	height: 3vw;
-	border-width: 3px;
-	width: 20vw;
-	margin-top: 0.5vw;
-	border-top-right-radius: 7.5vw;
-	border-style: solid;
+height: 3vw;
+border-width: 3px;
+width: 20vw;
+margin-top: 0.5vw;
+border-top-right-radius: 7.5vw;
+border-style: solid;
 }
 
-
 #EhB {
-	margin-bottom: 0vw;
+margin-bottom: 0vw;
 }
 
 .width {
-	width: 50vw;
+width: 50vw;
 }
 ::-webkit-calendar-picker-indicator {
-	margin-right: 2vw;
+margin-right: 2vw;
 }
-input[type="time"]::-webkit-calendar-picker-indicator {
-	background: none;
-}
-#calendar {
-	width: 35vw;
-	height: 24.25vw;
+::-webkit-time-picker-indicator {
+margin-right: 2vw;
 }
 
-.loading {
-	position: fixed;
-	z-index: 15;
-	height: auto;
-	width: auto;
-	margin-top: -5vw;
-	align-items: center;
-	padding: 5vw 7.5vw;
-	align-self: center;
-	border: solid;
-	border-width: 1px;
-}
-.spinner-border {
-	width: 5vw;
-	height: 5vw;
-	border: 5px solid #95d0d3;
-	border-top: 5px solid #ff6035;
-	border-radius: 50%;
-	animation: spin 1s linear infinite;
+@media screen and (max-width: 768px) {
+.fase-indicators {
+width: 18vw;
+margin: 4vw 0vw;
 }
 
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-	.radio-inputs {
-		width: 60vw;
-		margin: 2vw 0vw 6vw 0vw;
-	}
-
-	.fase-1-part-1 {
-		height: 150vw;
-	}
-
-	.fase-1-part-2 {
-		width: 80vw;
-	}
-
-	.contact-textarea {
-		height: 30vw;
-		width: 80vw;
-		margin-bottom: 6vw;
-	}
-
-	.margin-mobile {
-		margin-bottom: 2vw;
-	}
-
-.fc .fc-prev-button.fc-button {
-	background-color: #f9a084;
-	border-color: #f9a084;
-	color: #441e1d;
+.fase-1-indicator,
+.fase-2-indicator {
+	height: 8vw;
+	width: 8vw;
 }
 
-.fc .fc-next-button.fc-button {
-	background-color: #f9a084;
-	border-color: #f9a084;
-	color: #441e1d;
+.radio-inputs {
+	width: 60vw;
+	height: 30vw;
+	margin: 2vw 0vw 6vw 0vw;
 }
 
-.fc .fc-today-button.fc-button {
-	background-color: #95d0d3;
-	border-color: #95d0d3;
-	color: #441e1d;
-	opacity: 100;
-	font-family: "omnes-pro", sans-serif;
-	font-style: normal;
+.fase-1-part-1 {
+	height: 80vw;
 }
-.fc-event {
-	background-color: #ff6035;
-	border-color: #ff6035;
+
+.fase-1-part-2 {
+	width: 80vw;
 }
-.fc .fc-timegrid-slot-label-cushion {
-	font-family: "omnes-pro", sans-serif;
-	font-style: normal;
-	font-size: 1vw;
+
+.contact-textarea {
+	height: 30vw;
+	width: 80vw;
+	margin-bottom: 6vw;
+	font-size: large;
+}
+
+.margin-mobile {
+	margin-bottom: 2vw;
+}
+
+#footer-reservatie {
+	margin-top: 110vw;
+}
 }
