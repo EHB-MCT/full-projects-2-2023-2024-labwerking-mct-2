@@ -92,6 +92,7 @@ function fetchList() {
 		.then(function (data) {
 			document.querySelector(".catalog").innerHTML = "";
 			console.log(data);
+
 			catalogus = data;
 			renderList(catalogus);
 		});
@@ -310,28 +311,30 @@ function sendInfoSecondPage() {
 				return;
 			}
 
-			const data = {
-				Naam: `${naam}`,
-				UitSTock: 123,
-				StartDatum: `${startDatum}`,
-				EindDatum: `${eindDatum}`,
-				EHBStudent: ehbStudent,
-				Email: `${email}`,
-				Telefoonnummer: teleNummer,
-			};
-			fetch("https://labbxl.pockethost.io/api/collections/Uitlenen/records", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(data),
-			})
-				.then(function (response) {
-					return response.json();
+			basket.forEach(function (Item) {
+				const data = {
+					id: `${Item._id}`,
+					Naam: `${naam}`,
+					UitSTock: Item._amount,
+					StartDatum: `${startDatum}`,
+					EindDatum: `${eindDatum}`,
+					EHBStudent: ehbStudent,
+					Email: `${email}`,
+					Telefoonnummer: teleNummer,
+				};
+				fetch("https://labbxl.pockethost.io/api/collections/Uitlenen/records", {
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(data),
 				})
-				.then(function (data) {
-					alert("FUCK YOU BITCH");
-				});
+					.then(function (response) {
+						return response.json();
+					})
+					.then(function (data) {});
+			});
+			alert("FUCK YOU BITCH");
 		});
 	});
 }
