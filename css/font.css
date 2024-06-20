@@ -76,6 +76,9 @@ textarea {
 	font-size: 1.25vw;
 	font-weight: 500;
 }
+.size9 {
+	font-size: 0.75vw;
+}
 .no-underline {
 	text-decoration: none;
 }
