@@ -339,7 +339,7 @@
 		margin: 8vw 0vw;
 	}
 	.homepage-image-info {
-		height: 40vw;
+		height: 50vw;
 		width: 100%;
 	}
 
@@ -569,6 +569,7 @@
 	.carousel__viewport {
 		margin-left: 0.5vw;
 		width: 84.25vw;
+		height: 160vw;
 		align-self: center;
 		display: flex;
 		overflow-x: scroll;
@@ -591,7 +592,7 @@
 	}
 
 	.margin-bottom {
-		margin-bottom: 5vw;
+		margin-bottom: 15vw;
 	}
 
 	.margin-top {
