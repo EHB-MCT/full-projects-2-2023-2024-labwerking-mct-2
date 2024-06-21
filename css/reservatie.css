@@ -172,7 +172,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 	font-family: "omnes-pro", sans-serif;
 	font-style: normal;
 	font-size: 1vw;
-	height: 2vw;
+	height: 4.25vh;
 }
 
 @media screen and (max-width: 768px) {
