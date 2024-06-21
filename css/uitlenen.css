@@ -1,0 +1,371 @@
+.uitlenen {
+	width: 85vw;
+}
+.none {
+	display: none;
+}
+.display {
+	display: flex;
+}
+.uitleendienst {
+	margin-bottom: 2.5vw;
+}
+/* -------------------------------------------------------------------------------------------------- */
+.fase-indicators {
+	width: 7.5vw;
+	margin: 2vw 0vw;
+}
+
+.fase-indicator {
+	display: flex;
+	width: 50vw;
+	justify-content: space-between;
+}
+.fase-1-indicator {
+	border-radius: 50%;
+	padding: 0vw 1vw;
+	border-style: solid;
+	border-width: 2.5px;
+}
+.fase-2-indicator {
+	border-radius: 50%;
+	padding: 0vw 0.8vw;
+	border-style: solid;
+	border-width: 2.5px;
+}
+/* ---------------------------------------------------------------------------------------------------- */
+.fase-1 {
+	width: 85vw;
+}
+.fase-1-part-1 {
+	height: 55vw;
+	margin-bottom: 5vw;
+}
+.fase-1-part-2 {
+	margin-top: 1.5vw;
+}
+
+/* ------------------- */
+.filter {
+	width: 15vw;
+}
+.filter-inputs {
+	width: 40vw;
+}
+.category {
+	border-radius: 0.75vw;
+	width: 10vw;
+	border-width: 2px;
+}
+.search {
+	border-width: 2px;
+	border-radius: 0.75vw;
+	width: 10vw;
+	border-style: solid;
+	margin-bottom: 0.5vw;
+}
+/* ----------------------- */
+.catalog {
+	height: 25vw;
+	max-height: 25vw;
+	overflow: scroll;
+	border-width: 3px;
+	border-style: solid;
+	width: 40vw;
+	margin-top: 0.5vw;
+	border-bottom-right-radius: 7.5vw;
+	padding: 1vw;
+	scrollbar-width: none;
+}
+
+.catalog-item {
+	width: 35vw;
+	height: 9vw;
+	border-width: 3px;
+	border-style: solid;
+	border-top-right-radius: 4vw;
+	margin-bottom: 1vw;
+}
+.catalog-item2 {
+	width: 30.5vw;
+	height: 9vw;
+	border-width: 3px;
+	border-style: solid;
+	border-top-right-radius: 4vw;
+	margin-bottom: 1vw;
+}
+.catalog-item-image {
+	height: 9vw;
+	max-width: 12vw;
+	overflow: hidden;
+	align-items: center;
+	display: flex;
+}
+.catalog-item-image img {
+	height: 9vw;
+	width: auto;
+}
+
+.catalog-item-info {
+	height: 7;
+	padding-left: 1vw;
+	max-width: 20vw;
+}
+.item-amount {
+	width: 3vw;
+	border-style: solid;
+	border-width: 0.05vw;
+}
+.item-info {
+	width: 10vw;
+	margin-top: 2vw;
+	padding-bottom: 0.5vw;
+}
+.btn-item {
+	background-color: #f9a084;
+	border: none;
+	border-radius: 0.75vw;
+	padding: 0vw 1vw;
+}
+.uitleen-textarea {
+	height: 10vw;
+	border-width: 3px;
+	border-style: solid;
+	width: 41.5vw;
+	margin-top: 0.5vw;
+	border-bottom-right-radius: 7.5vw;
+	outline: none;
+
+	margin-bottom: 2.5vw;
+}
+.uitleen-textarea:focus {
+	border-color: #f9a084;
+}
+.uitleen-bericht {
+	height: 17.5vw;
+	width: 42.5vw;
+}
+.materials {
+	height: 25vw;
+	max-height: 25vw;
+	overflow: scroll;
+	border-width: 3px;
+	border-style: solid;
+	resize: none;
+	width: 32vw;
+	margin-top: 7.7vw;
+	scroll-behavior: smooth;
+	padding: 1vw;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+.fase-2 {
+	height: 40vw;
+	width: 70vw;
+}
+.fase-2-part-1 {
+	height: 30vw;
+	margin-top: 2.5vw;
+	width: 45vw;
+}
+.fase-2-part-2 {
+	height: 22.5vw;
+	width: 27.75vw;
+	margin-top: 2.5vw;
+}
+
+/* ------------------------------------ */
+.text-input {
+	height: 3vw;
+	border-width: 3px;
+	width: 33.5vw;
+	margin-top: 0.5vw;
+	border-top-right-radius: 7.5vw;
+	border-style: solid;
+}
+.text-input-2 {
+	height: 3vw;
+	border-width: 3px;
+	width: 27.75vw;
+	margin-top: 0.5vw;
+	border-top-right-radius: 7.5vw;
+	border-style: solid;
+}
+.ehb-choice {
+	height: 5.5vw;
+}
+#EhB {
+	margin-bottom: 0vw;
+	transform: scale(1);
+}
+.student {
+	width: 5vw;
+}
+.radio {
+	margin-top: 0;
+	margin-right: 1vw;
+}
+.periode {
+	height: 15vw;
+}
+.width {
+	width: 50vw;
+}
+::-webkit-calendar-picker-indicator {
+	margin-right: 2vw;
+}
+::-webkit-time-picker-indicator {
+	margin-right: 2vw;
+}
+@media screen and (max-width: 768px) {
+	.uitlenen {
+		height: auto;
+	}
+	.fase-1-indicator,
+	.fase-2-indicator {
+		height: 8vw;
+		width: 8vw;
+	}
+	.fase-indicators {
+		width: 18vw;
+		margin: 4vw 0vw;
+	}
+	.radio-inputs {
+		width: 68vw;
+		margin: 2vw 0vw 6vw 0vw;
+		height: 20vw;
+	}
+	.filter-inputs {
+		height: 20vw;
+		margin: 2.5vw 0vw;
+		width: 85vw;
+	}
+	.filter {
+		width: 85vw;
+	}
+	#SearchInput,
+	#filter {
+		width: 70vw;
+		margin-bottom: 5vw;
+	}
+	.fase-1-part-1 {
+		height: 180vw;
+	}
+	.catalog {
+		height: 90vw;
+		max-height: 90vw;
+		overflow: scroll;
+
+		border-style: none;
+		width: 85vw;
+
+		scrollbar-width: none;
+	}
+
+	.catalog-item {
+		width: 80vw;
+		height: 25vw;
+
+		border-top-right-radius: 15vw;
+	}
+	.catalog-item2 {
+		width: 80vw;
+		height: 25vw;
+		border-top-right-radius: 15vw;
+	}
+	.catalog-item-image {
+		height: 25vw;
+		max-width: 25vw;
+		overflow: hidden;
+		align-items: center;
+		display: flex;
+	}
+	.catalog-item-image img {
+		height: 25vw;
+		width: auto;
+	}
+
+	.catalog-item-info {
+		height: 7;
+		padding-left: 1vw;
+		max-width: 70vw;
+	}
+	.item-amount {
+		width: 10vw;
+		height: 10vw;
+		border-style: solid;
+		border-width: 0.05vw;
+	}
+	.item-info {
+		width: 50vw;
+		margin-top: 2vw;
+		padding-bottom: 0.5vw;
+	}
+	.btn-item {
+		background-color: #f9a084;
+		border: none;
+		border-radius: 2.5vw;
+		padding: 1vw 10vw;
+	}
+	.uitleen-textarea {
+		height: 30vw;
+		border-width: 3px;
+		border-style: solid;
+		width: 85vw;
+		margin-top: 0.5vw;
+		border-bottom-right-radius: 7.5vw;
+		outline: none;
+	}
+	.uitleen-textarea:focus {
+		border-color: #f9a084;
+	}
+	.uitleen-bericht {
+		height: 30vw;
+		width: 85vw;
+	}
+	.materials {
+		height: 80vw;
+		max-height: 80vw;
+		width: 85vw;
+		margin-top: 7.7vw;
+		margin-bottom: 5vw;
+	}
+	.fase-2 {
+		height: 170vw;
+		width: 85vw;
+	}
+	.fase-2-part-1 {
+		height: 80vw;
+		margin-top: 2.5vw;
+		width: 85vw;
+	}
+	.fase-2-part-2 {
+		height: 60vw;
+		width: 85vw;
+		margin-top: 2.5vw;
+	}
+
+	.ehb-choice {
+		height: 20vw;
+		width: 50vw;
+	}
+	.periode {
+		height: 50vw;
+	}
+	/* ------------------------------------ */
+	.text-input {
+		height: 10vw;
+		border-width: 3px;
+		width: 85vw;
+		margin-top: 0.5vw;
+		border-top-right-radius: 7.5vw;
+		border-style: solid;
+	}
+	.text-input-2 {
+		height: 10vw;
+		border-width: 3px;
+		width: 85vw;
+		margin-top: 0.5vw;
+		border-top-right-radius: 7.5vw;
+	}
+}

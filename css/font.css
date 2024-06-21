@@ -1,0 +1,159 @@
+@import url("https://use.typekit.net/ytz2sug.css");
+h1 {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+h2 {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+h3 {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+p {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+a {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+button {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+.fc-header,
+.fc-body,
+.fc-event,
+.fc-day,
+.fc-button,
+.fc-axis {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+	font-size: 1vw;
+}
+.fc-today-button {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+	font-size: 1vw;
+	font-weight: 500;
+}
+input {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+}
+textarea {
+	font-family: "omnes-pro", sans-serif;
+	font-style: normal;
+	font-size: 1vw;
+}
+.size1 {
+	font-size: 2.5vw;
+	font-weight: 500;
+}
+.size2 {
+	font-size: 1.75vw;
+	font-weight: 500;
+}
+.size3 {
+	font-size: 1.5vw;
+	font-weight: 500;
+}
+.size4 {
+	font-size: 1vw;
+	font-weight: 500;
+}
+.size5 {
+	font-size: 3vw;
+	font-weight: 500;
+}
+.size7 {
+	font-size: 2.5vw;
+	font-weight: 500;
+}
+.size8 {
+	font-size: 1.25vw;
+	font-weight: 500;
+}
+.size9 {
+	font-size: 0.75vw;
+}
+.no-underline {
+	text-decoration: none;
+}
+.underline {
+	text-decoration: underline;
+}
+.bold {
+	font-weight: 800;
+}
+.regular {
+	font-weight: 500;
+}
+.thin {
+	font-weight: 300;
+}
+h1 {
+	font-size: 9.75vw;
+}
+.size6 {
+	font-size: 14vw;
+}
+.interlinie {
+	line-height: 10vw;
+	padding-bottom: 2.75vw;
+}
+.interlinie2 {
+	line-height: 7.5vw;
+	padding-bottom: 2.75vw;
+}
+
+.align-right {
+	text-align: right;
+	margin-left: 20vw;
+}
+/* _____________________________________________________________________________ */
+@media screen and (max-width: 768px) {
+	.size1 {
+		font-size: 9vw;
+	}
+	.size2 {
+		font-size: 5vw;
+	}
+	.size3 {
+		font-size: 6vw;
+	}
+	.size4 {
+		font-size: 4vw;
+	}
+	.size5 {
+		font-size: 6vw;
+	}
+
+	.size6 {
+		font-size: 22.5vw;
+	}
+	.size7 {
+		font-size: 5.75vw;
+	}
+	.size8 {
+		font-size: 4vw;
+	}
+	.size9 {
+		font-size: 16vw;
+	}
+	.interlinie {
+		line-height: 16.5vw;
+	}
+
+	.sizeContact {
+		font-size: 15vw;
+		padding: 13.2vw 0vw 6.8vw 0vw;
+	}
+
+	.sizeActiviteiten {
+		font-size: 13vw;
+		padding: 13.2vw 0vw 6.8vw 0vw;
+	}
+}
