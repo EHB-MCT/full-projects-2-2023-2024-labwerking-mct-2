@@ -65,8 +65,8 @@
 	height: 30vw;
 }
 .fase-2-part-2 {
-	height: 20.75vw;
-	padding-top: 3.5vw;
+	height: 25vw;
+	padding-top: 5vw;
 }
 
 .contact-textarea {
@@ -172,7 +172,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 	font-family: "omnes-pro", sans-serif;
 	font-style: normal;
 	font-size: 1vw;
-	height: 0.5vw;
+	height: 2vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -229,6 +229,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 	}
 	.fase-2 {
 		height: 300vw;
+		flex-direction: column;
 	}
 	.fase-2-part-1 {
 		height: 80vw;
